@@ -1,209 +1,1719 @@
-/* 9. sınıf düzeyinde temel kavramlar ve ön öğrenmeler. */
+/* Genel kategori ipuçları: tanım veya cevabı daraltan konu açıklaması içermez. */
 window.QUESTION_BANK = [
-['Matematik','Sayılar','MUTLAK DEĞER','Bir gerçek sayının sayı doğrusunda sıfıra olan uzaklığı.'],
-['Matematik','Sayılar','RASYONEL SAYI','İki tam sayının, paydası sıfır olmayan oranı olarak yazılabilen sayı.'],
-['Matematik','Sayılar','KESİŞİM','İki kümenin ortak elemanlarıyla oluşan küme işlemi.'],
-['Matematik','Sayılar','EŞLENİK','3 + √2 ile 3 − √2 ifadelerinin birbirine göre adı.'],
-['Matematik','İşlem özellikleri','DAĞILMA','a(b + c) = ab + ac eşitliğinin gösterdiği özellik.'],
-['Matematik','Nicelikler ve değişimler','FONKSİYON','Tanım kümesindeki her elemanı değer kümesinde yalnız bir elemana eşleyen bağıntı.'],
-['Türk Dili ve Edebiyatı','Şiir dili','İMGE','Duygu ve düşüncelerin zihinde oluşturduğu, çağrışımlarla zenginleşen hayal.'],
-['Türk Dili ve Edebiyatı','Söz sanatları','BENZETME','Aralarında ortak özellik bulunan iki varlıktan zayıf olanı güçlü olana benzetme sanatı.'],
-['Türk Dili ve Edebiyatı','Şiir','TEMA','Bir şiirin bütününe hâkim olan temel duygu veya düşünce.'],
-['Türk Dili ve Edebiyatı','Anlatı','ANLATICI','Bir hikâyedeki olayları okuyucuya aktaran kurmaca ses.'],
-['Türk Dili ve Edebiyatı','Anlatı','ÇATIŞMA','Bir anlatıda karşıt güçler, kişiler veya düşünceler arasındaki mücadele.'],
-['Türk Dili ve Edebiyatı','Metin türleri','DENEME','Yazarın bir konudaki kişisel düşüncelerini kanıtlama zorunluluğu olmadan anlattığı yazı türü.'],
-['Fizik','Fizik bilimi','OPTİK','Işığı ve ışıkla ilgili olayları inceleyen fizik dalı.'],
-['Fizik','Nicelikler','VEKTÖREL','Büyüklüğünün yanında yönü de olan nicelikler için kullanılan niteleme.'],
-['Fizik','Kuvvet ve hareket','İVME','Hızın zamana göre değişimini ifade eden fiziksel nicelik.'],
-['Fizik','Kuvvet ve hareket','EYLEMSİZLİK','Cismin hareket durumundaki değişikliğe karşı koyma eğilimi.'],
-['Fizik','Akışkanlar','BASINÇ','Bir yüzeye dik etki eden kuvvetin yüzey alanına oranı.'],
-['Fizik','Enerji','SICAKLIK','Termometreyle ölçülen; ısı alışverişinin yönünü belirleyen nicelik.'],
-['Kimya','Etkileşim','ATOM','Bir elementin kimyasal özelliklerini taşıyan en küçük yapı birimi.'],
-['Kimya','Atomun yapısı','PROTON','Atom çekirdeğinde bulunan pozitif yüklü tanecik.'],
-['Kimya','Atomun yapısı','ELEKTRON','Atomda çekirdek çevresindeki orbitallerde bulunan negatif yüklü tanecik.'],
-['Kimya','Atom ve iyon','İYON','Elektron almış veya vermiş, elektriksel yüke sahip atom ya da atom grubu.'],
-['Kimya','Periyodik tablo','PERİYOT','Periyodik tablodaki yatay sıralara verilen ad.'],
-['Kimya','Periyodik tablo','GRUP','Periyodik tablodaki düşey sütunlara verilen ad.'],
-['Biyoloji','Yaşam','BİYOÇEŞİTLİLİK','Canlıların gen, tür ve ekosistem düzeyindeki çeşitliliği.'],
-['Biyoloji','Yaşam','TÜR','Doğal koşullarda birbiriyle çiftleşip verimli döller oluşturabilen benzer bireyler topluluğu.'],
-['Biyoloji','Organizasyon','HÜCRE','Canlıların temel yapı ve işlev birimi.'],
-['Biyoloji','Organizasyon','RİBOZOM','Hücrede protein sentezinin gerçekleştiği yapı.'],
-['Biyoloji','Organizasyon','HÜCRE ZARI','Hücreyi çevresinden ayıran, seçici geçirgen yapı.'],
-['Biyoloji','Yaşam','METABOLİZMA','Canlıda gerçekleşen yapım ve yıkım tepkimelerinin bütünü.'],
-['Tarih','Tarih bilimi','KRONOLOJİ','Olayları zaman sırasına koymayı sağlayan, tarihe yardımcı bilim.'],
-['Tarih','Tarih bilimi','ARKEOLOJİ','Geçmiş toplumları maddi kalıntılar ve kazılar yoluyla inceleyen bilim.'],
-['Tarih','Tarihsel bilgi','KAYNAK','Tarih araştırmalarında bilgi ve kanıt sunan belge, buluntu veya anlatı.'],
-['Tarih','Eski Çağ','YAZI','Sümerlerin geliştirdiği çivi biçimli işaretlerle de kullanılan, sözün işaretlerle kaydedilmesini sağlayan sistem.'],
-['Tarih','Eski Çağ','GÖÇ','İnsanların çeşitli nedenlerle bir yerleşim yerinden başka bir yere gitmesi.'],
-['Tarih','Eski Çağ','TARIM','Neolitik dönemde yerleşik yaşamın yaygınlaşmasında etkili olan bitkisel üretim faaliyeti.'],
-['Coğrafya','Mekânsal bilgi','ÖLÇEK','Haritadaki uzunluğun arazideki gerçek uzunluğa oranı.'],
-['Coğrafya','Mekânsal bilgi','ENLEM','Bir noktanın Ekvator’a olan açısal uzaklığı.'],
-['Coğrafya','Mekânsal bilgi','BOYLAM','Bir noktanın başlangıç meridyenine olan açısal uzaklığı.'],
-['Coğrafya','Doğal sistemler','ATMOSFER','Dünya’yı çevreleyen gaz tabakası.'],
-['Coğrafya','Doğal sistemler','İKLİM','Geniş bir alanda uzun yıllar boyunca gözlenen hava koşullarının genel özellikleri.'],
-['Coğrafya','Doğal sistemler','HİDROSFER','Dünya’daki suların oluşturduğu doğal ortam; su küre.'],
-['Din Kültürü ve Ahlak Bilgisi','İnsan ve inanç','TEVHİT','Allah’ın bir ve tek olduğuna inanma ilkesi.'],
-['Din Kültürü ve Ahlak Bilgisi','İnsan ve inanç','FITRAT','İnsanın yaratılıştan sahip olduğu temel özellik ve eğilimler.'],
-['Din Kültürü ve Ahlak Bilgisi','İnsan ve ibadet','DUA','İnsanın Allah’a yönelerek dileklerini ve şükrünü ifade etmesi.'],
-['Din Kültürü ve Ahlak Bilgisi','İnsan ve ahlak','İHLAS','İnanç ve davranışlarda samimi olmak, ibadeti yalnızca Allah’ın rızası için yapmak.'],
-['Din Kültürü ve Ahlak Bilgisi','İnsan ve ahlak','SABIR','Zorluklar karşısında kararlı ve dayanıklı olma erdemi.'],
-['Din Kültürü ve Ahlak Bilgisi','İnsan ve ibadet','ŞÜKÜR','Sahip olunan nimetler için Allah’a minnettarlık duyma ve bunu davranışlarla gösterme.'],
-['İngilizce','School life','CLASSROOM','İngilizcede “derslik, sınıf” anlamına gelen kelime.'],
-['İngilizce','School life','TIMETABLE','İngilizcede haftalık “ders çizelgesi” anlamına gelen kelime.'],
-['İngilizce','Daily life','BREAKFAST','İngilizcede günün ilk ana öğünü: kahvaltı.'],
-['İngilizce','Social life','FRIENDSHIP','İngilizcede “arkadaşlık, dostluk” anlamına gelen kelime.'],
-['İngilizce','Nature','ENVIRONMENT','İngilizcede “çevre” anlamına gelen kelime.'],
-['İngilizce','Daily life','LIBRARY','İngilizcede kitap ödünç alabileceğin yer: kütüphane.'],
-['Almanca (ikinci yabancı dil)','Başlangıç','SCHULE','Almancada “okul” anlamına gelen kelime.'],
-['Almanca (ikinci yabancı dil)','Başlangıç','FAMILIE','Almancada “aile” anlamına gelen kelime.'],
-['Almanca (ikinci yabancı dil)','Başlangıç','BUCH','Almancada “kitap” anlamına gelen kelime.'],
-['Almanca (ikinci yabancı dil)','Başlangıç','FREUND','Almancada erkek bir “arkadaş” için kullanılan kelime.'],
-['Almanca (ikinci yabancı dil)','Başlangıç','MUSIK','Almancada “müzik” anlamına gelen kelime.'],
-['Almanca (ikinci yabancı dil)','Başlangıç','LEHRER','Almancada erkek bir “öğretmen” için kullanılan kelime.'],
-['Beden Eğitimi ve Spor','Hareket becerileri','ISINMA','Egzersiz öncesinde vücudu etkinliğe hazırlayan hareketlerin bütünü.'],
-['Beden Eğitimi ve Spor','Fiziksel uygunluk','ESNEKLİK','Eklemlerin hareket genişliğiyle ilgili fiziksel uygunluk özelliği.'],
-['Beden Eğitimi ve Spor','Spor kültürü','FAIR PLAY','Sporda dürüstlük, kurallara uyma ve rakibe saygıyı anlatan uluslararası kavram.'],
-['Beden Eğitimi ve Spor','Fiziksel uygunluk','DAYANIKLILIK','Bir fiziksel etkinliği uzun süre sürdürebilme kapasitesi.'],
-['Beden Eğitimi ve Spor','Hareket becerileri','KOORDİNASYON','Farklı vücut bölümlerinin bir hareketi uyum içinde gerçekleştirmesi.'],
-['Müzik','Müzik dili','RİTİM','Ses ve susların süre bakımından düzenlenmesi.'],
-['Müzik','Müzik dili','NOTA','Müzik seslerinin yükseklik ve sürelerini göstermekte kullanılan işaret.'],
-['Müzik','Müzik dili','PORTE','Notaların yazıldığı beş paralel çizgiden oluşan dizek.'],
-['Müzik','Müzik dili','SOLFEJ','Notaları adları, yükseklikleri ve süreleriyle seslendirme çalışması.'],
-['Müzik','Müzik dili','EZGİ','Belirli bir düzen içinde art arda gelen seslerin oluşturduğu melodi.'],
-['Görsel Sanatlar','Görsel dil','PERSPEKTİF','Derinliği ve uzaklığı iki boyutlu yüzeyde göstermeye yarayan yöntem.'],
-['Görsel Sanatlar','Görsel dil','DOKU','Bir yüzeyin dokunmayla ya da görmeyle algılanan niteliği.'],
-['Görsel Sanatlar','Görsel dil','KOMPOZİSYON','Görsel ögelerin bir bütün oluşturacak biçimde düzenlenmesi.'],
-['Görsel Sanatlar','Görsel dil','DESEN','Çizgi, leke ve tonlarla yapılan resim çalışması.'],
-['Görsel Sanatlar','Görsel dil','KONTRAST','Görsel ögeler arasındaki belirgin karşıtlık; zıtlık.'],
-['Sağlık Bilgisi ve Trafik Kültürü','Sağlıklı yaşam','HİJYEN','Sağlığı korumaya yönelik temizlik uygulamalarının bütünü.'],
-['Sağlık Bilgisi ve Trafik Kültürü','Sağlıklı yaşam','DENGELİ BESLENME','Besin ögelerini gereksinime uygun miktar ve oranlarda tüketme.'],
-['Sağlık Bilgisi ve Trafik Kültürü','Trafik kültürü','EMNİYET KEMERİ','Araçta yolcuyu koltuğunda tutarak savrulma riskini azaltan güvenlik donanımı.'],
-['Sağlık Bilgisi ve Trafik Kültürü','Trafik kültürü','YAYA GEÇİDİ','Yayaların yolu geçmesi için ayrılmış ve işaretlenmiş bölüm.'],
-['Sağlık Bilgisi ve Trafik Kültürü','Trafik kültürü','TRAFİK ADABI','Trafikte saygı, hoşgörü ve sorumlulukla davranmayı ifade eden kavram.'],
-['Bilişim (seçmeli)','Dijital okuryazarlık','ALGORİTMA','Bir problemi çözmek için izlenen sonlu ve sıralı adımlar bütünü.'],
-['Bilişim (seçmeli)','Dijital okuryazarlık','DONANIM','Bir bilgisayar sisteminin elle tutulabilen fiziksel parçaları.'],
-['Bilişim (seçmeli)','Dijital okuryazarlık','YAZILIM','Bilgisayarda bir işi gerçekleştiren program ve komutlar bütünü.'],
-['Bilişim (seçmeli)','Dijital okuryazarlık','GÜÇLÜ PAROLA','Uzun, benzersiz ve tahmin edilmesi zor giriş şifresi.'],
-['Bilişim (seçmeli)','Dijital okuryazarlık','DİJİTAL AYAK İZİ','İnternetteki etkinliklerimizin geride bıraktığı veri izleri.']
-,
-["Matematik", "Sayılar", "BİRLEŞİM", "İki kümeden en az birine ait elemanları bir araya getiren küme işlemi."],
-["Matematik", "Sayılar", "ALT KÜME", "A kümesinin her elemanı B kümesinde de varsa A için kullanılan kavram."],
-["Matematik", "Sayılar", "İRRASYONEL SAYI", "√2 gibi, iki tam sayının oranı olarak yazılamayan gerçek sayı."],
-["Matematik", "Geometrik şekiller", "ÜÇGEN", "Doğrusal olmayan üç noktayı birleştiren üç doğru parçasının oluşturduğu çokgen."],
-["Matematik", "Geometrik şekiller", "AÇIORTAY", "Bir açıyı eş ölçülü iki açıya ayıran ışın."],
-["Matematik", "Geometrik şekiller", "KENARORTAY", "Üçgende bir köşeyi karşısındaki kenarın orta noktasına birleştiren doğru parçası."],
-["Matematik", "İstatistiksel araştırma", "ORTANCA", "Sıralanmış bir veri grubunun ortasındaki değer; veri sayısı çiftse ortadaki iki değerin ortalaması."],
-["Matematik", "Algoritma ve bilişim", "ÖNERME", "Doğru ya da yanlış olduğu kesin olarak belirlenebilen yargı bildiren cümle."],
-["Türk Dili ve Edebiyatı", "Söz sanatları", "KİŞİLEŞTİRME", "İnsan dışındaki varlıklara insana özgü özellikler verme sanatı."],
-["Türk Dili ve Edebiyatı", "Söz sanatları", "ABARTMA", "Bir durumu olduğundan çok büyük ya da küçük gösterme sanatı."],
-["Türk Dili ve Edebiyatı", "Şiir", "DİZE", "Şiirin her bir satırına verilen ad."],
-["Türk Dili ve Edebiyatı", "Şiirde ahenk", "UYAK", "Dize sonlarında farklı anlam ve görevdeki sözcüklerde görülen ses benzerliği; kafiye."],
-["Türk Dili ve Edebiyatı", "Şiirde ahenk", "REDİF", "Dize sonlarında aynı görev ve anlamla tekrarlanan ek, sözcük veya sözcük grubu."],
-["Türk Dili ve Edebiyatı", "Anlatı", "OLAY ÖRGÜSÜ", "Bir anlatıda olayların neden-sonuç ilişkisiyle düzenlenmiş bütünü."],
-["Türk Dili ve Edebiyatı", "Metin türleri", "ANI", "Bir kişinin geçmişte yaşadığı veya tanık olduğu olayları sonradan anlattığı yazı türü."],
-["Türk Dili ve Edebiyatı", "Metin türleri", "GÜNLÜK", "Yaşananların ve düşüncelerin günü gününe, tarih belirtilerek yazıldığı metin türü."],
-["Fizik", "Nicelikler", "SKALER", "Yalnızca sayı ve birimle ifade edilebilen, yön gerektirmeyen nicelikleri niteleyen sözcük."],
-["Fizik", "Nicelikler", "KÜTLE", "SI birimi kilogram olan, cismin eylemsizliğinin ölçüsü olan temel nicelik."],
-["Fizik", "Kuvvet ve hareket", "KUVVET", "Cisimlerin hareketini veya şeklini değiştirebilen, birimi newton olan etki."],
-["Fizik", "Kuvvet ve hareket", "SÜRAT", "Alınan yolun geçen zamana oranı olan skaler nicelik."],
-["Fizik", "Kuvvet ve hareket", "YER DEĞİŞTİRME", "Bir cismin ilk konumundan son konumuna uzanan yönlü uzaklık; konum vektörlerinin farkı."],
-["Fizik", "Enerji", "İLETİM", "Isının madde içinde veya temas eden maddeler arasında, maddenin topluca yer değiştirmesi olmadan aktarılması."],
-["Fizik", "Enerji", "TAŞINIM", "Sıvı veya gazın topluca yer değiştirmesiyle gerçekleşen ısı aktarımı."],
-["Fizik", "Enerji", "IŞIMA", "Güneş enerjisinin Dünya’ya ulaşmasında olduğu gibi elektromanyetik dalgalarla gerçekleşen enerji aktarımı."],
-["Kimya", "Etkileşim", "ELEMENT", "Aynı proton sayısına sahip atomlardan oluşan saf madde."],
-["Kimya", "Atomun yapısı", "NÖTRON", "Atom çekirdeğinde bulunan yüksüz tanecik."],
-["Kimya", "Atomun yapısı", "İZOTOP", "Proton sayıları aynı, nötron sayıları farklı atomların birbirine göre adı."],
-["Kimya", "Atomun yapısı", "ORBİTAL", "Elektronun bulunma olasılığının yüksek olduğu uzay bölgesi."],
-["Kimya", "Periyodik özellikler", "METAL", "Bakır ve demirin de içinde yer aldığı; genellikle ısıyı ve elektriği iyi ileten element sınıfı."],
-["Kimya", "Periyodik özellikler", "AMETAL", "Oksijen, karbon ve kükürdün yer aldığı element sınıfı."],
-["Kimya", "Kimyasal bağlar", "KOVALENT BAĞ", "Atomların elektronları ortaklaşa kullanmasıyla oluşan güçlü etkileşim."],
-["Kimya", "Kimyasal bağlar", "İYONİK BAĞ", "Zıt yüklü iyonlar arasındaki elektrostatik çekimle oluşan güçlü etkileşim."],
-["Biyoloji", "Organizasyon", "PROKARYOT", "Zarla çevrili çekirdeği bulunmayan hücre tipinin adı."],
-["Biyoloji", "Organizasyon", "ÖKARYOT", "Genetik materyali zarla çevrili çekirdekte bulunan hücre tipinin adı."],
-["Biyoloji", "Organizasyon", "ORGANEL", "Hücre içinde belirli görevleri yerine getiren özelleşmiş yapıların genel adı."],
-["Biyoloji", "Organizasyon", "MİTOKONDRİ", "Ökaryot hücrelerde oksijenli solunumun önemli aşamalarının gerçekleştiği organel."],
-["Biyoloji", "Organizasyon", "KLOROPLAST", "Bitki ve alg hücrelerinde fotosentezin gerçekleştiği organel."],
-["Biyoloji", "Organizasyon", "ENZİM", "Canlılardaki kimyasal tepkimeleri hızlandıran biyolojik katalizör."],
-["Biyoloji", "Yaşam", "HOMEOSTAZİ", "Çevre koşulları değişse de canlının iç dengesini belirli sınırlar içinde koruması."],
-["Biyoloji", "Yaşam", "ADAPTASYON", "Belirli bir çevrede yaşama ve üreme başarısını artıran kalıtsal özellik."],
-["Tarih", "Tarih bilimi", "PALEOGRAFYA", "Eski yazıları inceleyen, tarih araştırmalarına yardımcı bilim."],
-["Tarih", "Tarih bilimi", "EPİGRAFİ", "Taş, metal gibi dayanıklı yüzeylerdeki yazıtları inceleyen bilim."],
-["Tarih", "Tarih bilimi", "NUMİZMATİK", "Geçmiş dönemlerin paralarını ve madalyalarını inceleyen bilim."],
-["Tarih", "Eski Çağ", "SÜMERLER", "Mezopotamya’da çivi yazısını geliştiren uygarlık."],
-["Tarih", "Eski Çağ", "HİTİTLER", "Başkentleri Hattuşa olan Anadolu uygarlığı."],
-["Tarih", "Eski Çağ", "MEZOPOTAMYA", "Fırat ve Dicle nehirleri arasındaki tarihî bölgenin adı."],
-["Tarih", "Eski Çağ", "ARTI ÜRÜN", "Üreticinin kendi ihtiyacını aştığı için değişim veya ticarette kullanabildiği üretim fazlası."],
-["Tarih", "Eski Çağ", "HUKUK", "Toplumsal ilişkileri düzenleyen ve devlet yaptırımıyla desteklenen kurallar bütünü."],
-["Coğrafya", "Doğal sistemler", "LİTOSFER", "Yer kabuğu ile üst mantonun katı bölümünden oluşan taş küre."],
-["Coğrafya", "Doğal sistemler", "BİYOSFER", "Canlıların yaşadığı doğal ortam; canlılar küresi."],
-["Coğrafya", "Mekânsal bilgi", "HARİTA", "Yeryüzünün tamamının veya bir bölümünün, belirli bir ölçekle küçültülerek düzleme aktarılmış gösterimi."],
-["Coğrafya", "Mekânsal bilgi", "PARALEL", "Ekvator’a paralel uzandığı varsayılan enlem çemberlerinin adı."],
-["Coğrafya", "Mekânsal bilgi", "MERİDYEN", "Kutupları birleştirdiği varsayılan boylam yarım çemberlerinin adı."],
-["Coğrafya", "Mekânsal bilgi", "İZOHİPS", "Haritada deniz seviyesinden yüksekliği eşit noktaları birleştiren eğri."],
-["Coğrafya", "Mekânsal bilgi", "COĞRAFİ KONUM", "Bir yerin Dünya üzerindeki yerini, mutlak ve göreceli özellikleriyle ifade eden kavram."],
-["Coğrafya", "Afetler", "DOĞAL AFET", "Doğal bir tehlikenin toplumda ciddi kayıplar ve işleyişte kesinti oluşturmasıyla ortaya çıkan durum."],
-["Din Kültürü ve Ahlak Bilgisi", "İnsan ve inanç", "İMAN", "Allah’a ve inanılması istenen esaslara gönülden inanmak."],
-["Din Kültürü ve Ahlak Bilgisi", "İnsan ve ibadet", "İBADET", "Allah’a bağlılığı ve kulluğu ifade eden söz ve davranışların genel adı."],
-["Din Kültürü ve Ahlak Bilgisi", "İnsan ve ahlak", "AHLAK", "İnsanın iyi veya kötü olarak nitelenebilen huy ve davranışlarının bütünü."],
-["Din Kültürü ve Ahlak Bilgisi", "İnsan ve ahlak", "ADALET", "Hak sahibine hakkını vermek ve insanlar arasında hakkaniyetle davranmak."],
-["Din Kültürü ve Ahlak Bilgisi", "İnsan ve ahlak", "MERHAMET", "Başkalarının sıkıntılarına duyarlı olmayı ve onlara yardım etmeyi içeren erdem."],
-["Din Kültürü ve Ahlak Bilgisi", "İnsan ve ahlak", "TEVEKKÜL", "Gereken çabayı gösterip önlemleri aldıktan sonra sonucu Allah’a bırakmak."],
-["Din Kültürü ve Ahlak Bilgisi", "İnsan ve ahlak", "SORUMLULUK", "Kişinin kendi seçim ve davranışlarının sonuçlarını üstlenmesi."],
-["Din Kültürü ve Ahlak Bilgisi", "İnsan ve ahlak", "DOĞRULUK", "Söz ve davranışlarda gerçeğe uygun olma, dürüstlük erdemi."],
-["İngilizce", "School life", "HOMEWORK", "İngilizcede “ev ödevi” anlamına gelen kelime."],
-["İngilizce", "School life", "SUBJECT", "İngilizcede matematik veya fizik gibi bir “ders, çalışma alanı” anlamına gelen kelime."],
-["İngilizce", "Daily life", "NEIGHBOUR", "İngiliz İngilizcesinde “komşu” anlamına gelen kelime."],
-["İngilizce", "Daily life", "WEATHER", "İngilizcede “hava durumu” anlamına gelen kelime."],
-["İngilizce", "Social life", "VOLUNTEER", "İngilizcede bir işi kendi isteğiyle, ücret beklemeden yapan “gönüllü” kişi."],
-["İngilizce", "Nature", "RECYCLING", "İngilizcede “geri dönüşüm” anlamına gelen kelime."],
-["İngilizce", "Daily life", "JOURNEY", "İngilizcede bir yerden başka bir yere yapılan “yolculuk” anlamına gelen kelime."],
-["İngilizce", "School life", "RESPONSIBILITY", "İngilizcede “sorumluluk” anlamına gelen kelime."],
-["Almanca (ikinci yabancı dil)", "Başlangıç", "GUTEN MORGEN", "Almancada sabah söylenen “günaydın” selamı."],
-["Almanca (ikinci yabancı dil)", "Başlangıç", "DANKE", "Almancada “teşekkürler” anlamına gelen kelime."],
-["Almanca (ikinci yabancı dil)", "Başlangıç", "BITTE", "Almancada bir ricada “lütfen” demek için kullanılan kelime."],
-["Almanca (ikinci yabancı dil)", "Başlangıç", "WASSER", "Almancada “su” anlamına gelen kelime."],
-["Almanca (ikinci yabancı dil)", "Başlangıç", "HAUS", "Almancada “ev” anlamına gelen kelime."],
-["Almanca (ikinci yabancı dil)", "Başlangıç", "SCHWESTER", "Almancada “kız kardeş” anlamına gelen kelime."],
-["Almanca (ikinci yabancı dil)", "Başlangıç", "BRUDER", "Almancada “erkek kardeş” anlamına gelen kelime."],
-["Almanca (ikinci yabancı dil)", "Başlangıç", "SCHÜLER", "Almancada erkek bir “öğrenci” için kullanılan kelime."],
-["Beden Eğitimi ve Spor", "Hareket becerileri", "SOĞUMA", "Egzersiz sonunda vücudun dinlenme durumuna kademeli dönmesini sağlayan hafif etkinlikler."],
-["Beden Eğitimi ve Spor", "Fiziksel uygunluk", "DENGE", "Vücudun konumunu sabitken veya hareket sırasında kontrol edebilme becerisi."],
-["Beden Eğitimi ve Spor", "Fiziksel uygunluk", "ÇEVİKLİK", "Vücut konumunu veya hareket yönünü hızlı ve kontrollü biçimde değiştirme becerisi."],
-["Beden Eğitimi ve Spor", "Spor kültürü", "TAKIM RUHU", "Sporcuların ortak hedef için dayanışma ve birlik içinde hareket etmesi."],
-["Beden Eğitimi ve Spor", "Spor kültürü", "SPORTMENLİK", "Spor kurallarına uymayı, rakibe saygıyı ve dürüst davranmayı anlatan Türkçe kavram."],
-["Beden Eğitimi ve Spor", "Hareket becerileri", "DRİBLİNG", "Basketbolda topu yere sektirerek ilerleme hareketi."],
-["Beden Eğitimi ve Spor", "Hareket becerileri", "SERVİS", "Voleybolda ralliyi başlatmak için topu rakip sahaya gönderme vuruşu."],
-["Beden Eğitimi ve Spor", "Spor kültürü", "HAKEM", "Spor karşılaşmasında kuralların uygulanmasını sağlayan görevli."],
-["Müzik", "Müzik dili", "TEMPO", "Bir müzik eserinin seslendirilme hızı."],
-["Müzik", "Müzik dili", "SUS", "Müzikte belirli bir süre sessiz kalınacağını gösteren işaret."],
-["Müzik", "Müzik dili", "DİYEZ", "Bir notayı yarım ses incelten değiştirme işareti."],
-["Müzik", "Müzik dili", "BEMOL", "Bir notayı yarım ses kalınlaştıran değiştirme işareti."],
-["Müzik", "Müzik dili", "BEKAR", "Bir notadaki diyez veya bemol etkisini kaldıran işaretin Türkçe adı."],
-["Müzik", "Müzik dili", "ÖLÇÜ", "Bir müzik parçasında vuruşların belirli bir düzene göre gruplandığı bölüm."],
-["Müzik", "Müzik kültürü", "KORO", "Birlikte şarkı söylemek üzere oluşturulan ses topluluğu."],
-["Müzik", "Müzik dili", "NÜANS", "Müzikte sesin gürlüğüne ilişkin anlatım farklarının genel adı."],
-["Görsel Sanatlar", "Görsel dil", "ANA RENK", "Geleneksel resim eğitiminde kırmızı, sarı ve mavinin her biri için kullanılan ad."],
-["Görsel Sanatlar", "Görsel dil", "ARA RENK", "Geleneksel resim eğitiminde iki ana rengin karışımından elde edilen renk türü."],
-["Görsel Sanatlar", "Görsel dil", "SICAK RENK", "Kırmızı, turuncu ve sarı gibi renkler için kullanılan grup adı."],
-["Görsel Sanatlar", "Görsel dil", "SOĞUK RENK", "Mavi, yeşil ve mor gibi renkler için kullanılan grup adı."],
-["Görsel Sanatlar", "Görsel dil", "SİMETRİ", "Bir biçimin bir eksene göre iki yanında dengeli ve yansımış olarak tekrarlanması."],
-["Görsel Sanatlar", "Sanat türleri", "PORTRE", "Bir kişinin yüzünü ve kişiliğini yansıtmayı amaçlayan resim türü."],
-["Görsel Sanatlar", "Sanat türleri", "NATÜRMORT", "Meyve, çiçek ve eşya gibi cansız nesneleri konu alan resim türü."],
-["Görsel Sanatlar", "Sanat türleri", "PEYZAJ", "Doğa ve kır görünümlerini konu alan resim; manzara resmi."],
-["Sağlık Bilgisi ve Trafik Kültürü", "Sağlıklı yaşam", "BAĞIŞIKLIK", "Vücudun hastalık etkenlerine karşı savunma yeteneği."],
-["Sağlık Bilgisi ve Trafik Kültürü", "Sağlıklı yaşam", "UYKU", "Vücudun ve zihnin dinlenmesi ile yenilenmesine katkı sağlayan doğal dinlenme durumu."],
-["Sağlık Bilgisi ve Trafik Kültürü", "Sağlıklı yaşam", "FİZİKSEL AKTİVİTE", "Kasların çalışmasıyla enerji harcanmasını sağlayan günlük bedensel hareketlerin genel adı."],
-["Sağlık Bilgisi ve Trafik Kültürü", "Sağlıklı yaşam", "AKRAN ZORBALIĞI", "Benzer yaştaki kişiler arasında güç dengesizliğiyle birlikte görülen, tekrarlayan zarar verici davranışlar."],
-["Sağlık Bilgisi ve Trafik Kültürü", "Trafik kültürü", "TRAFİK İŞARETİ", "Yol kullanıcılarını uyaran, bilgilendiren veya düzenleyen levha, ışık ve yol çizgilerinin genel adı."],
-["Sağlık Bilgisi ve Trafik Kültürü", "Trafik kültürü", "GEÇİŞ ÜSTÜNLÜĞÜ", "Acil görev hâlindeki ambulans gibi araçlara, görev sırasında tanınan önceliğin adı."],
-["Sağlık Bilgisi ve Trafik Kültürü", "Trafik kültürü", "GÜVENLİ TAKİP", "Öndeki araçla, gerektiğinde güvenle durmaya yetecek mesafeyi koruyarak ilerleme."],
-["Sağlık Bilgisi ve Trafik Kültürü", "Trafik kültürü", "REFLEKTÖR", "Üzerine gelen ışığı geri yansıtarak özellikle karanlıkta görünürlüğü artıran donanım."],
-["Bilişim (seçmeli)", "Dijital okuryazarlık", "TARAYICI", "İnternet sayfalarını görüntülemek için kullanılan yazılım türü."],
-["Bilişim (seçmeli)", "Dijital okuryazarlık", "ARAMA MOTORU", "İnternette anahtar kelimelerle bilgi bulmayı sağlayan hizmet."],
-["Bilişim (seçmeli)", "Dijital okuryazarlık", "YEDEKLEME", "Veri kaybına karşı dosyaların ek kopyalarını oluşturma işlemi."],
-["Bilişim (seçmeli)", "Dijital okuryazarlık", "TELİF HAKKI", "Bir eseri üreten kişinin eseri üzerindeki yasal haklarını ifade eden kavram."],
-["Bilişim (seçmeli)", "Dijital okuryazarlık", "KİŞİSEL VERİ", "Kimliği belirli veya belirlenebilir bir kişiye ilişkin her türlü bilgi."],
-["Bilişim (seçmeli)", "Dijital okuryazarlık", "SİBER ZORBALIK", "Dijital araçlar üzerinden bir kişiye yönelik tekrarlayan zarar verici davranışlar."],
-["Bilişim (seçmeli)", "Dijital okuryazarlık", "OLTALAMA", "Sahte mesaj veya sitelerle kullanıcıyı kandırıp şifre gibi bilgilerini ele geçirmeye çalışma yöntemi."],
-["Bilişim (seçmeli)", "Dijital okuryazarlık", "AÇIK KAYNAK", "Kaynak kodu, lisansının koşullarına göre incelenebilen, değiştirilebilen ve paylaşılabilen yazılım yaklaşımı."]
-].map((x,i)=>({id:'q'+i,course:x[0],theme:x[1],answer:x[2],clue:x[3]}));
+  {
+    "id": "q0",
+    "course": "Matematik",
+    "answer": "MUTLAK DEĞER",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q1",
+    "course": "Matematik",
+    "answer": "RASYONEL SAYI",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q2",
+    "course": "Matematik",
+    "answer": "KESİŞİM",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q3",
+    "course": "Matematik",
+    "answer": "EŞLENİK",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q4",
+    "course": "Matematik",
+    "answer": "DAĞILMA",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q5",
+    "course": "Matematik",
+    "answer": "FONKSİYON",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q6",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "İMGE",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q7",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "BENZETME",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q8",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "TEMA",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q9",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "ANLATICI",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q10",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "ÇATIŞMA",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q11",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "DENEME",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q12",
+    "course": "Fizik",
+    "answer": "OPTİK",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q13",
+    "course": "Fizik",
+    "answer": "VEKTÖREL",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q14",
+    "course": "Fizik",
+    "answer": "İVME",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q15",
+    "course": "Fizik",
+    "answer": "EYLEMSİZLİK",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q16",
+    "course": "Fizik",
+    "answer": "BASINÇ",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q17",
+    "course": "Fizik",
+    "answer": "SICAKLIK",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q18",
+    "course": "Kimya",
+    "answer": "ATOM",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q19",
+    "course": "Kimya",
+    "answer": "PROTON",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q20",
+    "course": "Kimya",
+    "answer": "ELEKTRON",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q21",
+    "course": "Kimya",
+    "answer": "İYON",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q22",
+    "course": "Kimya",
+    "answer": "PERİYOT",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q23",
+    "course": "Kimya",
+    "answer": "GRUP",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q24",
+    "course": "Biyoloji",
+    "answer": "BİYOÇEŞİTLİLİK",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q25",
+    "course": "Biyoloji",
+    "answer": "TÜR",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q26",
+    "course": "Biyoloji",
+    "answer": "HÜCRE",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q27",
+    "course": "Biyoloji",
+    "answer": "RİBOZOM",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q28",
+    "course": "Biyoloji",
+    "answer": "HÜCRE ZARI",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q29",
+    "course": "Biyoloji",
+    "answer": "METABOLİZMA",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q30",
+    "course": "Tarih",
+    "answer": "KRONOLOJİ",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q31",
+    "course": "Tarih",
+    "answer": "ARKEOLOJİ",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q32",
+    "course": "Tarih",
+    "answer": "KAYNAK",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q33",
+    "course": "Tarih",
+    "answer": "YAZI",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q34",
+    "course": "Tarih",
+    "answer": "GÖÇ",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q35",
+    "course": "Tarih",
+    "answer": "TARIM",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q36",
+    "course": "Coğrafya",
+    "answer": "ÖLÇEK",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q37",
+    "course": "Coğrafya",
+    "answer": "ENLEM",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q38",
+    "course": "Coğrafya",
+    "answer": "BOYLAM",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q39",
+    "course": "Coğrafya",
+    "answer": "ATMOSFER",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q40",
+    "course": "Coğrafya",
+    "answer": "İKLİM",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q41",
+    "course": "Coğrafya",
+    "answer": "HİDROSFER",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q42",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "TEVHİT",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q43",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "FITRAT",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q44",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "DUA",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q45",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "İHLAS",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q46",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "SABIR",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q47",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "ŞÜKÜR",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q48",
+    "course": "İngilizce",
+    "answer": "CLASSROOM",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q49",
+    "course": "İngilizce",
+    "answer": "TIMETABLE",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q50",
+    "course": "İngilizce",
+    "answer": "BREAKFAST",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q51",
+    "course": "İngilizce",
+    "answer": "FRIENDSHIP",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q52",
+    "course": "İngilizce",
+    "answer": "ENVIRONMENT",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q53",
+    "course": "İngilizce",
+    "answer": "LIBRARY",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q54",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "SCHULE",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q55",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "FAMILIE",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q56",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "BUCH",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q57",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "FREUND",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q58",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "MUSIK",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q59",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "LEHRER",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q60",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "ISINMA",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q61",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "ESNEKLİK",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q62",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "FAIR PLAY",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q63",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "DAYANIKLILIK",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q64",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "KOORDİNASYON",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q65",
+    "course": "Müzik",
+    "answer": "RİTİM",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q66",
+    "course": "Müzik",
+    "answer": "NOTA",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q67",
+    "course": "Müzik",
+    "answer": "PORTE",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q68",
+    "course": "Müzik",
+    "answer": "SOLFEJ",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q69",
+    "course": "Müzik",
+    "answer": "EZGİ",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q70",
+    "course": "Görsel Sanatlar",
+    "answer": "PERSPEKTİF",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q71",
+    "course": "Görsel Sanatlar",
+    "answer": "DOKU",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q72",
+    "course": "Görsel Sanatlar",
+    "answer": "KOMPOZİSYON",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q73",
+    "course": "Görsel Sanatlar",
+    "answer": "DESEN",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q74",
+    "course": "Görsel Sanatlar",
+    "answer": "KONTRAST",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q75",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "HİJYEN",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q76",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "DENGELİ BESLENME",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q77",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "EMNİYET KEMERİ",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q78",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "YAYA GEÇİDİ",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q79",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "TRAFİK ADABI",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q80",
+    "course": "Bilişim (seçmeli)",
+    "answer": "ALGORİTMA",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q81",
+    "course": "Bilişim (seçmeli)",
+    "answer": "DONANIM",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q82",
+    "course": "Bilişim (seçmeli)",
+    "answer": "YAZILIM",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q83",
+    "course": "Bilişim (seçmeli)",
+    "answer": "GÜÇLÜ PAROLA",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q84",
+    "course": "Bilişim (seçmeli)",
+    "answer": "DİJİTAL AYAK İZİ",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q85",
+    "course": "Matematik",
+    "answer": "BİRLEŞİM",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q86",
+    "course": "Matematik",
+    "answer": "ALT KÜME",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q87",
+    "course": "Matematik",
+    "answer": "İRRASYONEL SAYI",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q88",
+    "course": "Matematik",
+    "answer": "ÜÇGEN",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q89",
+    "course": "Matematik",
+    "answer": "AÇIORTAY",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q90",
+    "course": "Matematik",
+    "answer": "KENARORTAY",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q91",
+    "course": "Matematik",
+    "answer": "ORTANCA",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q92",
+    "course": "Matematik",
+    "answer": "ÖNERME",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q93",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "KİŞİLEŞTİRME",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q94",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "ABARTMA",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q95",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "DİZE",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q96",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "UYAK",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q97",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "REDİF",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q98",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "OLAY ÖRGÜSÜ",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q99",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "ANI",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q100",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "GÜNLÜK",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q101",
+    "course": "Fizik",
+    "answer": "SKALER",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q102",
+    "course": "Fizik",
+    "answer": "KÜTLE",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q103",
+    "course": "Fizik",
+    "answer": "KUVVET",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q104",
+    "course": "Fizik",
+    "answer": "SÜRAT",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q105",
+    "course": "Fizik",
+    "answer": "YER DEĞİŞTİRME",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q106",
+    "course": "Fizik",
+    "answer": "İLETİM",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q107",
+    "course": "Fizik",
+    "answer": "TAŞINIM",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q108",
+    "course": "Fizik",
+    "answer": "IŞIMA",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q109",
+    "course": "Kimya",
+    "answer": "ELEMENT",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q110",
+    "course": "Kimya",
+    "answer": "NÖTRON",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q111",
+    "course": "Kimya",
+    "answer": "İZOTOP",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q112",
+    "course": "Kimya",
+    "answer": "ORBİTAL",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q113",
+    "course": "Kimya",
+    "answer": "METAL",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q114",
+    "course": "Kimya",
+    "answer": "AMETAL",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q115",
+    "course": "Kimya",
+    "answer": "KOVALENT BAĞ",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q116",
+    "course": "Kimya",
+    "answer": "İYONİK BAĞ",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q117",
+    "course": "Biyoloji",
+    "answer": "PROKARYOT",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q118",
+    "course": "Biyoloji",
+    "answer": "ÖKARYOT",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q119",
+    "course": "Biyoloji",
+    "answer": "ORGANEL",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q120",
+    "course": "Biyoloji",
+    "answer": "MİTOKONDRİ",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q121",
+    "course": "Biyoloji",
+    "answer": "KLOROPLAST",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q122",
+    "course": "Biyoloji",
+    "answer": "ENZİM",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q123",
+    "course": "Biyoloji",
+    "answer": "HOMEOSTAZİ",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q124",
+    "course": "Biyoloji",
+    "answer": "ADAPTASYON",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q125",
+    "course": "Tarih",
+    "answer": "PALEOGRAFYA",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q126",
+    "course": "Tarih",
+    "answer": "EPİGRAFİ",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q127",
+    "course": "Tarih",
+    "answer": "NUMİZMATİK",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q128",
+    "course": "Tarih",
+    "answer": "SÜMERLER",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q129",
+    "course": "Tarih",
+    "answer": "HİTİTLER",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q130",
+    "course": "Tarih",
+    "answer": "MEZOPOTAMYA",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q131",
+    "course": "Tarih",
+    "answer": "ARTI ÜRÜN",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q132",
+    "course": "Tarih",
+    "answer": "HUKUK",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q133",
+    "course": "Coğrafya",
+    "answer": "LİTOSFER",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q134",
+    "course": "Coğrafya",
+    "answer": "BİYOSFER",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q135",
+    "course": "Coğrafya",
+    "answer": "HARİTA",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q136",
+    "course": "Coğrafya",
+    "answer": "PARALEL",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q137",
+    "course": "Coğrafya",
+    "answer": "MERİDYEN",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q138",
+    "course": "Coğrafya",
+    "answer": "İZOHİPS",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q139",
+    "course": "Coğrafya",
+    "answer": "COĞRAFİ KONUM",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q140",
+    "course": "Coğrafya",
+    "answer": "DOĞAL AFET",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q141",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "İMAN",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q142",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "İBADET",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q143",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "AHLAK",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q144",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "ADALET",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q145",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "MERHAMET",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q146",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "TEVEKKÜL",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q147",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "SORUMLULUK",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q148",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "DOĞRULUK",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q149",
+    "course": "İngilizce",
+    "answer": "HOMEWORK",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q150",
+    "course": "İngilizce",
+    "answer": "SUBJECT",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q151",
+    "course": "İngilizce",
+    "answer": "NEIGHBOUR",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q152",
+    "course": "İngilizce",
+    "answer": "WEATHER",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q153",
+    "course": "İngilizce",
+    "answer": "VOLUNTEER",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q154",
+    "course": "İngilizce",
+    "answer": "RECYCLING",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q155",
+    "course": "İngilizce",
+    "answer": "JOURNEY",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q156",
+    "course": "İngilizce",
+    "answer": "RESPONSIBILITY",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q157",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "GUTEN MORGEN",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q158",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "DANKE",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q159",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "BITTE",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q160",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "WASSER",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q161",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "HAUS",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q162",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "SCHWESTER",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q163",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "BRUDER",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q164",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "SCHÜLER",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q165",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "SOĞUMA",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q166",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "DENGE",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q167",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "ÇEVİKLİK",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q168",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "TAKIM RUHU",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q169",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "SPORTMENLİK",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q170",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "DRİBLİNG",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q171",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "SERVİS",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q172",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "HAKEM",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q173",
+    "course": "Müzik",
+    "answer": "TEMPO",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q174",
+    "course": "Müzik",
+    "answer": "SUS",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q175",
+    "course": "Müzik",
+    "answer": "DİYEZ",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q176",
+    "course": "Müzik",
+    "answer": "BEMOL",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q177",
+    "course": "Müzik",
+    "answer": "BEKAR",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q178",
+    "course": "Müzik",
+    "answer": "ÖLÇÜ",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q179",
+    "course": "Müzik",
+    "answer": "KORO",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q180",
+    "course": "Müzik",
+    "answer": "NÜANS",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q181",
+    "course": "Görsel Sanatlar",
+    "answer": "ANA RENK",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q182",
+    "course": "Görsel Sanatlar",
+    "answer": "ARA RENK",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q183",
+    "course": "Görsel Sanatlar",
+    "answer": "SICAK RENK",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q184",
+    "course": "Görsel Sanatlar",
+    "answer": "SOĞUK RENK",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q185",
+    "course": "Görsel Sanatlar",
+    "answer": "SİMETRİ",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q186",
+    "course": "Görsel Sanatlar",
+    "answer": "PORTRE",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q187",
+    "course": "Görsel Sanatlar",
+    "answer": "NATÜRMORT",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q188",
+    "course": "Görsel Sanatlar",
+    "answer": "PEYZAJ",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q189",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "BAĞIŞIKLIK",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q190",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "UYKU",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q191",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "FİZİKSEL AKTİVİTE",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q192",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "AKRAN ZORBALIĞI",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q193",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "TRAFİK İŞARETİ",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q194",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "GEÇİŞ ÜSTÜNLÜĞÜ",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q195",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "GÜVENLİ TAKİP",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q196",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "REFLEKTÖR",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q197",
+    "course": "Bilişim (seçmeli)",
+    "answer": "TARAYICI",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q198",
+    "course": "Bilişim (seçmeli)",
+    "answer": "ARAMA MOTORU",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q199",
+    "course": "Bilişim (seçmeli)",
+    "answer": "YEDEKLEME",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q200",
+    "course": "Bilişim (seçmeli)",
+    "answer": "TELİF HAKKI",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q201",
+    "course": "Bilişim (seçmeli)",
+    "answer": "KİŞİSEL VERİ",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q202",
+    "course": "Bilişim (seçmeli)",
+    "answer": "SİBER ZORBALIK",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q203",
+    "course": "Bilişim (seçmeli)",
+    "answer": "OLTALAMA",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q204",
+    "course": "Bilişim (seçmeli)",
+    "answer": "AÇIK KAYNAK",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "city01",
+    "course": "Genel Kültür",
+    "answer": "ADANA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city02",
+    "course": "Genel Kültür",
+    "answer": "ADIYAMAN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city03",
+    "course": "Genel Kültür",
+    "answer": "AFYONKARAHİSAR",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city04",
+    "course": "Genel Kültür",
+    "answer": "AĞRI",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city05",
+    "course": "Genel Kültür",
+    "answer": "AMASYA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city06",
+    "course": "Genel Kültür",
+    "answer": "ANKARA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city07",
+    "course": "Genel Kültür",
+    "answer": "ANTALYA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city08",
+    "course": "Genel Kültür",
+    "answer": "ARTVİN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city09",
+    "course": "Genel Kültür",
+    "answer": "AYDIN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city10",
+    "course": "Genel Kültür",
+    "answer": "BALIKESİR",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city11",
+    "course": "Genel Kültür",
+    "answer": "BİLECİK",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city12",
+    "course": "Genel Kültür",
+    "answer": "BİNGÖL",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city13",
+    "course": "Genel Kültür",
+    "answer": "BİTLİS",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city14",
+    "course": "Genel Kültür",
+    "answer": "BOLU",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city15",
+    "course": "Genel Kültür",
+    "answer": "BURDUR",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city16",
+    "course": "Genel Kültür",
+    "answer": "BURSA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city17",
+    "course": "Genel Kültür",
+    "answer": "ÇANAKKALE",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city18",
+    "course": "Genel Kültür",
+    "answer": "ÇANKIRI",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city19",
+    "course": "Genel Kültür",
+    "answer": "ÇORUM",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city20",
+    "course": "Genel Kültür",
+    "answer": "DENİZLİ",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city21",
+    "course": "Genel Kültür",
+    "answer": "DİYARBAKIR",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city22",
+    "course": "Genel Kültür",
+    "answer": "EDİRNE",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city23",
+    "course": "Genel Kültür",
+    "answer": "ELAZIĞ",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city24",
+    "course": "Genel Kültür",
+    "answer": "ERZİNCAN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city25",
+    "course": "Genel Kültür",
+    "answer": "ERZURUM",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city26",
+    "course": "Genel Kültür",
+    "answer": "ESKİŞEHİR",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city27",
+    "course": "Genel Kültür",
+    "answer": "GAZİANTEP",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city28",
+    "course": "Genel Kültür",
+    "answer": "GİRESUN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city29",
+    "course": "Genel Kültür",
+    "answer": "GÜMÜŞHANE",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city30",
+    "course": "Genel Kültür",
+    "answer": "HAKKARİ",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city31",
+    "course": "Genel Kültür",
+    "answer": "HATAY",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city32",
+    "course": "Genel Kültür",
+    "answer": "ISPARTA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city33",
+    "course": "Genel Kültür",
+    "answer": "MERSİN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city34",
+    "course": "Genel Kültür",
+    "answer": "İSTANBUL",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city35",
+    "course": "Genel Kültür",
+    "answer": "İZMİR",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city36",
+    "course": "Genel Kültür",
+    "answer": "KARS",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city37",
+    "course": "Genel Kültür",
+    "answer": "KASTAMONU",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city38",
+    "course": "Genel Kültür",
+    "answer": "KAYSERİ",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city39",
+    "course": "Genel Kültür",
+    "answer": "KIRKLARELİ",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city40",
+    "course": "Genel Kültür",
+    "answer": "KIRŞEHİR",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city41",
+    "course": "Genel Kültür",
+    "answer": "KOCAELİ",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city42",
+    "course": "Genel Kültür",
+    "answer": "KONYA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city43",
+    "course": "Genel Kültür",
+    "answer": "KÜTAHYA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city44",
+    "course": "Genel Kültür",
+    "answer": "MALATYA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city45",
+    "course": "Genel Kültür",
+    "answer": "MANİSA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city46",
+    "course": "Genel Kültür",
+    "answer": "KAHRAMANMARAŞ",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city47",
+    "course": "Genel Kültür",
+    "answer": "MARDİN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city48",
+    "course": "Genel Kültür",
+    "answer": "MUĞLA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city49",
+    "course": "Genel Kültür",
+    "answer": "MUŞ",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city50",
+    "course": "Genel Kültür",
+    "answer": "NEVŞEHİR",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city51",
+    "course": "Genel Kültür",
+    "answer": "NİĞDE",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city52",
+    "course": "Genel Kültür",
+    "answer": "ORDU",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city53",
+    "course": "Genel Kültür",
+    "answer": "RİZE",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city54",
+    "course": "Genel Kültür",
+    "answer": "SAKARYA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city55",
+    "course": "Genel Kültür",
+    "answer": "SAMSUN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city56",
+    "course": "Genel Kültür",
+    "answer": "SİİRT",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city57",
+    "course": "Genel Kültür",
+    "answer": "SİNOP",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city58",
+    "course": "Genel Kültür",
+    "answer": "SİVAS",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city59",
+    "course": "Genel Kültür",
+    "answer": "TEKİRDAĞ",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city60",
+    "course": "Genel Kültür",
+    "answer": "TOKAT",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city61",
+    "course": "Genel Kültür",
+    "answer": "TRABZON",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city62",
+    "course": "Genel Kültür",
+    "answer": "TUNCELİ",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city63",
+    "course": "Genel Kültür",
+    "answer": "ŞANLIURFA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city64",
+    "course": "Genel Kültür",
+    "answer": "UŞAK",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city65",
+    "course": "Genel Kültür",
+    "answer": "VAN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city66",
+    "course": "Genel Kültür",
+    "answer": "YOZGAT",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city67",
+    "course": "Genel Kültür",
+    "answer": "ZONGULDAK",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city68",
+    "course": "Genel Kültür",
+    "answer": "AKSARAY",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city69",
+    "course": "Genel Kültür",
+    "answer": "BAYBURT",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city70",
+    "course": "Genel Kültür",
+    "answer": "KARAMAN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city71",
+    "course": "Genel Kültür",
+    "answer": "KIRIKKALE",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city72",
+    "course": "Genel Kültür",
+    "answer": "BATMAN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city73",
+    "course": "Genel Kültür",
+    "answer": "ŞIRNAK",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city74",
+    "course": "Genel Kültür",
+    "answer": "BARTIN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city75",
+    "course": "Genel Kültür",
+    "answer": "ARDAHAN",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city76",
+    "course": "Genel Kültür",
+    "answer": "IĞDIR",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city77",
+    "course": "Genel Kültür",
+    "answer": "YALOVA",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city78",
+    "course": "Genel Kültür",
+    "answer": "KARABÜK",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city79",
+    "course": "Genel Kültür",
+    "answer": "KİLİS",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city80",
+    "course": "Genel Kültür",
+    "answer": "OSMANİYE",
+    "clue": "Bir ilimiz."
+  },
+  {
+    "id": "city81",
+    "course": "Genel Kültür",
+    "answer": "DÜZCE",
+    "clue": "Bir ilimiz."
+  }
+];
