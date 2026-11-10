@@ -2,7 +2,7 @@
 
 Ozan Ali Arslan tarafından sınıfta kullanılmak üzere hazırlanan 9. sınıf düzeyinde dersler arası kelime oyunu.
 
-- 15 ders alanından 265 kelimeye ek olarak 81 il adı ve 40 tarihî kişi; toplam 386 kelime.
+- 15 ders alanından 265 kelimeye ek olarak 81 il adı ve 56 tarihî kişi; toplam 402 kelime.
 - Çark, Türkçe harf panosu, 2–6 takım, otomatik puan, 30 saniyelik harf süresi, pas ve geri alma.
 - Öğretmenin kendi sorularını eklemesi ve oyun verilerini JSON olarak taşıması.
 - Hesap, API anahtarı veya sunucu gerektirmez. İlerleme kullanılan tarayıcıda saklanır.
@@ -19,7 +19,7 @@ MEB öğretim programları: https://tymm.meb.gov.tr/ogretim-programlari
 
 ## Kontrol
 
-Bu klasörde `node tests/game.test.cjs` çalıştırılır. Denetimler 386 sorunun biçimini, aynı derste benzersiz cevapları, Türkçe/İngilizce harf dönüşümünü, puanı, sesli harf ücretini, özel çark dilimlerini, süre sonunu, sıra geçişini ve her sorunun harflerle tamamlanmasını kapsar.
+Bu klasörde `node tests/game.test.cjs` çalıştırılır. Denetimler 402 sorunun biçimini, aynı derste benzersiz cevapları, Türkçe/İngilizce harf dönüşümünü, puanı, sesli harf ücretini, özel çark dilimlerini, süre sonunu, sıra geçişini ve her sorunun harflerle tamamlanmasını kapsar.
 
 ## Kategori ipuçları
 

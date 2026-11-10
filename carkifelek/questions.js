@@ -2701,5 +2701,117 @@ window.QUESTION_BANK = [
     "answer": "LUDWIG VAN BEETHOVEN",
     "clue": "Tarihte önemli bir kişi.",
     "explanation": "Dokuzuncu Senfoni ve Ay Işığı Sonatı gibi eserleriyle tanınan Alman bestecidir."
+  },
+  {
+    "id": "person41",
+    "course": "Tarihî Kişiler",
+    "answer": "ADA LOVELACE",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Charles Babbage’ın Analitik Makinesi için Bernoulli sayılarını hesaplayan bir algoritma yayımlayan matematikçidir."
+  },
+  {
+    "id": "person42",
+    "course": "Tarihî Kişiler",
+    "answer": "ROSALIND FRANKLIN",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "X ışını kırınımıyla elde ettiği veriler DNA’nın çift sarmal yapısının anlaşılmasına katkı sağlayan bilim insanıdır."
+  },
+  {
+    "id": "person43",
+    "course": "Tarihî Kişiler",
+    "answer": "EMMY NOETHER",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Matematiksel simetriler ile enerjinin korunması gibi fizik yasaları arasındaki bağı ortaya koyan matematikçidir."
+  },
+  {
+    "id": "person44",
+    "course": "Tarihî Kişiler",
+    "answer": "LISE MEITNER",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Otto Frisch ile birlikte uranyum çekirdeğinin nasıl bölündüğünü açıklayan fizikçidir."
+  },
+  {
+    "id": "person45",
+    "course": "Tarihî Kişiler",
+    "answer": "DOROTHY HODGKIN",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "X ışınlarından yararlanarak B12 vitamini gibi moleküllerin üç boyutlu yapısını belirleyen kimyacıdır."
+  },
+  {
+    "id": "person46",
+    "course": "Tarihî Kişiler",
+    "answer": "KATHERINE JOHNSON",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "NASA’da uzay uçuşlarının yörüngelerini hesaplayan ve Apollo programına katkı sağlayan matematikçidir."
+  },
+  {
+    "id": "person47",
+    "course": "Tarihî Kişiler",
+    "answer": "CHIEN-SHIUNG WU",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Beta bozunmasında ayna simetrisinin korunmadığını deneyle gösteren ekibe öncülük eden fizikçidir."
+  },
+  {
+    "id": "person48",
+    "course": "Tarihî Kişiler",
+    "answer": "BARBARA MCCLINTOCK",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Mısır bitkisi üzerinde çalışarak DNA’nın bazı parçalarının yer değiştirebildiğini keşfeden genetikçidir."
+  },
+  {
+    "id": "person49",
+    "course": "Tarihî Kişiler",
+    "answer": "MICHAEL FARADAY",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Değişen manyetik alanın elektrik akımı oluşturabileceğini gösteren deneyleriyle tanınan fizikçidir."
+  },
+  {
+    "id": "person50",
+    "course": "Tarihî Kişiler",
+    "answer": "JAMES CLERK MAXWELL",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Elektrik ve manyetizmayı aynı denklemlerle açıklayan ve ışığın elektromanyetik bir dalga olduğunu gösteren fizikçidir."
+  },
+  {
+    "id": "person51",
+    "course": "Tarihî Kişiler",
+    "answer": "JOHANNES KEPLER",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Gezegenlerin Güneş çevresinde elips yörüngelerde hareket ettiğini açıklayan yasalarıyla tanınan astronomdur."
+  },
+  {
+    "id": "person52",
+    "course": "Tarihî Kişiler",
+    "answer": "CARL FRIEDRICH GAUSS",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Sayılar kuramı, geometri ve astronomiye önemli katkılar yapan Alman matematikçidir."
+  },
+  {
+    "id": "person53",
+    "course": "Tarihî Kişiler",
+    "answer": "DMITRI MENDELEYEV",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Elementleri özelliklerine göre periyodik bir tabloda düzenleyen ve henüz keşfedilmemiş bazı elementlerin özelliklerini öngören kimyacıdır."
+  },
+  {
+    "id": "person54",
+    "course": "Tarihî Kişiler",
+    "answer": "NIELS BOHR",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Elektronların belirli enerji düzeylerinde bulunabileceği bir atom modeli geliştiren Danimarkalı fizikçidir."
+  },
+  {
+    "id": "person55",
+    "course": "Tarihî Kişiler",
+    "answer": "ERNEST RUTHERFORD",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Altın levha deneyinin sonuçlarından atomun küçük ve yoğun bir çekirdeği olduğu sonucuna ulaşan fizikçidir."
+  },
+  {
+    "id": "person56",
+    "course": "Tarihî Kişiler",
+    "answer": "STEPHEN HAWKING",
+    "clue": "Tarihte önemli bir kişi.",
+    "explanation": "Kara deliklerin kuantum etkileri nedeniyle ışınım yayabileceğini öne süren kuramsal fizikçidir."
   }
 ];
