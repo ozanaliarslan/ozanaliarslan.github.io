@@ -4825,56 +4825,56 @@ window.QUESTION_BANK = [
   },
   {
     "id": "tymm252",
-    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "course": "İnsan Hakları, Vatandaşlık ve Demokrasi",
     "answer": "İNSAN HAKLARI",
     "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
     "explanation": "Her insanın insan olduğu için sahip olduğu temel hak ve özgürlüklerdir."
   },
   {
     "id": "tymm253",
-    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "course": "İnsan Hakları, Vatandaşlık ve Demokrasi",
     "answer": "EŞİTLİK",
     "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
     "explanation": "İnsanların hak ve onur bakımından eşit olması ve benzer durumlarda ayrımcılık yapılmadan muamele görmesidir."
   },
   {
     "id": "tymm254",
-    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "course": "İnsan Hakları, Vatandaşlık ve Demokrasi",
     "answer": "ÇOCUK HAKLARI",
     "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
     "explanation": "Çocukların gelişimini ve güvenliğini koruyan eğitim, oyun ve katılım gibi temel haklardır."
   },
   {
     "id": "tymm255",
-    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "course": "İnsan Hakları, Vatandaşlık ve Demokrasi",
     "answer": "KATILIM",
     "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
     "explanation": "Kişilerin kendilerini etkileyen konularda görüş bildirmesi veya karar alma süreçlerinde rol almasıdır."
   },
   {
     "id": "tymm256",
-    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "course": "İnsan Hakları, Vatandaşlık ve Demokrasi",
     "answer": "SEÇİM",
     "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
     "explanation": "Bir göreve gelecek kişiyi ya da bir konuda uygulanacak seçeneği oyla belirleme sürecidir."
   },
   {
     "id": "tymm257",
-    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "course": "İnsan Hakları, Vatandaşlık ve Demokrasi",
     "answer": "UZLAŞMA",
     "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
     "explanation": "Farklı görüşleri olan kişilerin konuşarak ortak bir çözümde anlaşmasıdır."
   },
   {
     "id": "tymm258",
-    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "course": "İnsan Hakları, Vatandaşlık ve Demokrasi",
     "answer": "AYRIMCILIK",
     "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
     "explanation": "Kişilere, kimlikleri veya özellikleri nedeniyle haklı bir neden olmadan farklı ve olumsuz davranılmasıdır."
   },
   {
     "id": "tymm259",
-    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "course": "İnsan Hakları, Vatandaşlık ve Demokrasi",
     "answer": "ÇOĞULCULUK",
     "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
     "explanation": "Farklı görüş ve yaşam biçimlerinin bir toplumda birlikte var olabilmesini önemseyen anlayıştır."
@@ -5046,5 +5046,460 @@ window.QUESTION_BANK = [
     "answer": "AHİRET",
     "clue": "Temel Dinî Bilgiler dersinden bir kavram.",
     "explanation": "İslam inancında dünya yaşamından sonraki hayatı ifade eder."
+  },
+  {
+    "id": "tymm284",
+    "course": "Afet Bilinci",
+    "answer": "ACİL DURUM ÇANTASI",
+    "clue": "Afet Bilinci dersinden bir kavram.",
+    "explanation": "Bir afet sonrasında temel ihtiyaçları karşılamaya yardımcı olacak malzemelerin hazır tutulduğu çantadır."
+  },
+  {
+    "id": "tymm285",
+    "course": "Afet Bilinci",
+    "answer": "TOPLANMA ALANI",
+    "clue": "Afet Bilinci dersinden bir kavram.",
+    "explanation": "Afet ve acil durum sonrasında insanların güvenli biçimde bir araya gelmesi için belirlenen yerdir."
+  },
+  {
+    "id": "tymm286",
+    "course": "Afet Bilinci",
+    "answer": "TAHLİYE",
+    "clue": "Afet Bilinci dersinden bir kavram.",
+    "explanation": "Tehlike altındaki insanların güvenli bir yere yönlendirilerek bulunduğu alanı boşaltmasıdır."
+  },
+  {
+    "id": "tymm287",
+    "course": "Afet Bilinci",
+    "answer": "HEYELAN",
+    "clue": "Afet Bilinci dersinden bir kavram.",
+    "explanation": "Toprak ve kaya kütlelerinin bir yamaç boyunca aşağı hareket etmesidir."
+  },
+  {
+    "id": "tymm288",
+    "course": "Afet Bilinci",
+    "answer": "AFET RİSKİ",
+    "clue": "Afet Bilinci dersinden bir kavram.",
+    "explanation": "Bir tehlikenin can, mal veya çevre açısından kayıplara yol açma olasılığıyla ilişkilidir."
+  },
+  {
+    "id": "tymm289",
+    "course": "Çevre Eğitimi ve İklim Değişikliği",
+    "answer": "KARBON AYAK İZİ",
+    "clue": "Çevre Eğitimi ve İklim Değişikliği dersinden bir kavram.",
+    "explanation": "Bir kişinin, ürünün veya faaliyetin neden olduğu sera gazı salımlarının karbondioksit eşdeğeriyle ifade edilen toplamıdır."
+  },
+  {
+    "id": "tymm290",
+    "course": "Çevre Eğitimi ve İklim Değişikliği",
+    "answer": "SERA ETKİSİ",
+    "clue": "Çevre Eğitimi ve İklim Değişikliği dersinden bir kavram.",
+    "explanation": "Atmosferdeki bazı gazların yeryüzünden yayılan kızılötesi ışınımı soğurup yeniden yaymasıyla gerçekleşir."
+  },
+  {
+    "id": "tymm291",
+    "course": "Çevre Eğitimi ve İklim Değişikliği",
+    "answer": "YAĞMUR HASADI",
+    "clue": "Çevre Eğitimi ve İklim Değişikliği dersinden bir kavram.",
+    "explanation": "Yağmur suyunu daha sonra kullanmak için toplama ve depolama uygulamasıdır."
+  },
+  {
+    "id": "tymm292",
+    "course": "Çevre Eğitimi ve İklim Değişikliği",
+    "answer": "KOMPOST",
+    "clue": "Çevre Eğitimi ve İklim Değişikliği dersinden bir kavram.",
+    "explanation": "Organik atıkların kontrollü biçimde ayrışmasıyla elde edilen ve toprağı iyileştirmede kullanılan üründür."
+  },
+  {
+    "id": "tymm293",
+    "course": "Çevre Eğitimi ve İklim Değişikliği",
+    "answer": "SÜRDÜRÜLEBİLİRLİK",
+    "clue": "Çevre Eğitimi ve İklim Değişikliği dersinden bir kavram.",
+    "explanation": "Bugünkü ihtiyaçları karşılarken gelecek kuşakların ihtiyaçlarını karşılama olanaklarını korumayı gözetir."
+  },
+  {
+    "id": "tymm294",
+    "course": "Robotik Kodlama",
+    "answer": "MOTOR",
+    "clue": "Robotik Kodlama dersinden bir kavram.",
+    "explanation": "Bir robotun tekerlek veya eklem gibi parçalarına hareket veren bileşendir."
+  },
+  {
+    "id": "tymm295",
+    "course": "Robotik Kodlama",
+    "answer": "ÇİZGİ İZLEYEN ROBOT",
+    "clue": "Robotik Kodlama dersinden bir kavram.",
+    "explanation": "Zemindeki bir çizgiyi algılayıcı verilerine göre takip eden robottur."
+  },
+  {
+    "id": "tymm296",
+    "course": "Robotik Kodlama",
+    "answer": "MİKRODENETLEYİCİ",
+    "clue": "Robotik Kodlama dersinden bir kavram.",
+    "explanation": "Algılayıcılardan gelen verileri işleyebilen ve bağlı parçaları yönetebilen programlanabilir küçük bir tümleşik devredir."
+  },
+  {
+    "id": "tymm297",
+    "course": "Robotik Kodlama",
+    "answer": "GERİ BESLEME",
+    "clue": "Robotik Kodlama dersinden bir kavram.",
+    "explanation": "Bir sistemin çıktısına ilişkin bilgiyi sonraki davranışını ayarlamak için kullanmasıdır."
+  },
+  {
+    "id": "tymm298",
+    "course": "Robotik Kodlama",
+    "answer": "BLOK TABANLI KODLAMA",
+    "clue": "Robotik Kodlama dersinden bir kavram.",
+    "explanation": "Komutları temsil eden görsel blokların birleştirilmesiyle program oluşturma yöntemidir."
+  },
+  {
+    "id": "tymm299",
+    "course": "Medya Okuryazarlığı",
+    "answer": "HABER KAYNAĞI",
+    "clue": "Medya Okuryazarlığı dersinden bir kavram.",
+    "explanation": "Bir haberdeki bilginin elde edildiği kişi, kurum, belge veya kayıttır."
+  },
+  {
+    "id": "tymm300",
+    "course": "Medya Okuryazarlığı",
+    "answer": "TEKZİP",
+    "clue": "Medya Okuryazarlığı dersinden bir kavram.",
+    "explanation": "Yayımlanmış bir içeriğe karşı düzeltme veya cevap niteliğindeki açıklamadır."
+  },
+  {
+    "id": "tymm301",
+    "course": "Medya Okuryazarlığı",
+    "answer": "TIK TUZAĞI",
+    "clue": "Medya Okuryazarlığı dersinden bir kavram.",
+    "explanation": "İçeriğe tıklama çekmek için merak uyandıran ve çoğu zaman yanıltıcı olan başlık ya da sunum biçimidir."
+  },
+  {
+    "id": "tymm302",
+    "course": "Medya Okuryazarlığı",
+    "answer": "DİJİTAL AYAK İZİ",
+    "clue": "Medya Okuryazarlığı dersinden bir kavram.",
+    "explanation": "İnternetteki etkinliklerin geride bıraktığı veri izleridir."
+  },
+  {
+    "id": "tymm303",
+    "course": "Medya Okuryazarlığı",
+    "answer": "DEZENFORMASYON",
+    "clue": "Medya Okuryazarlığı dersinden bir kavram.",
+    "explanation": "Yanıltma amacıyla kasıtlı olarak yayılan yanlış veya çarpıtılmış bilgidir."
+  },
+  {
+    "id": "tymm304",
+    "course": "Hukuk ve Adalet",
+    "answer": "TANIK",
+    "clue": "Hukuk ve Adalet dersinden bir kavram.",
+    "explanation": "Bir olay hakkında bildiklerini yetkili mercilere anlatan kişidir."
+  },
+  {
+    "id": "tymm305",
+    "course": "Hukuk ve Adalet",
+    "answer": "DİLEKÇE",
+    "clue": "Hukuk ve Adalet dersinden bir kavram.",
+    "explanation": "Bir istek, şikâyet veya başvuruyu yetkili makama yazılı olarak ileten belgedir."
+  },
+  {
+    "id": "tymm306",
+    "course": "Hukuk ve Adalet",
+    "answer": "SAVUNMA HAKKI",
+    "clue": "Hukuk ve Adalet dersinden bir kavram.",
+    "explanation": "Kişinin kendisine yöneltilen iddialara karşı görüşünü ve delillerini sunabilmesini güvence altına alır."
+  },
+  {
+    "id": "tymm307",
+    "course": "Hukuk ve Adalet",
+    "answer": "MASUMİYET KARİNESİ",
+    "clue": "Hukuk ve Adalet dersinden bir kavram.",
+    "explanation": "Kişinin suçluluğu hükmen sabit oluncaya kadar suçlu sayılamaması ilkesidir."
+  },
+  {
+    "id": "tymm308",
+    "course": "Hukuk ve Adalet",
+    "answer": "HUKUK DEVLETİ",
+    "clue": "Hukuk ve Adalet dersinden bir kavram.",
+    "explanation": "Devletin işlem ve eylemlerinin hukuk kurallarına bağlı olduğu ve yargı denetimine tabi tutulduğu düzeni ifade eder."
+  },
+  {
+    "id": "tymm309",
+    "course": "Astronomi ve Uzay Bilimleri",
+    "answer": "YILDIZ KÜMESİ",
+    "clue": "Astronomi ve Uzay Bilimleri dersinden bir kavram.",
+    "explanation": "Birlikte bulunan ve genellikle kütleçekimiyle birbirine bağlı olan yıldızlar topluluğudur."
+  },
+  {
+    "id": "tymm310",
+    "course": "Astronomi ve Uzay Bilimleri",
+    "answer": "GÜNEŞ TUTULMASI",
+    "clue": "Astronomi ve Uzay Bilimleri dersinden bir kavram.",
+    "explanation": "Ay’ın Güneş ile Dünya arasına girmesiyle, Dünya’nın belirli bölgelerinden Güneş’in bir bölümünün ya da tamamının örtülmüş görünmesidir."
+  },
+  {
+    "id": "tymm311",
+    "course": "Astronomi ve Uzay Bilimleri",
+    "answer": "IŞIK YILI",
+    "clue": "Astronomi ve Uzay Bilimleri dersinden bir kavram.",
+    "explanation": "Işığın boşlukta bir yılda aldığı yolu ifade eden uzaklık birimidir."
+  },
+  {
+    "id": "tymm312",
+    "course": "Astronomi ve Uzay Bilimleri",
+    "answer": "TAYF ÇİZGİSİ",
+    "clue": "Astronomi ve Uzay Bilimleri dersinden bir kavram.",
+    "explanation": "Bir maddenin belirli dalga boylarında ışık yayması veya soğurmasıyla tayfta oluşan çizgidir."
+  },
+  {
+    "id": "tymm313",
+    "course": "Astronomi ve Uzay Bilimleri",
+    "answer": "KIRMIZIYA KAYMA",
+    "clue": "Astronomi ve Uzay Bilimleri dersinden bir kavram.",
+    "explanation": "Işığın tayfındaki çizgilerin daha uzun dalga boylarına doğru kaymasıdır."
+  },
+  {
+    "id": "tymm314",
+    "course": "Psikoloji",
+    "answer": "DİKKAT",
+    "clue": "Psikoloji dersinden bir kavram.",
+    "explanation": "Zihinsel kaynakların belirli bir uyaran ya da görev üzerinde yoğunlaşmasıdır."
+  },
+  {
+    "id": "tymm315",
+    "course": "Psikoloji",
+    "answer": "ALGIDA SEÇİCİLİK",
+    "clue": "Psikoloji dersinden bir kavram.",
+    "explanation": "Çok sayıda uyaran arasından bazılarının öne çıkıp algılanmasıdır."
+  },
+  {
+    "id": "tymm316",
+    "course": "Psikoloji",
+    "answer": "ÇALIŞMA BELLEĞİ",
+    "clue": "Psikoloji dersinden bir kavram.",
+    "explanation": "Bilgiyi kısa süre tutarken aynı anda kullanmaya veya işlemeye olanak sağlayan bellek sistemidir."
+  },
+  {
+    "id": "tymm317",
+    "course": "Psikoloji",
+    "answer": "KLASİK KOŞULLANMA",
+    "clue": "Psikoloji dersinden bir kavram.",
+    "explanation": "Bir canlının, başlangıçta nötr olan bir uyarana, bu uyaran başka bir uyaranla eşleştirildikten sonra tepki vermeyi öğrenmesidir."
+  },
+  {
+    "id": "tymm318",
+    "course": "Psikoloji",
+    "answer": "İÇSEL GÜDÜLENME",
+    "clue": "Psikoloji dersinden bir kavram.",
+    "explanation": "Bir etkinliği, kendisi ilgi çekici veya doyurucu olduğu için yapmaya yönelmedir."
+  },
+  {
+    "id": "tymm319",
+    "course": "Sosyoloji",
+    "answer": "TOPLUMSAL ROL",
+    "clue": "Sosyoloji dersinden bir kavram.",
+    "explanation": "Bir toplumsal konumdan beklenen davranışlar bütünüdür."
+  },
+  {
+    "id": "tymm320",
+    "course": "Sosyoloji",
+    "answer": "TOPLUMSALLAŞMA",
+    "clue": "Sosyoloji dersinden bir kavram.",
+    "explanation": "Bireyin yaşadığı toplumun dilini, değerlerini ve davranış kurallarını öğrenme sürecidir."
+  },
+  {
+    "id": "tymm321",
+    "course": "Sosyoloji",
+    "answer": "TOPLUMSAL NORMLAR",
+    "clue": "Sosyoloji dersinden bir kavram.",
+    "explanation": "Bir grupta ya da toplumda uygun görülen davranışları belirleyen yazılı veya yazısız kurallardır."
+  },
+  {
+    "id": "tymm322",
+    "course": "Sosyoloji",
+    "answer": "KÜLTÜREL AKTARIM",
+    "clue": "Sosyoloji dersinden bir kavram.",
+    "explanation": "Bilgi, değer ve uygulamaların kişiler veya kuşaklar arasında paylaşılmasıdır."
+  },
+  {
+    "id": "tymm323",
+    "course": "Sosyoloji",
+    "answer": "TOPLUMSAL TABAKALAŞMA",
+    "clue": "Sosyoloji dersinden bir kavram.",
+    "explanation": "Toplumdaki kişi ve grupların kaynaklara ve fırsatlara erişim bakımından farklı katmanlarda yer almasıdır."
+  },
+  {
+    "id": "tymm324",
+    "course": "Mantık",
+    "answer": "ÖNERME",
+    "clue": "Mantık dersinden bir kavram.",
+    "explanation": "Doğru ya da yanlış olabilen bir yargı bildiren ifadedir."
+  },
+  {
+    "id": "tymm325",
+    "course": "Mantık",
+    "answer": "ÇIKARIM",
+    "clue": "Mantık dersinden bir kavram.",
+    "explanation": "Bir veya birden fazla öncülden sonuca ulaşma işlemidir."
+  },
+  {
+    "id": "tymm326",
+    "course": "Mantık",
+    "answer": "TÜMDENGELİM",
+    "clue": "Mantık dersinden bir kavram.",
+    "explanation": "Öncüller doğru olduğunda geçerli bir akıl yürütmenin sonucunun da zorunlu olarak doğru olduğu çıkarım biçimidir."
+  },
+  {
+    "id": "tymm327",
+    "course": "Mantık",
+    "answer": "TÜMEVARIM",
+    "clue": "Mantık dersinden bir kavram.",
+    "explanation": "Tek tek örneklerden hareketle daha genel bir sonuca ulaşan akıl yürütme biçimidir."
+  },
+  {
+    "id": "tymm328",
+    "course": "Mantık",
+    "answer": "DOĞRULUK TABLOSU",
+    "clue": "Mantık dersinden bir kavram.",
+    "explanation": "Bileşik bir önermenin, bileşenlerinin bütün olası doğruluk değerleri için sonucunu gösteren tablodur."
+  },
+  {
+    "id": "tymm329",
+    "course": "Masal ve Destanlarımız",
+    "answer": "TEKERLEME",
+    "clue": "Masal ve Destanlarımız dersinden bir kavram.",
+    "explanation": "Masallarda giriş veya geçişlerde kullanılan, ses oyunları ve ritim içerebilen kalıplaşmış söyleyiştir."
+  },
+  {
+    "id": "tymm330",
+    "course": "Masal ve Destanlarımız",
+    "answer": "KAF DAĞI",
+    "clue": "Masal ve Destanlarımız dersinden bir kavram.",
+    "explanation": "Masallarda uzak ve ulaşılması güç bir yer olarak anılan efsanevi dağdır."
+  },
+  {
+    "id": "tymm331",
+    "course": "Masal ve Destanlarımız",
+    "answer": "OĞUZ KAĞAN DESTANI",
+    "clue": "Masal ve Destanlarımız dersinden bir kavram.",
+    "explanation": "Oğuz Kağan’ın yaşamı ve seferleri çevresinde gelişen Türk destanıdır."
+  },
+  {
+    "id": "tymm332",
+    "course": "Masal ve Destanlarımız",
+    "answer": "MANAS DESTANI",
+    "clue": "Masal ve Destanlarımız dersinden bir kavram.",
+    "explanation": "Kırgızların Manas ve onun soyundan gelen kahramanlar etrafında gelişen destan geleneğidir."
+  },
+  {
+    "id": "tymm333",
+    "course": "Masal ve Destanlarımız",
+    "answer": "DEDE KORKUT KİTABI",
+    "clue": "Masal ve Destanlarımız dersinden bir kavram.",
+    "explanation": "Oğuzların yaşamını, mücadelelerini ve değerlerini anlatan destansı hikâyelerdir."
+  },
+  {
+    "id": "tymm334",
+    "course": "Dijital Sanatlar",
+    "answer": "PİKSEL",
+    "clue": "Dijital Sanatlar dersinden bir kavram.",
+    "explanation": "Bir sayısal görüntüyü oluşturan küçük görüntü öğelerinden biridir."
+  },
+  {
+    "id": "tymm335",
+    "course": "Dijital Sanatlar",
+    "answer": "KATMAN",
+    "clue": "Dijital Sanatlar dersinden bir kavram.",
+    "explanation": "Bir görselin parçalarını birbirinden bağımsız düzenlemeye yarayan çalışma düzlemidir."
+  },
+  {
+    "id": "tymm336",
+    "course": "Dijital Sanatlar",
+    "answer": "RENK PALETİ",
+    "clue": "Dijital Sanatlar dersinden bir kavram.",
+    "explanation": "Bir görsel çalışmada kullanılmak üzere seçilen renkler grubudur."
+  },
+  {
+    "id": "tymm337",
+    "course": "Dijital Sanatlar",
+    "answer": "VEKTÖREL ÇİZİM",
+    "clue": "Dijital Sanatlar dersinden bir kavram.",
+    "explanation": "Çizgi ve şekillerin matematiksel olarak tanımlandığı, farklı boyutlarda netliğini koruyabilen görsel türüdür."
+  },
+  {
+    "id": "tymm338",
+    "course": "Dijital Sanatlar",
+    "answer": "ANAHTAR KARE",
+    "clue": "Dijital Sanatlar dersinden bir kavram.",
+    "explanation": "Animasyonda bir özelliğin belirli bir andaki değerini tanımlayan karedir."
+  },
+  {
+    "id": "tymm339",
+    "course": "Proje Tasarımı ve Uygulamaları",
+    "answer": "PROBLEM DURUMU",
+    "clue": "Proje Tasarımı ve Uygulamaları dersinden bir kavram.",
+    "explanation": "Projenin çözüm aradığı ihtiyacın veya sorunun tanımlandığı bölümdür."
+  },
+  {
+    "id": "tymm340",
+    "course": "Proje Tasarımı ve Uygulamaları",
+    "answer": "İŞ TAKVİMİ",
+    "clue": "Proje Tasarımı ve Uygulamaları dersinden bir kavram.",
+    "explanation": "Projedeki işlerin hangi zamanda yapılacağını gösteren plandır."
+  },
+  {
+    "id": "tymm341",
+    "course": "Proje Tasarımı ve Uygulamaları",
+    "answer": "PROTOTİP",
+    "clue": "Proje Tasarımı ve Uygulamaları dersinden bir kavram.",
+    "explanation": "Bir çözümün sınamak ve geliştirmek için hazırlanan ilk örneğidir."
+  },
+  {
+    "id": "tymm342",
+    "course": "Proje Tasarımı ve Uygulamaları",
+    "answer": "UYGULANABİLİRLİK",
+    "clue": "Proje Tasarımı ve Uygulamaları dersinden bir kavram.",
+    "explanation": "Bir çözümün zaman, kaynak ve koşullar açısından gerçekleştirilebilme durumudur."
+  },
+  {
+    "id": "tymm343",
+    "course": "Proje Tasarımı ve Uygulamaları",
+    "answer": "ETKİ DEĞERLENDİRMESİ",
+    "clue": "Proje Tasarımı ve Uygulamaları dersinden bir kavram.",
+    "explanation": "Bir projenin hedeflenen kişi, grup veya çevre üzerinde oluşturduğu değişimleri inceleme sürecidir."
+  },
+  {
+    "id": "tymm344",
+    "course": "İslam Bilim Tarihi",
+    "answer": "BEYTÜLHİKME",
+    "clue": "İslam Bilim Tarihi dersinden bir kavram.",
+    "explanation": "Abbâsîler döneminde Bağdat’ta gelişen, çeviri ve bilim çalışmalarıyla anılan kurumdur."
+  },
+  {
+    "id": "tymm345",
+    "course": "İslam Bilim Tarihi",
+    "answer": "RASATHANE",
+    "clue": "İslam Bilim Tarihi dersinden bir kavram.",
+    "explanation": "Gök cisimlerini ve olaylarını gözlemlemek için kurulan gözlemevidir."
+  },
+  {
+    "id": "tymm346",
+    "course": "İslam Bilim Tarihi",
+    "answer": "USTURLAP",
+    "clue": "İslam Bilim Tarihi dersinden bir kavram.",
+    "explanation": "Gök cisimlerinin konumlarını kullanarak zaman ve açı ölçümüne yardımcı olan tarihî bir araçtır."
+  },
+  {
+    "id": "tymm347",
+    "course": "İslam Bilim Tarihi",
+    "answer": "ZİC",
+    "clue": "İslam Bilim Tarihi dersinden bir kavram.",
+    "explanation": "Gök cisimlerinin konumlarının hesabında kullanılan astronomi tablolarını içeren eser türüdür."
+  },
+  {
+    "id": "tymm348",
+    "course": "İslam Bilim Tarihi",
+    "answer": "BİMARİSTAN",
+    "clue": "İslam Bilim Tarihi dersinden bir kavram.",
+    "explanation": "İslam dünyasında hastaların tedavi edildiği ve bazı örneklerinde tıp eğitiminin de verildiği tarihî hastanedir."
   }
 ];
