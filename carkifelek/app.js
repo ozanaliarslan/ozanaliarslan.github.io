@@ -8,7 +8,18 @@ const GameCore = (()=>{
  const complete=(q,selected)=>[...clean(q.answer,q.course)].every(c=>selected.includes(c));
  const vowelCost = 100;
  const turnSeconds = 30;
- const values = [100, 200, 150, 'PAS', 250, 300, 'SESLİ', 400, 'JOKER', 500, 200, 350];
+ const values = [
+  100, 250, 'PAS', 400, 150, 'SESLİ',
+  200, 350, 'PAS', 500, 150, 'JOKER',
+  300, 250, 'PAS', 400, 200, 'SESLİ'
+ ];
+ const degreesPerSlice = 360 / values.length;
+
+ function wheelDestination(angle, slice) {
+  const center = (slice + .5) * degreesPerSlice;
+  const remaining = (360 - (angle + center) % 360) % 360;
+  return angle + 3 * 360 + remaining;
+ }
 
  function isVowel(letter, course) {
   if (course === 'İngilizce') return 'AEIOU'.includes(letter);
@@ -88,12 +99,14 @@ const GameCore = (()=>{
  }
 
  return { alphabet, foreign, upper, clean, isVowel, hasHiddenLetter, letterOption,
-  award, spinOutcome, passTurn, expireTurn, remainingTime, values, vowelCost, turnSeconds };
+  award, spinOutcome, passTurn, expireTurn, remainingTime, values, degreesPerSlice, wheelDestination, vowelCost, turnSeconds };
 })();
 if(typeof module!=='undefined')module.exports=GameCore;
 if(typeof document!=='undefined'){
 const $=id=>document.getElementById(id), KEY='sinif-carkifelek-v1', values=GameCore.values;
 let state,custom=[],filter='',history=[],angle=0,confirmAction=null;
+let wheelSound = true;
+try { wheelSound = localStorage.getItem(KEY + '-wheel-sound') !== 'off'; } catch {}
 const clone=x=>JSON.parse(JSON.stringify(x));
 function defaultState(){return {teams:[{name:'Takım 1',score:0,round:0},{name:'Takım 2',score:0,round:0},{name:'Takım 3',score:0,round:0}],turn:0,round:0,used:[],q:null,selected:[],solved:false,value:null,deadline:null,spinning:false,message:'Çarkı çevirin, ilk harfi söyleyin.',tone:''};}
 function validQuestion(q){return q&&typeof q.id==='string'&&typeof q.course==='string'&&q.course.trim().length>0&&q.course.length<=60&&typeof q.answer==='string'&&q.answer.length<=50&&typeof q.clue==='string'&&q.clue.length<=280&&/^[A-ZÇĞİÖŞÜÄ -]+$/.test(q.answer)&&GameCore.clean(q.answer,q.course).length>0&&q.answer.split(/\s+/).every(w=>w.length<=20);}
@@ -101,7 +114,7 @@ function validState(s){return s&&Array.isArray(s.teams)&&s.teams.length>=2&&s.te
 function save(){try{localStorage.setItem(KEY,JSON.stringify({state:{...state,spinning:false},custom,filter}));}catch(e){$('bankInfo').textContent='Bu tarayıcıda otomatik kayıt kullanılamıyor';}}
 function bank(){return [...window.QUESTION_BANK,...custom];}
 function pool(){return bank().filter(q=>!filter||q.course===filter);}
-function record(){history.push({ state: clone(state), seconds: GameCore.remainingTime(state, Date.now()) });if(history.length>30)history.shift();}
+function record(){history.push({ state: clone(state), seconds: GameCore.remainingTime(state, Date.now()), angle });if(history.length>30)history.shift();}
 function message(s,tone=''){state.message=s;state.tone=tone;}
 function populateCourses(){const el=$('courseSelect');el.replaceChildren(new Option('Tüm dersler · Karışık',''));[...new Set(bank().map(q=>q.course))].forEach(c=>el.add(new Option(c,c)));if(![...el.options].some(o=>o.value===filter))filter='';el.value=filter;}
 function newRound(){
@@ -114,7 +127,140 @@ function newRound(){
  message(state.teams[state.turn].name+' başlıyor. Çarkı çevirin.');render();
 }
 function requestRound(){if(state.spinning)return;if(state.q&&!state.solved&&(state.selected.length||state.value!==null))ask('Yeni kelimeye geçilsin mi?','Mevcut kelime açılmadan geçilecek. Kazanılan puanlar korunur.',()=>{record();newRound();});else{record();newRound();}}
-function drawWheel(){const ctx=$('wheel').getContext('2d'),n=values.length,step=2*Math.PI/n,colors=['#f4cc75','#277862','#f9e1a3','#9aa9b2','#235e56','#eca975','#514e9b','#f5c85b','#a54a35','#176157','#c6e2ac','#e9ac58'];ctx.clearRect(0,0,600,600);for(let i=0;i<n;i++){const start=-Math.PI/2+i*step;ctx.beginPath();ctx.moveTo(300,300);ctx.arc(300,300,292,start,start+step);ctx.closePath();ctx.fillStyle=colors[i];ctx.fill();ctx.strokeStyle='#f7f3dd66';ctx.lineWidth=4;ctx.stroke();ctx.save();ctx.translate(300,300);ctx.rotate(start+step/2);ctx.textAlign='right';ctx.textBaseline='middle';ctx.fillStyle=[1,4,6,8,9].includes(i)?'#fff8e2':'#153e34';ctx.font='bold '+(typeof values[i]==='string'?29:33)+'px Arial';ctx.fillText(String(values[i]),264,0);ctx.restore();}}
+function drawWheel() {
+ const ctx = $('wheel').getContext('2d');
+ const step = 2 * Math.PI / values.length;
+ const colors = ['#e8c46f', '#377a66', '#435465', '#dca265', '#3a826a', '#62549c',
+  '#edcc79', '#216758', '#435465', '#d79556', '#4e8971', '#a54a35',
+  '#e5bc71', '#286b5c', '#435465', '#dfa265', '#397b66', '#62549c'];
+ ctx.clearRect(0, 0, 600, 600);
+
+ values.forEach((value, index) => {
+  const start = -Math.PI / 2 + index * step;
+  ctx.beginPath();
+  ctx.moveTo(300, 300);
+  ctx.arc(300, 300, 294, start, start + step);
+  ctx.closePath();
+  ctx.fillStyle = colors[index];
+  ctx.fill();
+  ctx.strokeStyle = '#fbf3dc85';
+  ctx.lineWidth = 3;
+  ctx.stroke();
+
+  ctx.save();
+  ctx.translate(300, 300);
+  ctx.rotate(start + step / 2);
+  ctx.textAlign = 'right';
+  ctx.textBaseline = 'middle';
+  ctx.fillStyle = [0, 3, 6, 9, 12, 15].includes(index) ? '#183d32' : '#fffbec';
+  ctx.font = 'bold ' + (typeof value === 'string' ? 25 : 30) + 'px Arial';
+  ctx.fillText(String(value), 251, 0);
+  ctx.restore();
+ });
+
+ // The pegs sit on the slice boundaries so the pointer stops between two pegs.
+ ctx.beginPath();
+ ctx.arc(300, 300, 283, 0, 2 * Math.PI);
+ ctx.strokeStyle = '#183b35';
+ ctx.lineWidth = 23;
+ ctx.stroke();
+ ctx.beginPath();
+ ctx.arc(300, 300, 290, 0, 2 * Math.PI);
+ ctx.strokeStyle = '#e5c780';
+ ctx.lineWidth = 4;
+ ctx.stroke();
+
+ for (let index = 0; index < values.length; index++) {
+  const position = -Math.PI / 2 + index * step;
+  const x = 300 + 275 * Math.cos(position);
+  const y = 300 + 275 * Math.sin(position);
+  const metal = ctx.createRadialGradient(x - 3, y - 4, 1, x, y, 9);
+  metal.addColorStop(0, '#ffffff');
+  metal.addColorStop(.45, '#c6d0d1');
+  metal.addColorStop(1, '#5d6972');
+  ctx.beginPath();
+  ctx.arc(x, y + 1.8, 9.7, 0, 2 * Math.PI);
+  ctx.fillStyle = '#13251f';
+  ctx.fill();
+  ctx.beginPath();
+  ctx.arc(x, y, 8.5, 0, 2 * Math.PI);
+  ctx.fillStyle = metal;
+  ctx.fill();
+ }
+}
+
+function positionWheel(rotation, needleBend = 0) {
+ $('wheel').style.transform = 'rotate(' + rotation + 'deg)';
+ $('wheelPointer').style.setProperty('--needle-bend', needleBend + 'deg');
+}
+
+function tickWheel() {
+ if (!wheelSound || audio?.state !== 'running') return;
+ const time = audio.currentTime;
+ const click = audio.createOscillator();
+ const volume = audio.createGain();
+ click.type = 'triangle';
+ click.frequency.setValueAtTime(1750, time);
+ click.frequency.exponentialRampToValueAtTime(690, time + .022);
+ volume.gain.setValueAtTime(.046, time);
+ volume.gain.exponentialRampToValueAtTime(.001, time + .03);
+ click.connect(volume);
+ volume.connect(audio.destination);
+ click.start(time);
+ click.stop(time + .032);
+}
+
+function animateWheel(slice, onStop) {
+ const start = angle;
+ const target = GameCore.wheelDestination(start, slice);
+ const step = GameCore.degreesPerSlice;
+ const finish = () => {
+  angle = target % 360;
+  positionWheel(angle);
+  onStop();
+ };
+ if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  finish();
+  return;
+ }
+
+ const duration = 4600;
+ let startedAt;
+ let lastPeg = Math.floor(start / step);
+ let hitAt = -Infinity;
+
+ function frame(now) {
+  startedAt ??= now;
+  const elapsed = now - startedAt;
+  const progress = Math.min(1, elapsed / duration);
+  const rotation = start + (target - start) * (1 - (1 - progress) ** 2.5);
+  const peg = Math.floor(rotation / step);
+  if (peg > lastPeg) {
+   hitAt = now;
+   lastPeg = peg;
+   tickWheel();
+  }
+
+  const untilPeg = step - rotation % step;
+  const sinceHit = now - hitAt;
+  let bend = 0;
+  if (untilPeg < 4) bend = -18 * (1 - untilPeg / 4);
+  else if (sinceHit < 170) bend = -19 * Math.exp(-sinceHit / 42) * Math.cos(sinceHit / 13);
+  positionWheel(rotation, bend);
+
+  if (progress < 1) requestAnimationFrame(frame);
+  else finish();
+ }
+
+ requestAnimationFrame(frame);
+}
+
+function updateWheelSoundButton() {
+ const button = $('wheelSoundBtn');
+ button.setAttribute('aria-pressed', String(wheelSound));
+ button.textContent = wheelSound ? 'Çark sesi açık' : 'Çark sesi kapalı';
+}
+
 function board(){const board=$('board');board.replaceChildren();const words=state.q.answer.split(' ');const max=Math.max(...words.map(w=>w.length));const available=board.clientWidth||500;const tile=Math.min(44,Math.max(16,(available-18-4*(max-1))/max));board.style.setProperty('--tile',tile+'px');words.forEach(word=>{const row=document.createElement('div');row.className='word';for(const char of word){const t=document.createElement('div');const open=state.solved||state.selected.includes(char)||!GameCore.clean(char,state.q.course);t.className='tile '+(open?'revealed':'hidden');t.textContent=open?char:'';t.setAttribute('aria-label',open?char:'Kapalı harf');row.append(t);}board.append(row);});$('letterCount').textContent=words.map(w=>w.length).join(' + ')+' HARF'+(words.length>1?' · '+words.length+' KELİME':'');}
 function keyboard() {
  const box = $('keyboard');
@@ -216,20 +362,16 @@ function spin() {
  const random = new Uint32Array(1);
  crypto.getRandomValues(random);
  const segment = random[0] % values.length;
- const target = (360 - (segment + .5) * 360 / values.length) % 360;
- angle += 360 * 5 + ((target - angle % 360 + 360) % 360);
- $('wheel').style.transform = 'rotate(' + angle + 'deg)';
- const wait = matchMedia('(prefers-reduced-motion: reduce)').matches ? 120 : 2900;
- setTimeout(() => {
+ if (wheelSound) unlockAudio();
+ animateWheel(segment, () => {
   state.spinning = false;
   const value = GameCore.spinOutcome(state, values[segment], Date.now());
   if (value === null) message('PAS! Sıra ' + state.teams[state.turn].name + ' takımına geçti.', 'error');
   else if (value === 'SESLİ') message('Sesli harf hakkı! 30 saniye içinde ücretsiz bir sesli seçin.');
   else if (value === 'JOKER') message('Joker! 300 puanlık sessiz harf veya ücretsiz sesli harf seçin.');
   else message(value + ' puan! ' + state.teams[state.turn].name + ', harf seçmek için 30 saniyeniz var.');
-  tone(440);
   render();
- }, wait);
+ });
 }
 
 function pass() {
@@ -243,15 +385,29 @@ function ask(title,body,action){confirmAction=action;$('confirmTitle').textConte
 function showSettings(){$('teamCount').value=state.teams.length;teamFields();$('customStatus').textContent='Eklediğiniz soru sayısı: '+custom.length;$('settingsStatus').textContent='';customList();$('settingsDialog').showModal();}
 function teamFields(){const n=Number($('teamCount').value);$('teamNames').replaceChildren();for(let i=0;i<n;i++){const label=document.createElement('label');label.textContent=(i+1)+'. takım';const input=document.createElement('input');input.value=state.teams[i]?.name||'Takım '+(i+1);input.maxLength=24;input.className='team-input';label.append(input);$('teamNames').append(label);}}
 function customList(){$('customList').replaceChildren();custom.forEach(q=>{const row=document.createElement('div');row.className='custom-item';const span=document.createElement('span');span.textContent=q.course+' · '+q.answer;const b=document.createElement('button');b.textContent='Sil';b.onclick=()=>{custom=custom.filter(x=>x.id!==q.id);populateCourses();customList();$('customStatus').textContent='Soru silindi. Eklediğiniz soru sayısı: '+custom.length;save();render();};row.append(span,b);$('customList').append(row);});}
-function tone(f){try{if(!audio)audio=new(window.AudioContext||window.webkitAudioContext)();audio.resume();const o=audio.createOscillator(),g=audio.createGain();o.connect(g);g.connect(audio.destination);o.frequency.value=f;g.gain.setValueAtTime(.035,audio.currentTime);g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+.18);o.start();o.stop(audio.currentTime+.18);}catch{}}
+function unlockAudio() {
+ try {
+  if (!audio) audio = new (window.AudioContext || window.webkitAudioContext)();
+  if (audio.state === 'suspended') audio.resume().catch(() => {});
+ } catch {}
+}
+function tone(f){try{unlockAudio();if(!audio)return;const o=audio.createOscillator(),g=audio.createGain();o.connect(g);g.connect(audio.destination);o.frequency.value=f;g.gain.setValueAtTime(.035,audio.currentTime);g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+.18);o.start();o.stop(audio.currentTime+.18);}catch{}}
 let audio=null;
 try{const stored=JSON.parse(localStorage.getItem(KEY));if(stored&&validState(stored.state)){state=stored.state;state.spinning=false;custom=(stored.custom||[]).filter(validQuestion);filter=typeof stored.filter==='string'?stored.filter:'';}}catch{}
-state=state||defaultState();populateCourses();drawWheel();if(!state.q)newRound();else render();
+state=state||defaultState();populateCourses();drawWheel();updateWheelSoundButton();if(!state.q)newRound();else render();
 checkTimer();
 setInterval(checkTimer, 150);
-$('spinBtn').onclick=spin;$('passBtn').onclick=pass;$('nextBtn').onclick=requestRound;
+$('spinBtn').onclick=spin;
+$('wheelSoundBtn').onclick=()=>{
+ wheelSound = !wheelSound;
+ if (wheelSound) unlockAudio();
+ try { localStorage.setItem(KEY + '-wheel-sound', wheelSound ? 'on' : 'off'); } catch {}
+ updateWheelSoundButton();
+};$('passBtn').onclick=pass;$('nextBtn').onclick=requestRound;
 $('undoBtn').onclick=()=>{if(state.spinning||!history.length)return;const previous=history.pop();
  state=previous.state;
+ angle=previous.angle;
+ positionWheel(angle);
  state.spinning=false;
  if(state.value!==null)state.deadline=Date.now()+previous.seconds*1000;
  render();
@@ -265,7 +421,7 @@ $('courseSelect').onchange=e=>{const next=e.target.value;const apply=()=>{filter
 $('teamCount').onchange=teamFields;
 $('saveTeams').onclick=()=>{const names=[...document.querySelectorAll('.team-input')].map((x,i)=>x.value.trim()||'Takım '+(i+1));const changed=names.length!==state.teams.length;const apply=()=>{record();state.teams=names.map((name,i)=>({name,score:changed?0:state.teams[i].score,round:changed?0:state.teams[i].round}));if(changed){state.turn=0;state.value=null;}message('Takımlar güncellendi.');$('settingsStatus').textContent='Takımlar kaydedildi.';render();};if(changed)ask('Takım sayısı değişsin mi?','Takım puanları sıfırlanacak.',apply);else apply();};
 $('customForm').onsubmit=e=>{e.preventDefault();const course=$('customCourse').value.trim(),answer=GameCore.upper($('customAnswer').value.trim(),course).replace(/\s+/g,' '),clue=$('customClue').value.trim();const q={id:'custom-'+Date.now()+'-'+Math.random().toString(36).slice(2),course,answer,clue,theme:''};if(!validQuestion(q)){$('customStatus').textContent='Cevapta yalnızca harf, boşluk veya tire kullanın. Tek kelime en fazla 20 harf olabilir.';return;}custom.push(q);populateCourses();save();customList();$('customStatus').textContent='Soru eklendi. Oynamak için bu dersi seçin veya yeni kelimeye geçin.';$('customAnswer').value='';$('customClue').value='';render();};
-$('resetBtn').onclick=()=>ask('Yeni oyun başlasın mı?','Takım puanları ve tur geçmişi sıfırlanacak. Eklediğiniz sorular ve takım adları korunur.',()=>{const teams=state.teams.map(t=>({name:t.name,score:0,round:0}));state=defaultState();state.teams=teams;history=[];angle=0;$('wheel').style.transform='rotate(0deg)';newRound();});
+$('resetBtn').onclick=()=>ask('Yeni oyun başlasın mı?','Takım puanları ve tur geçmişi sıfırlanacak. Eklediğiniz sorular ve takım adları korunur.',()=>{const teams=state.teams.map(t=>({name:t.name,score:0,round:0}));state=defaultState();state.teams=teams;history=[];angle=0;positionWheel(angle);newRound();});
 $('exportBtn').onclick=()=>{const blob=new Blob([JSON.stringify({format:'sinif-carkifelek-v1',state:{...state,spinning:false},custom,filter},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='sinif-carkifelek-oyunum.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('settingsStatus').textContent='Oyun dosyası indirildi.';};
 $('importBtn').onclick=()=>$('importFile').click();
 $('importFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>1000000)throw Error();const data=JSON.parse(await f.text());if(data.format!=='sinif-carkifelek-v1'||!validState(data.state)||!Array.isArray(data.custom)||data.custom.length>1000||!data.custom.every(validQuestion))throw Error();ask('Oyun dosyası yüklensin mi?','Bu tarayıcıdaki puanlar ve özel sorular, seçtiğiniz dosyayla değiştirilecek.',()=>{state=data.state;state.spinning=false;custom=data.custom;filter=typeof data.filter==='string'?data.filter:'';history=[];populateCourses();if(!state.q)newRound();else render();$('settingsDialog').close();});}catch{$('settingsStatus').textContent='Dosya okunamadı. Bu oyundan dışa aktarılmış geçerli bir JSON dosyası seçin.';}e.target.value='';};

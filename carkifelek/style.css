@@ -36,3 +36,41 @@
  .toolbar-actions { flex-wrap: wrap; justify-content: flex-end; }
  .letter-timer { gap: 5px; padding-inline: 7px; }
 }
+
+.wheel-wrap canvas { transition: none; }
+.wheel-wrap .pointer {
+ top: -12px;
+ left: calc(50% - 11px);
+ width: 22px;
+ height: 31px;
+ border: 0;
+ filter: drop-shadow(0 2px 1px #0b201d55);
+ transform: rotate(var(--needle-bend, 0deg));
+ transform-origin: 50% 5px;
+}
+.wheel-wrap .pointer::before {
+ content: "";
+ position: absolute;
+ inset: 2px 0 0;
+ clip-path: polygon(5% 0, 95% 0, 72% 53%, 53% 100%, 47% 100%, 28% 53%);
+ background: linear-gradient(100deg, #152e35, #4a5860 52%, #203938);
+}
+.wheel-wrap .pointer::after {
+ content: "";
+ position: absolute;
+ top: 2px;
+ left: 7px;
+ width: 8px;
+ height: 8px;
+ border-radius: 50%;
+ background: radial-gradient(circle at 35% 30%, #fff5cb, #d7a14f 70%, #705133);
+}
+.wheel-tools {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ gap: 2px;
+}
+.wheel-tools .text-button { padding-inline: 6px; }
+#wheelSoundBtn[aria-pressed="false"] { color: #66716e; }

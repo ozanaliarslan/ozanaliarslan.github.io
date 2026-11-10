@@ -57,6 +57,17 @@ assert.equal(s.teams[0].score,1000);
 s=initial();assert.equal(C.spinOutcome(s,'PAS',1000),null);assert.equal(s.turn,1);
 assert.equal(s.deadline,null);
 assert(!C.values.includes('İFLAS'));
+assert.equal(C.values.length,18);
+assert.equal(C.values.filter(value=>value==='PAS').length,3);
+assert.equal(C.values.filter(value=>value==='SESLİ').length,2);
+for (const angle of [0,10,90,350]) {
+ for (let slice=0; slice<C.values.length; slice++) {
+  const stop=C.wheelDestination(angle,slice);
+  const center=(slice+.5)*C.degreesPerSlice;
+  assert.equal((stop+center)%360,0);
+  assert(stop-angle>=3*360 && stop-angle<4*360);
+ }
+}
 assert(C.isVowel('Ü','Almanca (ikinci yabancı dil)'));
 assert(C.isVowel('I','Matematik') && C.isVowel('İ','Matematik'));
 assert.notEqual(C.clean('ısı'),C.clean('isi'));assert.equal(C.clean('friendship','İngilizce'),'FRIENDSHIP');assert.equal(C.clean('hücre - zarı'),'HÜCREZARI');
