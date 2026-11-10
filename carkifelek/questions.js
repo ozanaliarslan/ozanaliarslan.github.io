@@ -2813,5 +2813,257 @@ window.QUESTION_BANK = [
     "answer": "STEPHEN HAWKING",
     "clue": "Tarihte önemli bir kişi.",
     "explanation": "Kara deliklerin kuantum etkileri nedeniyle ışınım yayabileceğini öne süren kuramsal fizikçidir."
+  },
+  {
+    "id": "math01",
+    "course": "Matematik",
+    "answer": "GERÇEK SAYILAR",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Sayı doğrusundaki tüm noktalara karşılık gelen sayılardır. Rasyonel ve irrasyonel sayıları kapsar."
+  },
+  {
+    "id": "math02",
+    "course": "Matematik",
+    "answer": "BOŞ KÜME",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Hiç elemanı olmayan kümedir. ∅ veya {} ile gösterilir."
+  },
+  {
+    "id": "math03",
+    "course": "Matematik",
+    "answer": "EVRENSEL KÜME",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir problemde ele alınan bütün elemanları içeren referans kümedir."
+  },
+  {
+    "id": "math04",
+    "course": "Matematik",
+    "answer": "AÇIK ARALIK",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Uç noktaları aralığa dahil etmeyen sayı aralığıdır. Örneğin (2, 5), 2 ile 5 arasındaki gerçek sayıları içerir."
+  },
+  {
+    "id": "math05",
+    "course": "Matematik",
+    "answer": "KAPALI ARALIK",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "İki uç noktası da aralığa dahil olan sayı aralığıdır. Örneğin [2, 5] hem 2’yi hem 5’i içerir."
+  },
+  {
+    "id": "math06",
+    "course": "Matematik",
+    "answer": "ÜSLÜ İFADE",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir taban ve bir üsle yazılan ifadedir. Örneğin 3³, üç tane 3’ün çarpımıdır."
+  },
+  {
+    "id": "math07",
+    "course": "Matematik",
+    "answer": "KÖKLÜ İFADE",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Kök işareti içeren ifadedir. Örneğin √9, karesi 9 olan negatif olmayan sayıyı gösterir."
+  },
+  {
+    "id": "math08",
+    "course": "Matematik",
+    "answer": "DOĞRUSAL FONKSİYON",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Gerçek sayılarda f(x) = ax + b biçiminde verilen ve grafiği bir doğru olan fonksiyondur."
+  },
+  {
+    "id": "math09",
+    "course": "Matematik",
+    "answer": "GÖRÜNTÜ KÜMESİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Fonksiyonun tanım kümesindeki girdiler için ürettiği bütün çıktıların kümesidir."
+  },
+  {
+    "id": "math10",
+    "course": "Matematik",
+    "answer": "FONKSİYONUN SIFIRI",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Fonksiyonun değerini sıfır yapan girdidir. Grafikte varsa x eksenini kestiği veya değdiği noktanın x koordinatıdır."
+  },
+  {
+    "id": "math11",
+    "course": "Matematik",
+    "answer": "EŞLİK",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Şekillerin aynı biçim ve büyüklükte olmasıdır. Eş şekiller boyutları değişmeden üst üste getirilebilir."
+  },
+  {
+    "id": "math12",
+    "course": "Matematik",
+    "answer": "İÇ AÇI",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir çokgenin iki komşu kenarının şeklin iç tarafında oluşturduğu açıdır."
+  },
+  {
+    "id": "math13",
+    "course": "Matematik",
+    "answer": "AĞIRLIK MERKEZİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Üçgende üç kenarortayın kesiştiği noktadır. Her kenarortayı, köşeye yakın parça daha uzun olacak şekilde 2’ye 1 oranında böler."
+  },
+  {
+    "id": "math14",
+    "course": "Matematik",
+    "answer": "ARİTMETİK ORTALAMA",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Veri değerlerinin toplamının veri sayısına bölünmesiyle elde edilir."
+  },
+  {
+    "id": "math15",
+    "course": "Matematik",
+    "answer": "TEPE DEĞER",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir veri grubunda en sık görülen değerdir. Birden fazla tepe değer bulunabilir."
+  },
+  {
+    "id": "math16",
+    "course": "Matematik",
+    "answer": "VERİ AÇIKLIĞI",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir veri grubundaki en büyük değer ile en küçük değer arasındaki farktır."
+  },
+  {
+    "id": "math17",
+    "course": "Matematik",
+    "answer": "ÖRNEK UZAY",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir rastgele deneyin bütün olası sonuçlarının kümesidir."
+  },
+  {
+    "id": "math18",
+    "course": "Matematik",
+    "answer": "DENEYSEL OLASILIK",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir olayın gözlendiği deneme sayısının toplam deneme sayısına oranıdır."
+  },
+  {
+    "id": "math19",
+    "course": "Matematik",
+    "answer": "KAPALILIK ÖZELLİĞİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir kümenin iki elemanına belirli bir işlem uygulandığında sonucun yine o kümede kalmasıdır."
+  },
+  {
+    "id": "math20",
+    "course": "Matematik",
+    "answer": "VARLIK NİCELEYİCİSİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir özelliği sağlayan en az bir elemanın bulunduğunu belirten ∃ simgesidir."
+  },
+  {
+    "id": "math21",
+    "course": "Matematik",
+    "answer": "EVRENSEL NİCELEYİCİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir ifadenin ele alınan kümedeki her eleman için geçerli olduğunu belirten ∀ simgesidir."
+  },
+  {
+    "id": "math22",
+    "course": "Matematik",
+    "answer": "KARŞIT ÖRNEK",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Genel bir iddiayı çürüten örnektir. Örneğin 2, “Bütün asal sayılar tektir” iddiasını çürütür."
+  },
+  {
+    "id": "math23",
+    "course": "Matematik",
+    "answer": "DE MORGAN KURALLARI",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Birleşimin tümleyeni, tümleyenlerin kesişimidir. Kesişimin tümleyeni ise tümleyenlerin birleşimidir."
+  },
+  {
+    "id": "math24",
+    "course": "Matematik",
+    "answer": "MUTLAK DEĞER FONKSİYONU",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Temel örneği f(x) = |x| olan fonksiyondur. Bu örnekte her gerçek sayı, sıfıra uzaklığına eşlenir."
+  },
+  {
+    "id": "math25",
+    "course": "Matematik",
+    "answer": "BİRE BİR FONKSİYON",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Tanım kümesindeki farklı girdileri farklı çıktılara eşleyen fonksiyondur."
+  },
+  {
+    "id": "math26",
+    "course": "Matematik",
+    "answer": "BİLEŞKE FONKSİYON",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir fonksiyonun çıktısının başka bir fonksiyona girdi olarak verilmesiyle oluşur. (f ∘ g)(x) = f(g(x))."
+  },
+  {
+    "id": "math27",
+    "course": "Matematik",
+    "answer": "ÇEVREL ÇEMBER",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir üçgenin üç köşesinden geçen çemberdir. Merkezi kenar orta dikmelerinin kesişimidir."
+  },
+  {
+    "id": "math28",
+    "course": "Matematik",
+    "answer": "İÇ TEĞET ÇEMBER",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Üçgenin içinde yer alan ve üç kenarına da teğet olan çemberdir. Merkezi iç açıortayların kesişimidir."
+  },
+  {
+    "id": "math29",
+    "course": "Matematik",
+    "answer": "DİKLİK MERKEZİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir üçgenin yükseklik doğrularının kesiştiği noktadır. Geniş açılı üçgende üçgenin dışında kalır."
+  },
+  {
+    "id": "math30",
+    "course": "Matematik",
+    "answer": "ORTA DİKME",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir doğru parçasını orta noktasından dik kesen doğrudur. Üzerindeki her nokta iki uçtan eşit uzaklıktadır."
+  },
+  {
+    "id": "math31",
+    "course": "Matematik",
+    "answer": "EULER DOĞRUSU",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Eşkenar olmayan bir üçgende ağırlık merkezi, diklik merkezi ve çevrel çember merkezinden geçen doğrudur."
+  },
+  {
+    "id": "math32",
+    "course": "Matematik",
+    "answer": "CEVA TEOREMİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Üçgenin köşelerini karşı kenarlardaki noktalara birleştiren doğruların tek noktada kesişme koşulunu kenar oranlarıyla verir."
+  },
+  {
+    "id": "math33",
+    "course": "Matematik",
+    "answer": "MENELAUS TEOREMİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Üçgenin kenar doğruları üzerindeki üç noktanın doğrusal olma koşulunu, kenarlardaki yönlü oranlarla verir."
+  },
+  {
+    "id": "math34",
+    "course": "Matematik",
+    "answer": "ÖKLİD ALGORİTMASI",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "İki tam sayının en büyük ortak bölenini, bölme işlemlerindeki kalanları kullanarak bulma yöntemidir."
+  },
+  {
+    "id": "math35",
+    "course": "Matematik",
+    "answer": "DİOFANT DENKLEMİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Çözümleri tam sayılar arasında aranan denklemdir. Örneğin x + 2y = 7 için tam sayı çözümleri bulunabilir."
+  },
+  {
+    "id": "math36",
+    "course": "Matematik",
+    "answer": "KONGRÜANS",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "İki tam sayının aynı pozitif tam sayıya bölündüğünde eşit kalan vermesidir. Örneğin 17 ve 5, 4 ile bölündüğünde 1 kalanını verir."
   }
 ];
