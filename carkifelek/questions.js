@@ -1,4 +1,4 @@
-/* Genel kategori ipuçları: tanım veya cevabı daraltan konu açıklaması içermez. */
+/* Genel kategori ipuçları */
 window.QUESTION_BANK = [
   {
     "id": "q0",
@@ -1715,5 +1715,365 @@ window.QUESTION_BANK = [
     "course": "Genel Kültür",
     "answer": "DÜZCE",
     "clue": "Bir ilimiz."
+  },
+  {
+    "id": "q205",
+    "course": "Matematik",
+    "answer": "EĞİM",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q206",
+    "course": "Matematik",
+    "answer": "TANIM KÜMESİ",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q207",
+    "course": "Matematik",
+    "answer": "EŞİTSİZLİK",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q208",
+    "course": "Matematik",
+    "answer": "BENZERLİK",
+    "clue": "Bir matematik kavramı."
+  },
+  {
+    "id": "q209",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "ÖYKÜ",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q210",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "MECAZ",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q211",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "SÖYLEŞİ",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q212",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "MONOLOG",
+    "clue": "Bir edebiyat terimi."
+  },
+  {
+    "id": "q213",
+    "course": "Fizik",
+    "answer": "HIZ",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q214",
+    "course": "Fizik",
+    "answer": "İŞ",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q215",
+    "course": "Fizik",
+    "answer": "ENERJİ",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q216",
+    "course": "Fizik",
+    "answer": "SÜRTÜNME",
+    "clue": "Bir fizik kavramı."
+  },
+  {
+    "id": "q217",
+    "course": "Kimya",
+    "answer": "MOLEKÜL",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q218",
+    "course": "Kimya",
+    "answer": "BİLEŞİK",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q219",
+    "course": "Kimya",
+    "answer": "ANYON",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q220",
+    "course": "Kimya",
+    "answer": "KATYON",
+    "clue": "Bir kimya terimi."
+  },
+  {
+    "id": "q221",
+    "course": "Biyoloji",
+    "answer": "FOTOSENTEZ",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q222",
+    "course": "Biyoloji",
+    "answer": "HÜCRE DUVARI",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q223",
+    "course": "Biyoloji",
+    "answer": "LİZOZOM",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q224",
+    "course": "Biyoloji",
+    "answer": "KOFUL",
+    "clue": "Bir biyoloji terimi."
+  },
+  {
+    "id": "q225",
+    "course": "Tarih",
+    "answer": "PERSLER",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q226",
+    "course": "Tarih",
+    "answer": "LİDYALILAR",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q227",
+    "course": "Tarih",
+    "answer": "FEODALİTE",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q228",
+    "course": "Tarih",
+    "answer": "KAVİMLER GÖÇÜ",
+    "clue": "Bir tarih kavramı."
+  },
+  {
+    "id": "q229",
+    "course": "Coğrafya",
+    "answer": "EKVATOR",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q230",
+    "course": "Coğrafya",
+    "answer": "MUSON",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q231",
+    "course": "Coğrafya",
+    "answer": "NEM",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q232",
+    "course": "Coğrafya",
+    "answer": "EROZYON",
+    "clue": "Bir coğrafya kavramı."
+  },
+  {
+    "id": "q233",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "İHSAN",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q234",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "TÖVBE",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q235",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "İHLAS SURESİ",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q236",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "KULLUK",
+    "clue": "Bir din kültürü veya ahlak kavramı."
+  },
+  {
+    "id": "q237",
+    "course": "İngilizce",
+    "answer": "CULTURE",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q238",
+    "course": "İngilizce",
+    "answer": "NATURE",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q239",
+    "course": "İngilizce",
+    "answer": "CHALLENGE",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q240",
+    "course": "İngilizce",
+    "answer": "ADVENTURE",
+    "clue": "İngilizce bir kelime."
+  },
+  {
+    "id": "q241",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "LEHRERIN",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q242",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "GARTEN",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q243",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "FENSTER",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q244",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "TISCH",
+    "clue": "Almanca bir kelime."
+  },
+  {
+    "id": "q245",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "PASLAŞMA",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q246",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "RALLİ",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q247",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "PENALTI",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q248",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "DEPAR",
+    "clue": "Bir spor terimi."
+  },
+  {
+    "id": "q249",
+    "course": "Müzik",
+    "answer": "KADANS",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q250",
+    "course": "Müzik",
+    "answer": "AKOR",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q251",
+    "course": "Müzik",
+    "answer": "ARPEJ",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q252",
+    "course": "Müzik",
+    "answer": "METRONOM",
+    "clue": "Bir müzik terimi."
+  },
+  {
+    "id": "q253",
+    "course": "Görsel Sanatlar",
+    "answer": "ÇİZGİ",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q254",
+    "course": "Görsel Sanatlar",
+    "answer": "GÖLGE",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q255",
+    "course": "Görsel Sanatlar",
+    "answer": "KOLAJ",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q256",
+    "course": "Görsel Sanatlar",
+    "answer": "SERAMİK",
+    "clue": "Bir görsel sanatlar terimi."
+  },
+  {
+    "id": "q257",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "İLK YARDIM",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q258",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "YAYA",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q259",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "KASK",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q260",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "SÜRÜCÜ",
+    "clue": "Bir sağlık veya trafik kavramı."
+  },
+  {
+    "id": "q261",
+    "course": "Bilişim (seçmeli)",
+    "answer": "İŞLETİM SİSTEMİ",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q262",
+    "course": "Bilişim (seçmeli)",
+    "answer": "DOSYA",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q263",
+    "course": "Bilişim (seçmeli)",
+    "answer": "KLASÖR",
+    "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "q264",
+    "course": "Bilişim (seçmeli)",
+    "answer": "VERİ TABANI",
+    "clue": "Bir bilişim terimi."
   }
 ];
