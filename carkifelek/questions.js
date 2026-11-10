@@ -2075,5 +2075,245 @@ window.QUESTION_BANK = [
     "course": "Bilişim (seçmeli)",
     "answer": "VERİ TABANI",
     "clue": "Bir bilişim terimi."
+  },
+  {
+    "id": "person01",
+    "course": "Tarihî Kişiler",
+    "answer": "MUSTAFA KEMAL ATATÜRK",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person02",
+    "course": "Tarihî Kişiler",
+    "answer": "İSMET İNÖNÜ",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person03",
+    "course": "Tarihî Kişiler",
+    "answer": "FEVZİ ÇAKMAK",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person04",
+    "course": "Tarihî Kişiler",
+    "answer": "KAZIM KARABEKİR",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person05",
+    "course": "Tarihî Kişiler",
+    "answer": "HALİDE EDİP ADIVAR",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person06",
+    "course": "Tarihî Kişiler",
+    "answer": "MEHMET AKİF ERSOY",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person07",
+    "course": "Tarihî Kişiler",
+    "answer": "SABİHA GÖKÇEN",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person08",
+    "course": "Tarihî Kişiler",
+    "answer": "VECİHİ HÜRKUŞ",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person09",
+    "course": "Tarihî Kişiler",
+    "answer": "NURİ DEMİRAĞ",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person10",
+    "course": "Tarihî Kişiler",
+    "answer": "AFET İNAN",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person11",
+    "course": "Tarihî Kişiler",
+    "answer": "HASAN ALİ YÜCEL",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person12",
+    "course": "Tarihî Kişiler",
+    "answer": "CAHİT ARF",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person13",
+    "course": "Tarihî Kişiler",
+    "answer": "AYDIN SAYILI",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person14",
+    "course": "Tarihî Kişiler",
+    "answer": "JALE İNAN",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person15",
+    "course": "Tarihî Kişiler",
+    "answer": "TÜRKAN SAYLAN",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person16",
+    "course": "Tarihî Kişiler",
+    "answer": "FETHİ OKYAR",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person17",
+    "course": "Tarihî Kişiler",
+    "answer": "CELAL BAYAR",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person18",
+    "course": "Tarihî Kişiler",
+    "answer": "RAUF ORBAY",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person19",
+    "course": "Tarihî Kişiler",
+    "answer": "YAHYA KEMAL BEYATLI",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person20",
+    "course": "Tarihî Kişiler",
+    "answer": "KERİMAN HALİS ECE",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person21",
+    "course": "Tarihî Kişiler",
+    "answer": "MARIE CURIE",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person22",
+    "course": "Tarihî Kişiler",
+    "answer": "ALBERT EINSTEIN",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person23",
+    "course": "Tarihî Kişiler",
+    "answer": "ISAAC NEWTON",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person24",
+    "course": "Tarihî Kişiler",
+    "answer": "CHARLES DARWIN",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person25",
+    "course": "Tarihî Kişiler",
+    "answer": "LOUIS PASTEUR",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person26",
+    "course": "Tarihî Kişiler",
+    "answer": "NIKOLA TESLA",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person27",
+    "course": "Tarihî Kişiler",
+    "answer": "THOMAS EDISON",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person28",
+    "course": "Tarihî Kişiler",
+    "answer": "ALAN TURING",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person29",
+    "course": "Tarihî Kişiler",
+    "answer": "ALEXANDER FLEMING",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person30",
+    "course": "Tarihî Kişiler",
+    "answer": "ALEXANDER GRAHAM BELL",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person31",
+    "course": "Tarihî Kişiler",
+    "answer": "GREGOR MENDEL",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person32",
+    "course": "Tarihî Kişiler",
+    "answer": "MAX PLANCK",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person33",
+    "course": "Tarihî Kişiler",
+    "answer": "FLORENCE NIGHTINGALE",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person34",
+    "course": "Tarihî Kişiler",
+    "answer": "NELSON MANDELA",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person35",
+    "course": "Tarihî Kişiler",
+    "answer": "ROSA PARKS",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person36",
+    "course": "Tarihî Kişiler",
+    "answer": "AMELIA EARHART",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person37",
+    "course": "Tarihî Kişiler",
+    "answer": "FRIDA KAHLO",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person38",
+    "course": "Tarihî Kişiler",
+    "answer": "WILLIAM SHAKESPEARE",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person39",
+    "course": "Tarihî Kişiler",
+    "answer": "WOLFGANG AMADEUS MOZART",
+    "clue": "Tarihte önemli bir kişi."
+  },
+  {
+    "id": "person40",
+    "course": "Tarihî Kişiler",
+    "answer": "LUDWIG VAN BEETHOVEN",
+    "clue": "Tarihte önemli bir kişi."
   }
 ];

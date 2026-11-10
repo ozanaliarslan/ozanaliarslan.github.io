@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict');const vm=require('node:vm');const fs=require('node:fs');const C=require('../app.js');const ctx={window:{}};vm.runInNewContext(fs.readFileSync('questions.js','utf8'),ctx);const qs=ctx.window.QUESTION_BANK;
-assert.equal(qs.length,346);assert.equal(new Set(qs.map(q=>q.course)).size,16);assert.equal(new Set(qs.map(q=>q.id)).size,346);assert.equal(new Set(qs.map(q=>q.course+'|'+q.answer)).size,346);
+assert.equal(qs.length,386);assert.equal(new Set(qs.map(q=>q.course)).size,17);assert.equal(new Set(qs.map(q=>q.id)).size,386);assert.equal(new Set(qs.map(q=>q.course+'|'+q.answer)).size,386);
 for(const q of qs){assert(q.clue.length>10);assert(C.clean(q.answer,q.course).length>0);assert(q.answer.split(' ').every(w=>w.length<=20));assert(/^[A-ZÇĞİÖŞÜÄ -]+$/.test(q.answer),q.answer);}
 const initial=()=>({q:{answer:'KİTAP',course:'Türk Dili ve Edebiyatı'},teams:[{name:'A',score:1000,round:0},{name:'B',score:700,round:0}],turn:0,value:200,selected:[],solved:false,spinning:false});
 let s=initial();let r=C.award(s,'K');assert.equal(r.p,200);assert.equal(s.teams[0].score,1200);assert.equal(s.turn,0);assert.equal(s.value,null);assert.equal(C.award(s,'K'),null);
@@ -75,6 +75,7 @@ for (const q of qs) {
  s=initial();
  s.q=q;
  const letters=[...new Set(C.clean(q.answer,q.course))];
+ assert(letters.every(letter=>C.lettersFor(q.course).includes(letter)),q.answer);
  const consonants=letters.filter(letter=>!C.isVowel(letter,q.course));
  const vowels=letters.filter(letter=>C.isVowel(letter,q.course));
  for (const letter of [...consonants,...vowels]) {
@@ -85,7 +86,10 @@ for (const q of qs) {
  assert.equal(s.teams[0].score,1500+100*[...C.clean(q.answer,q.course)].filter(letter=>!C.isVowel(letter,q.course)).length,q.answer);
 }
 assert.equal(qs.filter(q=>q.clue==='Bir ilimiz.').length,81);
+const people=qs.filter(q=>q.course==='Tarihî Kişiler');
+assert.equal(people.length,40);
+assert(people.every(q=>q.answer.includes(' ') && q.clue==='Tarihte önemli bir kişi.'));
 assert(qs.filter(q=>q.course==='Müzik').every(q=>q.clue==='Bir müzik terimi.'));
 for(const course of new Set(qs.map(q=>q.course)))assert.equal(new Set(qs.filter(q=>q.course===course).map(q=>q.clue)).size,1);
 
-console.log('Passed: all 346 words, scoring, vowel fees and prizes, pass, and exact timer expiry.');
+console.log('Passed: all 386 words, scoring, vowel fees and prizes, pass, and exact timer expiry.');

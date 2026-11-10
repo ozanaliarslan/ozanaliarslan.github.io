@@ -2,6 +2,10 @@
 const GameCore = (()=>{
  const alphabet='ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ';
  const foreign=c=>c==='İngilizce'||c.startsWith('Almanca');
+ function lettersFor(course) {
+  if (foreign(course) || course === 'Tarihî Kişiler') return 'ABCDEFGHIJKLMNOPQRSTUVWXYZÇĞİÖŞÜÄ';
+  return alphabet;
+ }
  const upper=(s,c='')=>String(s).normalize('NFC').toLocaleUpperCase(foreign(c)?'en-US':'tr-TR');
  const clean=(s,c='')=>upper(s,c).replace(/[^A-ZÇĞİÖŞÜÄ]/g,'');
  const count=(answer,letter)=>[...answer].filter(c=>c===letter).length;
@@ -98,7 +102,7 @@ const GameCore = (()=>{
   return s.value;
  }
 
- return { alphabet, foreign, upper, clean, isVowel, hasHiddenLetter, letterOption,
+ return { lettersFor, upper, clean, isVowel, hasHiddenLetter, letterOption,
   award, spinOutcome, passTurn, expireTurn, remainingTime, values, degreesPerSlice, wheelDestination, vowelCost, turnSeconds };
 })();
 if(typeof module!=='undefined')module.exports=GameCore;
@@ -116,7 +120,7 @@ function bank(){return [...window.QUESTION_BANK,...custom];}
 function pool(){return bank().filter(q=>!filter||q.course===filter);}
 function record(){history.push({ state: clone(state), seconds: GameCore.remainingTime(state, Date.now()), angle });if(history.length>30)history.shift();}
 function message(s,tone=''){state.message=s;state.tone=tone;}
-function populateCourses(){const el=$('courseSelect');el.replaceChildren(new Option('Tüm dersler · Karışık',''));[...new Set(bank().map(q=>q.course))].forEach(c=>el.add(new Option(c,c)));if(![...el.options].some(o=>o.value===filter))filter='';el.value=filter;}
+function populateCourses(){const el=$('courseSelect');el.replaceChildren(new Option('Tüm kategoriler · Karışık',''));[...new Set(bank().map(q=>q.course))].forEach(c=>el.add(new Option(c,c)));if(![...el.options].some(o=>o.value===filter))filter='';el.value=filter;}
 function newRound(){
  if(state.spinning)return;
  const p=pool();let available=p.filter(q=>!state.used.includes(q.id));
@@ -265,7 +269,7 @@ function board(){const board=$('board');board.replaceChildren();const words=stat
 function keyboard() {
  const box = $('keyboard');
  box.replaceChildren();
- const alphabet = GameCore.foreign(state.q.course) ? 'ABCDEFGHIJKLMNOPQRSTUVWXYZÇĞİÖŞÜÄ' : GameCore.alphabet;
+ const alphabet = GameCore.lettersFor(state.q.course);
  for (const letter of alphabet) {
   const button = document.createElement('button');
   button.className = 'key';
@@ -334,7 +338,7 @@ function render(){if(!state.q)return;const current=window.QUESTION_BANK.find(q=>
  $('roundNumber').textContent=state.round+'. TUR';$('poolCount').textContent=pool().length+' kelime';$('courseBadge').textContent=state.q.course;$('clue').textContent=state.q.clue;$('status').textContent=state.message;$('status').className='status '+state.tone;board();keyboard();renderTeams();$('spinBtn').disabled=state.spinning||state.solved||state.value!==null;$('spinBtn').textContent=state.spinning?'Çark dönüyor…':state.value!==null?'Şimdi harf seçin':'Çarkı çevir';$('resetBtn').disabled=state.spinning;$('passBtn').disabled=state.solved||state.spinning;$('revealBtn').disabled=state.solved||state.spinning;$('nextBtn').disabled=state.spinning;$('courseSelect').disabled=state.spinning;$('settingsBtn').disabled=state.spinning;$('undoBtn').disabled=!history.length||state.spinning;$('wheelValue').textContent=wheelMessage();
  $('keyboardHint').textContent=keyboardMessage();
  paintTimer();
- const remaining=pool().filter(q=>!state.used.includes(q.id)).length;$('progress').textContent=remaining+' kelime kaldı';$('bankInfo').textContent=bank().length+' soru · '+new Set(bank().map(q=>q.course)).size+' ders alanı';save();}
+ const remaining=pool().filter(q=>!state.used.includes(q.id)).length;$('progress').textContent=remaining+' kelime kaldı';$('bankInfo').textContent=bank().length+' soru · '+new Set(bank().map(q=>q.course)).size+' kategori';save();}
 function chooseLetter(letter) {
  if (!checkTimer() || !GameCore.letterOption(state, letter)) return;
  record();
