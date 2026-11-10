@@ -93,3 +93,39 @@ assert(qs.filter(q=>q.course==='Müzik').every(q=>q.clue==='Bir müzik terimi.')
 for(const course of new Set(qs.map(q=>q.course)))assert.equal(new Set(qs.filter(q=>q.course===course).map(q=>q.clue)).size,1);
 
 console.log('Passed: all 402 words, scoring, vowel fees and prizes, pass, and exact timer expiry.');
+
+{
+ const s = { match: C.normalizeMatch({ mode: 'questions', limit: 2 }), round: 2, turnsDone: 0 };
+ assert.equal(C.endReason(s), null);
+ C.closeQuestion(s);
+ assert.equal(C.endReason(s), 'questions');
+ C.closeQuestion(s);
+ assert.equal(s.turnsDone, 1);
+}
+{
+ const s = { match: C.normalizeMatch({ mode: 'turns', limit: 2 }), teams: [{score:0},{score:0}], turn: 0, turnsDone: 0 };
+ C.passTurn(s);
+ assert.equal(C.endReason(s), null);
+ C.passTurn(s);
+ assert.equal(C.endReason(s), 'turns');
+}
+{
+ const s = { match: C.normalizeMatch({ mode: 'score', limit: 500 }), teams: [{score:0},{score:499}] };
+ assert.equal(C.endReason(s), null);
+ s.teams[1].score += 1;
+ assert.equal(C.endReason(s), 'score');
+ assert.equal(C.endReason({ ...s, match: C.normalizeMatch() }), null);
+}
+{
+ const s = { used: [], recentCourses: [] };
+ const seen = [];
+ // This runs past the total bank size to exercise category spacing during recycling.
+ for (let i = 0; i < qs.length * 3; i++) {
+  const q = C.drawQuestion(s, qs, true, () => 0);
+  assert(!seen.slice(-6).includes(q.course));
+  seen.push(q.course);
+ }
+ const single = qs.filter(q => q.course === qs[0].course);
+ assert.equal(C.drawQuestion(s, single, false).course, single[0].course);
+}
+console.log('Passed: game limits, free play, single category and mixed category spacing.');

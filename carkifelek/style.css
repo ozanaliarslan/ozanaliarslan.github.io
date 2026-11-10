@@ -88,3 +88,18 @@
 .answer-note[hidden] { display: none; }
 .answer-note h2 { margin: 0 0 4px; font-size: 12px; }
 .answer-note p { margin: 0; font-size: clamp(14px, 1.3vw, 18px); line-height: 1.4; overflow-wrap: anywhere; }
+
+.mode-badge {
+ padding: 4px 7px;
+ border-radius: 7px;
+ background: #e6f0e8;
+ color: var(--ink);
+ font-weight: 700;
+ white-space: nowrap;
+}
+.toolbar > div:first-child { flex-wrap: wrap; }
+.game-setup { max-width: 455px; }
+.game-setup [hidden] { display: none; }
+.game-setup form label { margin: 0 0 13px; }
+.game-setup form select { max-width: none; width: 100%; }
+.game-setup form .subtle { margin: 7px 0; }

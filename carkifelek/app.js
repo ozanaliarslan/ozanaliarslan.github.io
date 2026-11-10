@@ -36,8 +36,53 @@ const GameCore = (()=>{
    isVowel(letter, s.q.course) === vowel && !s.selected.includes(letter));
  }
 
+ function normalizeMatch(match) {
+  const mode = match?.mode;
+  const limit = match?.limit;
+  if (['questions', 'score', 'turns'].includes(mode) &&
+      Number.isInteger(limit) && limit > 0 && limit <= 1000000) return { mode, limit };
+  return { mode: 'free', limit: null };
+ }
+
+ function endReason(s) {
+  const match = s.match;
+  if (match?.mode === 'questions' && s.questionClosed && s.round >= match.limit) return 'questions';
+  if (match?.mode === 'turns' && s.turnsDone >= match.limit) return 'turns';
+  if (match?.mode === 'score' && s.teams.some(team => team.score >= match.limit)) return 'score';
+  return null;
+ }
+
+ function closeQuestion(s) {
+  if (s.questionClosed) return;
+  endChoice(s);
+  s.questionClosed = true;
+  s.turnsDone = (s.turnsDone || 0) + 1;
+ }
+
+ function drawQuestion(s, questions, mixed, random = Math.random) {
+  const courses = [...new Set(questions.map(q => q.course))];
+  const recent = s.recentCourses || [];
+  // Keep the six most recently seen distinct categories out of the mixed draw.
+  const blocked = mixed ? recent.slice(0, Math.min(6, courses.length - 1)) : [];
+  const eligible = questions.filter(q => !blocked.includes(q.course));
+  const used = new Set(s.used);
+  let available = eligible.filter(q => !used.has(q.id));
+  if (!available.length) {
+   const recyclable = new Set(eligible.map(q => q.id));
+   s.used = s.used.filter(id => !recyclable.has(id));
+   available = eligible;
+  }
+  const options = [...new Set(available.map(q => q.course))];
+  const course = options[Math.floor(random() * options.length)];
+  const choices = available.filter(q => q.course === course);
+  const selected = choices[Math.floor(random() * choices.length)];
+  s.used.push(selected.id);
+  s.recentCourses = [course, ...recent.filter(c => c !== course)].slice(0, 6);
+  return selected;
+ }
+
  function letterOption(s, letter) {
-  if (s.solved || s.spinning || s.value === null || s.selected.includes(letter)) return null;
+  if (endReason(s) || s.solved || s.spinning || s.value === null || s.selected.includes(letter)) return null;
   const consonantsLeft = hasHiddenLetter(s, false);
   if (isVowel(letter, s.q.course)) {
    const cost = consonantsLeft && typeof s.value === 'number' ? vowelCost : 0;
@@ -54,6 +99,7 @@ const GameCore = (()=>{
 
  function passTurn(s) {
   endChoice(s);
+  s.turnsDone = (s.turnsDone || 0) + 1;
   s.turn = (s.turn + 1) % s.teams.length;
  }
 
@@ -62,7 +108,7 @@ const GameCore = (()=>{
  }
 
  function expireTurn(s, now) {
-  if (s.value === null || !Number.isFinite(s.deadline) || now < s.deadline) return false;
+  if (endReason(s) || s.value === null || !Number.isFinite(s.deadline) || now < s.deadline) return false;
   passTurn(s);
   return true;
  }
@@ -87,6 +133,7 @@ const GameCore = (()=>{
    team.score += 500;
    team.round += 500;
    s.solved = true;
+   closeQuestion(s);
   }
   return { hit: true, n: occurrences, p: earned, cost, won };
  }
@@ -103,7 +150,7 @@ const GameCore = (()=>{
  }
 
  return { lettersFor, upper, clean, isVowel, hasHiddenLetter, letterOption,
-  award, spinOutcome, passTurn, expireTurn, remainingTime, values, degreesPerSlice, wheelDestination, vowelCost, turnSeconds };
+  award, spinOutcome, passTurn, closeQuestion, expireTurn, normalizeMatch, endReason, drawQuestion, remainingTime, values, degreesPerSlice, wheelDestination, vowelCost, turnSeconds };
 })();
 if(typeof module!=='undefined')module.exports=GameCore;
 if(typeof document!=='undefined'){
@@ -112,7 +159,7 @@ let state,custom=[],filter='',history=[],angle=0,confirmAction=null;
 let wheelSound = true;
 try { wheelSound = localStorage.getItem(KEY + '-wheel-sound') !== 'off'; } catch {}
 const clone=x=>JSON.parse(JSON.stringify(x));
-function defaultState(){return {teams:[{name:'Takım 1',score:0,round:0},{name:'Takım 2',score:0,round:0},{name:'Takım 3',score:0,round:0}],turn:0,round:0,used:[],q:null,selected:[],solved:false,value:null,deadline:null,spinning:false,message:'Çarkı çevirin, ilk harfi söyleyin.',tone:''};}
+function defaultState(){return {teams:[{name:'Takım 1',score:0,round:0},{name:'Takım 2',score:0,round:0},{name:'Takım 3',score:0,round:0}],turn:0,round:0,used:[],match:GameCore.normalizeMatch(),turnsDone:0,questionClosed:false,recentCourses:[],q:null,selected:[],solved:false,value:null,deadline:null,spinning:false,message:'Çarkı çevirin, ilk harfi söyleyin.',tone:''};}
 function validQuestion(q){return q&&typeof q.id==='string'&&typeof q.course==='string'&&q.course.trim().length>0&&q.course.length<=60&&typeof q.answer==='string'&&q.answer.length<=50&&typeof q.clue==='string'&&q.clue.length<=280&&(q.explanation===undefined||(typeof q.explanation==='string'&&q.explanation.length<=320))&&/^[A-ZÇĞİÖŞÜÄ -]+$/.test(q.answer)&&GameCore.clean(q.answer,q.course).length>0&&q.answer.split(/\s+/).every(w=>w.length<=20);}
 function validState(s){return s&&Array.isArray(s.teams)&&s.teams.length>=2&&s.teams.length<=6&&s.teams.every(t=>typeof t.name==='string'&&t.name.length<=24&&Number.isFinite(t.score)&&Number.isFinite(t.round)&&t.score>=0&&t.round>=0&&t.round<=t.score)&&Number.isInteger(s.turn)&&s.turn>=0&&s.turn<s.teams.length&&Number.isInteger(s.round)&&s.round>=0&&s.round<100000&&Array.isArray(s.used)&&s.used.every(i=>typeof i==='string')&&(!s.q||validQuestion(s.q))&&Array.isArray(s.selected)&&s.selected.every(c=>typeof c==='string'&&c.length===1)&&typeof s.solved==='boolean'&&(s.value===null||(s.value!=='PAS'&&values.includes(s.value)));}
 function save(){try{localStorage.setItem(KEY,JSON.stringify({state:{...state,spinning:false},custom,filter}));}catch(e){$('bankInfo').textContent='Bu tarayıcıda otomatik kayıt kullanılamıyor';}}
@@ -120,17 +167,112 @@ function bank(){return [...window.QUESTION_BANK,...custom];}
 function pool(){return bank().filter(q=>!filter||q.course===filter);}
 function record(){history.push({ state: clone(state), seconds: GameCore.remainingTime(state, Date.now()), angle });if(history.length>30)history.shift();}
 function message(s,tone=''){state.message=s;state.tone=tone;}
-function populateCourses(){const el=$('courseSelect');el.replaceChildren(new Option('Tüm kategoriler · Karışık',''));[...new Set(bank().map(q=>q.course))].forEach(c=>el.add(new Option(c,c)));if(![...el.options].some(o=>o.value===filter))filter='';el.value=filter;}
-function newRound(){
- if(state.spinning)return;
- const p=pool();let available=p.filter(q=>!state.used.includes(q.id));
- if(!available.length){state.used=state.used.filter(id=>!p.some(q=>q.id===id));available=p;}
- const courses=[...new Set(available.map(q=>q.course))];const course=courses[Math.floor(Math.random()*courses.length)];const choices=available.filter(q=>q.course===course);state.q=clone(choices[Math.floor(Math.random()*choices.length)]);
- state.used.push(state.q.id);state.round++;state.selected=[];state.solved=false;state.value=null;state.deadline=null;state.teams.forEach(t=>t.round=0);
- if(state.round>1)state.turn=(state.turn+1)%state.teams.length;
- message(state.teams[state.turn].name+' başlıyor. Çarkı çevirin.');render();
+function populateCourses() {
+ const select = $('courseSelect');
+ const courses = [...new Set(bank().map(q => q.course))];
+ if (!courses.includes(filter)) filter = '';
+ select.replaceChildren(new Option('Tüm kategoriler · Karışık', ''),
+  ...courses.map(course => new Option(course, course)));
+ select.value = filter;
 }
-function requestRound(){if(state.spinning)return;if(state.q&&!state.solved&&(state.selected.length||state.value!==null))ask('Yeni kelimeye geçilsin mi?','Mevcut kelime açılmadan geçilecek. Kazanılan puanlar korunur.',()=>{record();newRound();});else{record();newRound();}}
+
+function restoreMatch() {
+ state.match = GameCore.normalizeMatch(state.match);
+ state.turnsDone = Number.isSafeInteger(state.turnsDone) && state.turnsDone >= 0 ? state.turnsDone : 0;
+ state.questionClosed = state.solved || state.questionClosed === true;
+ if (!Array.isArray(state.recentCourses)) {
+  const coursesById = new Map(bank().map(q => [q.id, q.course]));
+  const played = [state.q?.course, ...state.used.slice().reverse().map(id => coursesById.get(id))];
+  state.recentCourses = [...new Set(played.filter(Boolean))].slice(0, 6);
+ } else {
+  state.recentCourses = [...new Set(state.recentCourses.filter(course => typeof course === 'string'))].slice(0, 6);
+ }
+}
+
+function newRound() {
+ if (state.spinning || GameCore.endReason(state)) return;
+ if (state.q) GameCore.closeQuestion(state);
+ if (GameCore.endReason(state)) {
+  render();
+  return;
+ }
+ state.q = clone(GameCore.drawQuestion(state, pool(), !filter));
+ state.round++;
+ state.selected = [];
+ state.solved = false;
+ state.questionClosed = false;
+ state.teams.forEach(team => team.round = 0);
+ if (state.round > 1) state.turn = (state.turn + 1) % state.teams.length;
+ message(state.teams[state.turn].name + ' başlıyor. Çarkı çevirin.');
+ render();
+}
+
+function requestRound() {
+ if (state.spinning || GameCore.endReason(state)) return;
+ const advance = () => { record(); newRound(); };
+ if (!state.solved && (state.selected.length || state.value !== null)) {
+  ask('Yeni kelimeye geçilsin mi?', 'Mevcut soru tamamlanmış sayılacak. Kazanılan puanlar korunur.', advance);
+ } else advance();
+}
+
+function startGame(match, category) {
+ const teams = state.teams.map(team => ({ name: team.name, score: 0, round: 0 }));
+ state = defaultState();
+ state.match = GameCore.normalizeMatch(match);
+ state.teams = teams;
+ filter = category;
+ history = [];
+ angle = 0;
+ positionWheel(angle);
+ populateCourses();
+ newRound();
+}
+
+const modeFields = {
+ questions: { label: 'Soru sayısı', initial: 10 },
+ score: { label: 'Hedef puan', initial: 3000 },
+ turns: { label: 'Takım sırası sayısı', initial: 12 }
+};
+
+function updateModeFields() {
+ const rule = modeFields[$('gameMode').value];
+ const input = $('gameLimit');
+ $('gameLimitLabel').hidden = !rule;
+ $('gameLimitName').textContent = rule?.label || '';
+ input.disabled = !rule;
+ input.required = Boolean(rule);
+ input.value = rule?.initial || '';
+}
+
+function openGameSetup() {
+ $('gameMode').value = state.match.mode;
+ updateModeFields();
+ if (state.match.limit) $('gameLimit').value = state.match.limit;
+ const category = $('gameCategory');
+ category.replaceChildren(...Array.from($('courseSelect').options, option =>
+  new Option(option.text, option.value)));
+ category.value = filter;
+ $('gameDialog').showModal();
+}
+
+function gameProgress() {
+ const { mode, limit } = state.match;
+ if (mode === 'questions') return limit + ' soruluk oyun';
+ if (mode === 'score') return 'Hedef ' + limit.toLocaleString('tr-TR') + ' puan';
+ if (mode === 'turns') return 'Takım sırası ' + state.turnsDone + ' / ' + limit;
+ return 'Serbest oyun';
+}
+
+function gameResult(reason) {
+ const high = Math.max(...state.teams.map(team => team.score));
+ const leaders = state.teams.filter(team => team.score === high).map(team => team.name);
+ const points = high.toLocaleString('tr-TR') + ' puan';
+ const ending = { questions: 'Soru sayısı doldu.', score: 'Hedef puana ulaşıldı.', turns: 'Takım sırası sayısı doldu.' };
+ const result = leaders.length === 1 ? leaders[0] + ' kazandı (' + points + ').'
+  : leaders.join(', ') + ' berabere (' + points + ').';
+ return 'Oyun bitti. ' + ending[reason] + ' ' + result;
+}
+
 function drawWheel() {
  const ctx = $('wheel').getContext('2d');
  const step = 2 * Math.PI / values.length;
@@ -310,7 +452,7 @@ function keyboardMessage() {
 }
 
 function paintTimer() {
- const active = state.value !== null && !state.solved && !state.spinning;
+ const active = state.value !== null && !state.solved && !state.spinning && !GameCore.endReason(state);
  const seconds = active ? GameCore.remainingTime(state, Date.now()) : GameCore.turnSeconds;
  const timer = $('letterTimer');
  const label = seconds + ' sn';
@@ -341,13 +483,44 @@ function renderAnswerNote() {
  $('answerNote').hidden = !showNote;
 }
 
-function render(){if(!state.q)return;const current=window.QUESTION_BANK.find(q=>q.id===state.q.id&&q.answer===state.q.answer);if(current)state.q={...current};
- if(state.value===null)state.deadline=null;
- else if(!Number.isFinite(state.deadline))state.deadline=Date.now()+GameCore.turnSeconds*1000;
- $('roundNumber').textContent=state.round+'. TUR';$('poolCount').textContent=pool().length+' kelime';$('courseBadge').textContent=state.q.course;$('clue').textContent=state.q.clue;renderAnswerNote();$('status').textContent=state.message;$('status').className='status '+state.tone;board();keyboard();renderTeams();$('spinBtn').disabled=state.spinning||state.solved||state.value!==null;$('spinBtn').textContent=state.spinning?'Çark dönüyor…':state.value!==null?'Şimdi harf seçin':'Çarkı çevir';$('resetBtn').disabled=state.spinning;$('passBtn').disabled=state.solved||state.spinning;$('revealBtn').disabled=state.solved||state.spinning;$('nextBtn').disabled=state.spinning;$('courseSelect').disabled=state.spinning;$('settingsBtn').disabled=state.spinning;$('undoBtn').disabled=!history.length||state.spinning;$('wheelValue').textContent=wheelMessage();
- $('keyboardHint').textContent=keyboardMessage();
+function render() {
+ if (!state.q) return;
+ const current = window.QUESTION_BANK.find(q => q.id === state.q.id && q.answer === state.q.answer);
+ if (current) state.q = { ...current };
+ const reason = GameCore.endReason(state);
+ if (state.value === null || reason) state.deadline = null;
+ else if (!Number.isFinite(state.deadline)) state.deadline = Date.now() + GameCore.turnSeconds * 1000;
+ const locked = Boolean(reason) || state.spinning;
+ $('roundNumber').textContent = state.match.mode === 'questions'
+  ? 'SORU ' + state.round + ' / ' + state.match.limit : state.round + '. SORU';
+ $('gameProgress').textContent = gameProgress();
+ $('poolCount').textContent = pool().length + ' kelime';
+ $('courseBadge').textContent = state.q.course;
+ $('clue').textContent = state.q.clue;
+ renderAnswerNote();
+ $('status').textContent = reason ? gameResult(reason) : state.message;
+ $('status').className = 'status ' + (reason ? 'win' : state.tone);
+ board();
+ keyboard();
+ renderTeams();
+ $('spinBtn').disabled = locked || state.solved || state.value !== null;
+ $('spinBtn').textContent = state.spinning ? 'Çark dönüyor…' : state.value !== null ? 'Şimdi harf seçin' : 'Çarkı çevir';
+ $('newGameBtn').disabled = state.spinning;
+ $('resetBtn').disabled = state.spinning;
+ $('passBtn').disabled = locked || state.solved;
+ $('revealBtn').disabled = locked || state.solved;
+ $('nextBtn').disabled = locked;
+ $('courseSelect').disabled = locked;
+ $('settingsBtn').disabled = state.spinning;
+ $('undoBtn').disabled = !history.length || state.spinning;
+ $('wheelValue').textContent = reason ? 'Oyun bitti' : wheelMessage();
+ $('keyboardHint').textContent = reason ? 'Yeni oyun başlatabilirsiniz' : keyboardMessage();
  paintTimer();
- const remaining=pool().filter(q=>!state.used.includes(q.id)).length;$('progress').textContent=remaining+' kelime kaldı';$('bankInfo').textContent=bank().length+' soru · '+new Set(bank().map(q=>q.course)).size+' kategori';save();}
+ const remaining = pool().filter(q => !state.used.includes(q.id)).length;
+ $('progress').textContent = reason ? 'Oyun tamamlandı' : remaining + ' yeni kelime';
+ $('bankInfo').textContent = bank().length + ' soru · ' + new Set(bank().map(q => q.course)).size + ' kategori';
+ save();
+}
 function chooseLetter(letter) {
  if (!checkTimer() || !GameCore.letterOption(state, letter)) return;
  record();
@@ -367,7 +540,7 @@ function chooseLetter(letter) {
 }
 
 function spin() {
- if (state.spinning || state.solved || state.value !== null) return;
+ if (GameCore.endReason(state) || state.spinning || state.solved || state.value !== null) return;
  record();
  state.spinning = true;
  message('Çark dönüyor…');
@@ -388,7 +561,7 @@ function spin() {
 }
 
 function pass() {
- if (state.solved || state.spinning || !checkTimer()) return;
+ if (GameCore.endReason(state) || state.solved || state.spinning || !checkTimer()) return;
  record();
  GameCore.passTurn(state);
  message('Sıra ' + state.teams[state.turn].name + ' takımında. Çarkı çevirin.');
@@ -407,7 +580,7 @@ function unlockAudio() {
 function tone(f){try{unlockAudio();if(!audio)return;const o=audio.createOscillator(),g=audio.createGain();o.connect(g);g.connect(audio.destination);o.frequency.value=f;g.gain.setValueAtTime(.035,audio.currentTime);g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+.18);o.start();o.stop(audio.currentTime+.18);}catch{}}
 let audio=null;
 try{const stored=JSON.parse(localStorage.getItem(KEY));if(stored&&validState(stored.state)){state=stored.state;state.spinning=false;custom=(stored.custom||[]).filter(validQuestion);filter=typeof stored.filter==='string'?stored.filter:'';}}catch{}
-state=state||defaultState();populateCourses();drawWheel();updateWheelSoundButton();if(!state.q)newRound();else render();
+state=state||defaultState();restoreMatch();populateCourses();drawWheel();updateWheelSoundButton();if(!state.q)newRound();else render();
 checkTimer();
 setInterval(checkTimer, 150);
 $('spinBtn').onclick=spin;
@@ -429,15 +602,25 @@ $('helpBtn').onclick=()=>$('helpDialog').showModal();$('settingsBtn').onclick=sh
 $('fullBtn').onclick=async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen();}catch{message('Tam ekran için tarayıcınızda F11 tuşunu kullanabilirsiniz.');render();}};
 document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>b.closest('dialog').close());
 $('confirmYes').onclick=()=>{const action=confirmAction;confirmAction=null;$('confirmDialog').close();if(action)action();};
-$('revealBtn').onclick=()=>ask('Cevap açılsın mı?','Kelime bütün sınıfa gösterilecek. Bu işlem tamamlama bonusu kazandırmaz.',()=>{record();state.solved=true;state.value=null;message('Cevap açıldı. Hazır olduğunuzda yeni kelimeye geçin.');render();});
-$('courseSelect').onchange=e=>{const next=e.target.value;const apply=()=>{filter=next;history=[];newRound();populateCourses();};if(!state.solved&&(state.selected.length||state.value!==null)){e.target.value=filter;ask('Ders değiştirilsin mi?','Mevcut kelime bırakılıp seçtiğiniz dersten yeni kelime gelecek. Puanlar korunur.',apply);}else apply();};
+$('revealBtn').onclick=()=>ask('Cevap açılsın mı?','Kelime bütün sınıfa gösterilecek. Bu işlem tamamlama bonusu kazandırmaz.',()=>{if(GameCore.endReason(state))return;record();state.solved=true;GameCore.closeQuestion(state);message('Cevap açıldı. Hazır olduğunuzda yeni kelimeye geçin.');render();});
+$('courseSelect').onchange=e=>{const next=e.target.value;const apply=()=>{if(GameCore.endReason(state))return;filter=next;history=[];populateCourses();newRound();};if(!state.solved&&(state.selected.length||state.value!==null)){e.target.value=filter;ask('Ders değiştirilsin mi?','Mevcut kelime bırakılıp seçtiğiniz dersten yeni kelime gelecek. Puanlar korunur.',apply);}else apply();};
 $('teamCount').onchange=teamFields;
 $('saveTeams').onclick=()=>{const names=[...document.querySelectorAll('.team-input')].map((x,i)=>x.value.trim()||'Takım '+(i+1));const changed=names.length!==state.teams.length;const apply=()=>{record();state.teams=names.map((name,i)=>({name,score:changed?0:state.teams[i].score,round:changed?0:state.teams[i].round}));if(changed){state.turn=0;state.value=null;}message('Takımlar güncellendi.');$('settingsStatus').textContent='Takımlar kaydedildi.';render();};if(changed)ask('Takım sayısı değişsin mi?','Takım puanları sıfırlanacak.',apply);else apply();};
 $('customForm').onsubmit=e=>{e.preventDefault();const course=$('customCourse').value.trim(),answer=GameCore.upper($('customAnswer').value.trim(),course).replace(/\s+/g,' '),clue=$('customClue').value.trim();const explanation=$('customExplanation').value.trim();const q={id:'custom-'+Date.now()+'-'+Math.random().toString(36).slice(2),course,answer,clue,explanation,theme:''};if(!validQuestion(q)){$('customStatus').textContent='Cevapta yalnızca harf, boşluk veya tire kullanın. Tek kelime en fazla 20 harf olabilir.';return;}custom.push(q);populateCourses();save();customList();$('customStatus').textContent='Soru eklendi. Oynamak için bu dersi seçin veya yeni kelimeye geçin.';$('customAnswer').value='';$('customClue').value='';$('customExplanation').value='';render();};
-$('resetBtn').onclick=()=>ask('Yeni oyun başlasın mı?','Takım puanları ve tur geçmişi sıfırlanacak. Eklediğiniz sorular ve takım adları korunur.',()=>{const teams=state.teams.map(t=>({name:t.name,score:0,round:0}));state=defaultState();state.teams=teams;history=[];angle=0;positionWheel(angle);newRound();});
+$('newGameBtn').onclick = openGameSetup;
+$('gameMode').onchange = updateModeFields;
+$('gameSetup').onsubmit = event => {
+ event.preventDefault();
+ const match = GameCore.normalizeMatch({ mode: $('gameMode').value, limit: $('gameLimit').valueAsNumber });
+ $('gameDialog').close();
+ startGame(match, $('gameCategory').value);
+};
+$('resetBtn').onclick = () => ask('Oyun sıfırlansın mı?',
+ 'Puanlar ve oyun geçmişi sıfırlanacak. Seçili kuralla yeni oyun başlayacak.',
+ () => startGame(state.match, filter));
 $('exportBtn').onclick=()=>{const blob=new Blob([JSON.stringify({format:'sinif-carkifelek-v1',state:{...state,spinning:false},custom,filter},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='sinif-carkifelek-oyunum.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('settingsStatus').textContent='Oyun dosyası indirildi.';};
 $('importBtn').onclick=()=>$('importFile').click();
-$('importFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>1000000)throw Error();const data=JSON.parse(await f.text());if(data.format!=='sinif-carkifelek-v1'||!validState(data.state)||!Array.isArray(data.custom)||data.custom.length>1000||!data.custom.every(validQuestion))throw Error();ask('Oyun dosyası yüklensin mi?','Bu tarayıcıdaki puanlar ve özel sorular, seçtiğiniz dosyayla değiştirilecek.',()=>{state=data.state;state.spinning=false;custom=data.custom;filter=typeof data.filter==='string'?data.filter:'';history=[];populateCourses();if(!state.q)newRound();else render();$('settingsDialog').close();});}catch{$('settingsStatus').textContent='Dosya okunamadı. Bu oyundan dışa aktarılmış geçerli bir JSON dosyası seçin.';}e.target.value='';};
+$('importFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>1000000)throw Error();const data=JSON.parse(await f.text());if(data.format!=='sinif-carkifelek-v1'||!validState(data.state)||!Array.isArray(data.custom)||data.custom.length>1000||!data.custom.every(validQuestion))throw Error();ask('Oyun dosyası yüklensin mi?','Bu tarayıcıdaki puanlar ve özel sorular, seçtiğiniz dosyayla değiştirilecek.',()=>{state=data.state;state.spinning=false;custom=data.custom;filter=typeof data.filter==='string'?data.filter:'';history=[];restoreMatch();populateCourses();if(!state.q)newRound();else render();$('settingsDialog').close();});}catch{$('settingsStatus').textContent='Dosya okunamadı. Bu oyundan dışa aktarılmış geçerli bir JSON dosyası seçin.';}e.target.value='';};
 document.addEventListener('keydown',e=>{if(document.querySelector('dialog[open]')||e.ctrlKey||e.altKey||e.metaKey||e.repeat)return;if(e.key.length!==1)return;const letter=GameCore.upper(e.key,state.q.course);const button=[...$('keyboard').children].find(b=>b.textContent===letter);if(button&&!button.disabled){e.preventDefault();chooseLetter(letter);}});
 let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>board(),80);});
 }
