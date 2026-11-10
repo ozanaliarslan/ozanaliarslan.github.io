@@ -3065,5 +3065,1986 @@ window.QUESTION_BANK = [
     "answer": "KONGRÜANS",
     "clue": "Bir matematik kavramı.",
     "explanation": "İki tam sayının aynı pozitif tam sayıya bölündüğünde eşit kalan vermesidir. Örneğin 17 ve 5, 4 ile bölündüğünde 1 kalanını verir."
+  },
+  {
+    "id": "tymm001",
+    "course": "Matematik",
+    "answer": "DOĞAL SAYI",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Sıfırdan başlayarak birer artan tam sayılardan her biridir. 0, 1, 2 ve 3 doğal sayılara örnektir."
+  },
+  {
+    "id": "tymm002",
+    "course": "Matematik",
+    "answer": "BASAMAK DEĞERİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir rakamın sayıdaki yerine göre aldığı değerdir. 347 sayısındaki 4’ün basamak değeri 40’tır."
+  },
+  {
+    "id": "tymm003",
+    "course": "Matematik",
+    "answer": "KESİR",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir bütünün eş parçalarının kaçının ele alındığını veya iki sayının bölümünü gösteren ifadedir."
+  },
+  {
+    "id": "tymm004",
+    "course": "Matematik",
+    "answer": "PAYDA",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Kesir çizgisinin altındaki sayıdır. Bir bütünün kaç eş parçaya ayrıldığını gösterir."
+  },
+  {
+    "id": "tymm005",
+    "course": "Matematik",
+    "answer": "ÇARPIM",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Çarpma işleminin sonucudur. Örneğin 4 ile 5’in çarpımı 20’dir."
+  },
+  {
+    "id": "tymm006",
+    "course": "Matematik",
+    "answer": "DİK AÇI",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Ölçüsü 90 derece olan açıdır."
+  },
+  {
+    "id": "tymm007",
+    "course": "Matematik",
+    "answer": "KOORDİNAT DÜZLEMİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Birbirini dik kesen iki sayı doğrusuyla oluşturulan ve noktaların sıralı ikililerle gösterildiği düzlemdir."
+  },
+  {
+    "id": "tymm008",
+    "course": "Matematik",
+    "answer": "ORANTI",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "İki oranın eşitliğidir. Örneğin 2/3 ve 4/6 oranları birbirine eşittir."
+  },
+  {
+    "id": "tymm009",
+    "course": "Matematik",
+    "answer": "ASAL SAYI",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "1’den büyük ve yalnızca iki pozitif böleni olan doğal sayıdır. Örneğin 7 asaldır."
+  },
+  {
+    "id": "tymm010",
+    "course": "Matematik",
+    "answer": "BİLİMSEL GÖSTERİM",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Sıfırdan farklı bir sayının, mutlak değeri en az 1 ve 10’dan küçük olan bir katsayı ile 10’un bir tam sayı kuvvetinin çarpımı biçiminde yazılmasıdır."
+  },
+  {
+    "id": "tymm011",
+    "course": "Matematik",
+    "answer": "SİNÜS TEOREMİ",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir üçgende her kenarın, karşısındaki açının sinüsüne oranı aynıdır."
+  },
+  {
+    "id": "tymm012",
+    "course": "Matematik",
+    "answer": "PARABOL",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "İkinci dereceden bir fonksiyonun grafiğidir. Örneğin y = x² grafiği bir paraboldür."
+  },
+  {
+    "id": "tymm013",
+    "course": "Matematik",
+    "answer": "LOGARİTMA",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir tabanın belirli bir sayıyı elde etmek için hangi kuvvete yükseltilmesi gerektiğini gösterir. Örneğin 2 tabanında 8’in logaritması 3’tür."
+  },
+  {
+    "id": "tymm014",
+    "course": "Matematik",
+    "answer": "LİMİT",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Fonksiyonun girdisi belirli bir değere yaklaşırken çıktısının yaklaştığı değerdir. Böyle bir değer her zaman bulunmayabilir."
+  },
+  {
+    "id": "tymm015",
+    "course": "Matematik",
+    "answer": "TÜREV",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Bir fonksiyonun bir noktadaki anlık değişim hızıdır. Grafik üzerinde teğetin eğimini verir."
+  },
+  {
+    "id": "tymm016",
+    "course": "Matematik",
+    "answer": "KOŞULLU OLASILIK",
+    "clue": "Bir matematik kavramı.",
+    "explanation": "Başka bir olayın gerçekleştiği bilindiğinde bir olayın gerçekleşme olasılığıdır."
+  },
+  {
+    "id": "tymm017",
+    "course": "Fizik",
+    "answer": "KALDIRMA KUVVETİ",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Bir akışkanın içindeki cisme yukarı yönde uyguladığı kuvvettir. Büyüklüğü yer değiştiren akışkanın ağırlığına eşittir."
+  },
+  {
+    "id": "tymm018",
+    "course": "Fizik",
+    "answer": "KIRILMA",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Işığın bir ortamdan başka bir ortama geçerken hızının değişmesiyle ortaya çıkan olaydır. Işık eğik gelirse yönü de değişir."
+  },
+  {
+    "id": "tymm019",
+    "course": "Fizik",
+    "answer": "TAM YANSIMA",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Işık, kırılma indisi daha küçük bir ortama geçmek isterken gelme açısı sınır açısını aşarsa tümüyle ilk ortama geri döner."
+  },
+  {
+    "id": "tymm020",
+    "course": "Fizik",
+    "answer": "ELEKTRİK AKIMI",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Elektrik yükünün bir kesitten geçiş hızıdır. Amperle ölçülür."
+  },
+  {
+    "id": "tymm021",
+    "course": "Fizik",
+    "answer": "POTANSİYEL FARK",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "İki nokta arasındaki birim yük başına elektriksel potansiyel enerji farkıdır. Voltla ölçülür."
+  },
+  {
+    "id": "tymm022",
+    "course": "Fizik",
+    "answer": "ELEKTRİK DİRENCİ",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Bir iletkenin elektrik akımına karşı gösterdiği zorluktur. Ohmla ölçülür."
+  },
+  {
+    "id": "tymm023",
+    "course": "Fizik",
+    "answer": "DALGA BOYU",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Bir dalgada aynı titreşim durumundaki en yakın iki nokta arasındaki uzaklıktır. İki ardışık dalga tepesi buna örnektir."
+  },
+  {
+    "id": "tymm024",
+    "course": "Fizik",
+    "answer": "FREKANS",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Birim zamanda gerçekleşen titreşim veya tekrar sayısıdır. Hertzle ölçülür."
+  },
+  {
+    "id": "tymm025",
+    "course": "Fizik",
+    "answer": "MOMENTUM",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Bir cismin kütlesi ile hızının çarpımına eşit olan yönlü niceliktir."
+  },
+  {
+    "id": "tymm026",
+    "course": "Fizik",
+    "answer": "TORK",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Kuvvetin bir nokta ya da eksen çevresinde döndürme etkisidir. Kapı kolunu menteşeden uzağa koymak bu etkiyi artırır."
+  },
+  {
+    "id": "tymm027",
+    "course": "Fizik",
+    "answer": "ELEKTRİK ALANI",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Elektriksel yüklerin başka yüklere kuvvet uygulayabildiği bölgeyi tanımlar. Bir noktadaki değeri, birim pozitif yüke etki eden kuvvettir."
+  },
+  {
+    "id": "tymm028",
+    "course": "Fizik",
+    "answer": "KONDANSATÖR",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Elektrik yüklerini ayırarak elektrik alanında enerji depolayan devre elemanıdır."
+  },
+  {
+    "id": "tymm029",
+    "course": "Fizik",
+    "answer": "BASİT HARMONİK HAREKET",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Geri çağırıcı kuvvetin, denge noktasından uzaklıkla orantılı ve dengeye doğru olduğu titreşim hareketidir."
+  },
+  {
+    "id": "tymm030",
+    "course": "Fizik",
+    "answer": "REZONANS",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Bir sistemin doğal frekansına yakın bir frekansta uyarıldığında titreşim genliğinin büyümesidir."
+  },
+  {
+    "id": "tymm031",
+    "course": "Fizik",
+    "answer": "GİRİŞİM",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Dalgaların üst üste gelerek bazı bölgelerde birbirini güçlendirmesi, bazı bölgelerde zayıflatmasıdır."
+  },
+  {
+    "id": "tymm032",
+    "course": "Fizik",
+    "answer": "FOTOELEKTRİK OLAY",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Yeterli frekanstaki ışık bir yüzeye düştüğünde yüzeyden elektron kopmasıdır."
+  },
+  {
+    "id": "tymm033",
+    "course": "Fizik",
+    "answer": "KIRINIM",
+    "clue": "Bir fizik kavramı.",
+    "explanation": "Dalganın bir açıklıktan geçerken ya da bir engelin kenarında yayılmasıdır. Açıklık dalga boyuna yakınsa etki belirginleşir."
+  },
+  {
+    "id": "tymm034",
+    "course": "Kimya",
+    "answer": "MOL",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Bir maddenin belirli sayıda taneciğini ifade eden madde miktarı birimidir. 1 mol yaklaşık 6,02 × 10²³ tanecik içerir."
+  },
+  {
+    "id": "tymm035",
+    "course": "Kimya",
+    "answer": "MOLAR KÜTLE",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Bir maddenin bir molünün kütlesidir. Genellikle gram bölü mol ile ifade edilir."
+  },
+  {
+    "id": "tymm036",
+    "course": "Kimya",
+    "answer": "ÇÖZELTİ",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Çözünen maddenin çözücü içinde eşit dağıldığı homojen karışımdır. Tuzlu su bir örnektir."
+  },
+  {
+    "id": "tymm037",
+    "course": "Kimya",
+    "answer": "DERİŞİM",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Bir çözeltide belirli miktarda çözelti ya da çözücü başına ne kadar çözünmüş madde bulunduğunu ifade eder."
+  },
+  {
+    "id": "tymm038",
+    "course": "Kimya",
+    "answer": "ÇÖZÜNÜRLÜK",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Belirli koşullarda, belirli miktardaki çözücüde dengeye ulaşıldığında çözünebilen en fazla madde miktarıdır."
+  },
+  {
+    "id": "tymm039",
+    "course": "Kimya",
+    "answer": "ASİT",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Bir tepkimede proton verebilen maddedir. Sulu çözeltide hidronyum iyonu miktarını artırabilir."
+  },
+  {
+    "id": "tymm040",
+    "course": "Kimya",
+    "answer": "BAZ",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Bir tepkimede proton alabilen maddedir. Sulu çözeltide hidroksit iyonu miktarını artırabilir."
+  },
+  {
+    "id": "tymm041",
+    "course": "Kimya",
+    "answer": "NÖTRALLEŞME",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Asit ile bazın tepkimeye girmesidir. Birçok sulu örnekte tuz ve su oluşur."
+  },
+  {
+    "id": "tymm042",
+    "course": "Kimya",
+    "answer": "AKTİVASYON ENERJİSİ",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Bir kimyasal tepkimenin gerçekleşmesi için aşılması gereken enerji engelidir."
+  },
+  {
+    "id": "tymm043",
+    "course": "Kimya",
+    "answer": "KATALİZÖR",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Daha düşük enerji engeli olan bir yol sağlayarak tepkimeyi hızlandıran ve tepkime sonunda yeniden oluşan maddedir."
+  },
+  {
+    "id": "tymm044",
+    "course": "Kimya",
+    "answer": "KİMYASAL DENGE",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Tersinir bir tepkimede ileri ve geri tepkime hızlarının eşitlendiği durumdur."
+  },
+  {
+    "id": "tymm045",
+    "course": "Kimya",
+    "answer": "ELEKTROLİZ",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Elektrik enerjisi kullanılarak kendiliğinden gerçekleşmeyen bir kimyasal tepkimenin yürütülmesidir."
+  },
+  {
+    "id": "tymm046",
+    "course": "Kimya",
+    "answer": "HİDROKARBON",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Yalnızca karbon ve hidrojen atomlarından oluşan bileşiktir. Metan buna örnektir."
+  },
+  {
+    "id": "tymm047",
+    "course": "Kimya",
+    "answer": "POLİMER",
+    "clue": "Bir kimya terimi.",
+    "explanation": "Çok sayıda küçük birimin birbirine bağlanmasıyla oluşan uzun zincirli veya ağ yapılı büyük moleküldür."
+  },
+  {
+    "id": "tymm048",
+    "course": "Biyoloji",
+    "answer": "DNA",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Canlıların kalıtsal bilgisini taşıyan moleküldür. Açılımı deoksiribonükleik asittir."
+  },
+  {
+    "id": "tymm049",
+    "course": "Biyoloji",
+    "answer": "GEN",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "İşlevsel bir ürünün oluşması için bilgi taşıyan DNA bölgesidir."
+  },
+  {
+    "id": "tymm050",
+    "course": "Biyoloji",
+    "answer": "ALEL",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Bir genin farklı biçimlerinden biridir. Aynı genin farklı alelleri bir özelliği farklı şekilde etkileyebilir."
+  },
+  {
+    "id": "tymm051",
+    "course": "Biyoloji",
+    "answer": "MİTOZ",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Çekirdeğin bölünerek kromozom sayısı değişmeden iki yeni çekirdek oluşturmasıdır. Büyüme ve doku onarımında rol oynar."
+  },
+  {
+    "id": "tymm052",
+    "course": "Biyoloji",
+    "answer": "MAYOZ",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Kromozom sayısını yarıya indiren ve genetik çeşitlilik sağlayabilen bölünme biçimidir."
+  },
+  {
+    "id": "tymm053",
+    "course": "Biyoloji",
+    "answer": "EKOSİSTEM",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Belirli bir yerdeki canlıların cansız çevreleriyle birlikte oluşturduğu ve karşılıklı etkileşimlerin görüldüğü bütündür."
+  },
+  {
+    "id": "tymm054",
+    "course": "Biyoloji",
+    "answer": "HÜCRESEL SOLUNUM",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Hücrenin besinlerdeki enerjiyi kullanılabilir biçime dönüştürdüğü tepkimeler bütünüdür."
+  },
+  {
+    "id": "tymm055",
+    "course": "Biyoloji",
+    "answer": "SİNDİRİM",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Besinlerin emilebilecek kadar küçük parçalara ayrılmasıdır."
+  },
+  {
+    "id": "tymm056",
+    "course": "Biyoloji",
+    "answer": "NÖRON",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Bilgiyi elektriksel ve kimyasal yollarla ileten sinir hücresidir."
+  },
+  {
+    "id": "tymm057",
+    "course": "Biyoloji",
+    "answer": "REFLEKS",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Bir uyarana verilen hızlı ve istemsiz tepkidir. Sıcak bir yüzeye dokununca eli çekmek buna örnektir."
+  },
+  {
+    "id": "tymm058",
+    "course": "Biyoloji",
+    "answer": "HORMON",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Canlıda hücreler arasında haber taşıyan ve büyüme gibi işlevleri düzenleyen kimyasal maddedir."
+  },
+  {
+    "id": "tymm059",
+    "course": "Biyoloji",
+    "answer": "ANTİKOR",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Bağışıklık sisteminin belirli bir yabancı yapıyı tanıyıp ona bağlanabilen proteinidir."
+  },
+  {
+    "id": "tymm060",
+    "course": "Biyoloji",
+    "answer": "KARBON DÖNGÜSÜ",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "Karbonun atmosfer, canlılar, su ve toprak arasında dolaşmasıdır."
+  },
+  {
+    "id": "tymm061",
+    "course": "Biyoloji",
+    "answer": "GENETİK ŞİFRE",
+    "clue": "Bir biyoloji terimi.",
+    "explanation": "RNA üzerindeki üçlü baz dizilerinin hangi amino asitleri ya da dur sinyallerini belirttiğini gösteren eşleşmeler bütünüdür."
+  },
+  {
+    "id": "tymm062",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "BEYİT",
+    "clue": "Bir edebiyat terimi.",
+    "explanation": "İki dizeden oluşan nazım birimidir."
+  },
+  {
+    "id": "tymm063",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "DÖRTLÜK",
+    "clue": "Bir edebiyat terimi.",
+    "explanation": "Dört dizenin bir araya gelmesiyle oluşan nazım birimidir."
+  },
+  {
+    "id": "tymm064",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "GAZEL",
+    "clue": "Bir edebiyat terimi.",
+    "explanation": "Divan şiirinde kullanılan, beyitlerle yazılan ve çoğu zaman aşk, güzellik veya tasavvuf gibi konuları işleyen nazım biçimidir."
+  },
+  {
+    "id": "tymm065",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "MESNEVİ",
+    "clue": "Bir edebiyat terimi.",
+    "explanation": "Her beyti kendi içinde kafiyeli olan ve uzun olay anlatımlarına elverişli bir nazım biçimidir."
+  },
+  {
+    "id": "tymm066",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "ARUZ ÖLÇÜSÜ",
+    "clue": "Bir edebiyat terimi.",
+    "explanation": "Dizelerin açık ve kapalı hecelerinin belirli kalıplara göre sıralanmasına dayanan şiir ölçüsüdür."
+  },
+  {
+    "id": "tymm067",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "HECE ÖLÇÜSÜ",
+    "clue": "Bir edebiyat terimi.",
+    "explanation": "Dizelerdeki hece sayılarının eşit olmasına dayanan şiir ölçüsüdür."
+  },
+  {
+    "id": "tymm068",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "ROMAN",
+    "clue": "Bir edebiyat terimi.",
+    "explanation": "Kişileri, olayları, zaman ve mekânı ayrıntılı biçimde işleyebilen uzun anlatı türüdür."
+  },
+  {
+    "id": "tymm069",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "TİYATRO",
+    "clue": "Bir edebiyat terimi.",
+    "explanation": "Olayları oyuncuların söz ve hareketleriyle sahnede canlandıran sanat dalıdır. Sahnelenmek üzere yazılmış metne de bu ad verilir."
+  },
+  {
+    "id": "tymm070",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "İÇ KONUŞMA",
+    "clue": "Bir edebiyat terimi.",
+    "explanation": "Bir anlatıda kahramanın kendi kendine söylediği sözlerin okura doğrudan aktarılmasıdır."
+  },
+  {
+    "id": "tymm071",
+    "course": "Türk Dili ve Edebiyatı",
+    "answer": "GERİYE DÖNÜŞ",
+    "clue": "Bir edebiyat terimi.",
+    "explanation": "Anlatının şimdiki akışını durdurup daha önce yaşanmış bir olaya dönme tekniğidir."
+  },
+  {
+    "id": "tymm072",
+    "course": "Tarih",
+    "answer": "İPEK YOLU",
+    "clue": "Bir tarih kavramı.",
+    "explanation": "Asya, Avrupa ve aradaki bölgeleri bağlayan tarihî ticaret yolları ağıdır. İpek yanında bilgi ve kültür de bu yollarla yayılmıştır."
+  },
+  {
+    "id": "tymm073",
+    "course": "Tarih",
+    "answer": "KERVANSARAY",
+    "clue": "Bir tarih kavramı.",
+    "explanation": "Ticaret yollarında yolcuların, hayvanların ve malların güvenli biçimde konaklaması için yapılan yapıdır."
+  },
+  {
+    "id": "tymm074",
+    "course": "Tarih",
+    "answer": "İKTA",
+    "clue": "Bir tarih kavramı.",
+    "explanation": "Bazı İslam devletlerinde ve Selçuklularda belirli toprak gelirlerinin hizmet karşılığında görevlilere ayrılması uygulamasıdır."
+  },
+  {
+    "id": "tymm075",
+    "course": "Tarih",
+    "answer": "TIMAR",
+    "clue": "Bir tarih kavramı.",
+    "explanation": "Osmanlı’da bazı devlet görevlilerine, hizmetleri karşılığında belirli bölgelerin vergi gelirlerinin ayrılması uygulamasıdır."
+  },
+  {
+    "id": "tymm076",
+    "course": "Tarih",
+    "answer": "MERKEZİYETÇİLİK",
+    "clue": "Bir tarih kavramı.",
+    "explanation": "Devlet yönetimindeki karar yetkisinin yerel birimler yerine büyük ölçüde merkezde toplanması anlayışıdır."
+  },
+  {
+    "id": "tymm077",
+    "course": "Tarih",
+    "answer": "RÖNESANS",
+    "clue": "Bir tarih kavramı.",
+    "explanation": "Avrupa’da Antik Yunan ve Roma kültürüne artan ilgiyle birlikte sanat, bilim ve düşüncede gelişmelerin yaşandığı dönemdir."
+  },
+  {
+    "id": "tymm078",
+    "course": "Tarih",
+    "answer": "REFORM",
+    "clue": "Bir tarih kavramı.",
+    "explanation": "Avrupa’da Hristiyan kilisesine yönelik eleştirilerle başlayan ve yeni mezheplerin ortaya çıkmasına yol açan dinî dönüşüm sürecidir."
+  },
+  {
+    "id": "tymm079",
+    "course": "Tarih",
+    "answer": "SANAYİ DEVRİMİ",
+    "clue": "Bir tarih kavramı.",
+    "explanation": "Üretimde makinelerin ve fabrikaların yaygınlaşmasıyla ekonomi, çalışma biçimleri ve kent yaşamının değiştiği süreçtir."
+  },
+  {
+    "id": "tymm080",
+    "course": "Tarih",
+    "answer": "TANZİMAT",
+    "clue": "Bir tarih kavramı.",
+    "explanation": "Osmanlı’da 1839’da ilan edilen Tanzimat Fermanı ile anılan, yönetim ve hukuk alanlarındaki yenileşme dönemidir."
+  },
+  {
+    "id": "tymm081",
+    "course": "Tarih",
+    "answer": "MEŞRUTİYET",
+    "clue": "Bir tarih kavramı.",
+    "explanation": "Hükümdarın yetkilerinin bir anayasa ile sınırlandığı ve bir meclisin yer aldığı yönetim biçimidir."
+  },
+  {
+    "id": "tymm082",
+    "course": "Coğrafya",
+    "answer": "AKARSU HAVZASI",
+    "clue": "Bir coğrafya kavramı.",
+    "explanation": "Bir akarsuya ve onun kollarına sularını gönderen alanın tamamıdır."
+  },
+  {
+    "id": "tymm083",
+    "course": "Coğrafya",
+    "answer": "DELTA OVASI",
+    "clue": "Bir coğrafya kavramı.",
+    "explanation": "Bir akarsuyun denize veya göle ulaştığı yerde taşıdığı malzemeyi biriktirmesiyle oluşan ovadır."
+  },
+  {
+    "id": "tymm084",
+    "course": "Coğrafya",
+    "answer": "KARSTİK ŞEKİL",
+    "clue": "Bir coğrafya kavramı.",
+    "explanation": "Kireç taşı gibi çözünebilen kayaçların çözünmesi veya çözünen maddelerin çökelmesiyle oluşan yer şeklidir."
+  },
+  {
+    "id": "tymm085",
+    "course": "Coğrafya",
+    "answer": "FAY HATTI",
+    "clue": "Bir coğrafya kavramı.",
+    "explanation": "Yer kabuğunda kaya kütlelerinin birbirine göre hareket edebildiği kırık boyunca uzanan çizgidir."
+  },
+  {
+    "id": "tymm086",
+    "course": "Coğrafya",
+    "answer": "NÜFUS YOĞUNLUĞU",
+    "clue": "Bir coğrafya kavramı.",
+    "explanation": "Bir alanda birim yüz ölçümüne düşen kişi sayısıdır. Genellikle kilometrekare başına kişi olarak verilir."
+  },
+  {
+    "id": "tymm087",
+    "course": "Coğrafya",
+    "answer": "KENTLEŞME",
+    "clue": "Bir coğrafya kavramı.",
+    "explanation": "Kent nüfusunun ve kentlerin öneminin artmasıyla yaşam ve yerleşme biçimlerinin değişmesi sürecidir."
+  },
+  {
+    "id": "tymm088",
+    "course": "Coğrafya",
+    "answer": "BEŞERİ COĞRAFYA",
+    "clue": "Bir coğrafya kavramı.",
+    "explanation": "İnsanların nüfus, yerleşme, göç ve ekonomik etkinliklerini mekânla ilişkisi içinde inceleyen coğrafya alanıdır."
+  },
+  {
+    "id": "tymm089",
+    "course": "Coğrafya",
+    "answer": "YENİLENEBİLİR ENERJİ",
+    "clue": "Bir coğrafya kavramı.",
+    "explanation": "Güneş ve rüzgâr gibi doğal süreçlerle kendini yenileyen kaynaklardan elde edilen enerjidir."
+  },
+  {
+    "id": "tymm090",
+    "course": "Coğrafya",
+    "answer": "SERA ETKİSİ",
+    "clue": "Bir coğrafya kavramı.",
+    "explanation": "Atmosferdeki bazı gazların yeryüzünden yayılan ısı ışınımının bir bölümünü tutmasıyla oluşan ısınma etkisidir."
+  },
+  {
+    "id": "tymm091",
+    "course": "Coğrafya",
+    "answer": "KÜRESEL TİCARET",
+    "clue": "Bir coğrafya kavramı.",
+    "explanation": "Mal ve hizmetlerin ülkeler arasında alınıp satılmasıdır."
+  },
+  {
+    "id": "tymm092",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "NAMAZ",
+    "clue": "Bir din kültürü veya ahlak kavramı.",
+    "explanation": "İslam’da belirli sözler ve hareketlerle yerine getirilen ibadettir."
+  },
+  {
+    "id": "tymm093",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "VAHİY",
+    "clue": "Bir din kültürü veya ahlak kavramı.",
+    "explanation": "Dinî anlamda Allah’ın peygamberlerine bildirdiği ilahî mesajdır."
+  },
+  {
+    "id": "tymm094",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "PEYGAMBER",
+    "clue": "Bir din kültürü veya ahlak kavramı.",
+    "explanation": "Allah’ın mesajını insanlara bildirmekle görevlendirilen kişidir."
+  },
+  {
+    "id": "tymm095",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "SADAKA",
+    "clue": "Bir din kültürü veya ahlak kavramı.",
+    "explanation": "Allah’ın rızasını gözeterek gönüllü biçimde yapılan maddi veya manevi yardımdır."
+  },
+  {
+    "id": "tymm096",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "İFTAR",
+    "clue": "Bir din kültürü veya ahlak kavramı.",
+    "explanation": "Oruç tutan kişinin güneş battıktan sonra orucunu açmasıdır."
+  },
+  {
+    "id": "tymm097",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "UMRE",
+    "clue": "Bir din kültürü veya ahlak kavramı.",
+    "explanation": "Mekke’de belirli ibadetleri yerine getirmek için yapılan ziyarettir. Hac gibi yalnızca belirli günlere bağlı değildir."
+  },
+  {
+    "id": "tymm098",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "HELAL",
+    "clue": "Bir din kültürü veya ahlak kavramı.",
+    "explanation": "Dinî bakımdan yapılmasına veya kullanılmasına izin verilen şeydir."
+  },
+  {
+    "id": "tymm099",
+    "course": "Din Kültürü ve Ahlak Bilgisi",
+    "answer": "KUL HAKKI",
+    "clue": "Bir din kültürü veya ahlak kavramı.",
+    "explanation": "Bir insanın başka insanlar üzerindeki haklarını ifade eder. Bir kişinin malına veya onuruna zarar vermek bu hakları ihlal edebilir."
+  },
+  {
+    "id": "tymm100",
+    "course": "İngilizce",
+    "answer": "APPLE",
+    "clue": "İngilizce bir kelime.",
+    "explanation": "İngilizcede elma demektir."
+  },
+  {
+    "id": "tymm101",
+    "course": "İngilizce",
+    "answer": "SCHOOL",
+    "clue": "İngilizce bir kelime.",
+    "explanation": "İngilizcede okul demektir."
+  },
+  {
+    "id": "tymm102",
+    "course": "İngilizce",
+    "answer": "PENCIL",
+    "clue": "İngilizce bir kelime.",
+    "explanation": "İngilizcede kurşun kalem demektir."
+  },
+  {
+    "id": "tymm103",
+    "course": "İngilizce",
+    "answer": "BIRTHDAY",
+    "clue": "İngilizce bir kelime.",
+    "explanation": "İngilizcede doğum günü demektir."
+  },
+  {
+    "id": "tymm104",
+    "course": "İngilizce",
+    "answer": "PLAYGROUND",
+    "clue": "İngilizce bir kelime.",
+    "explanation": "İngilizcede oyun alanı demektir."
+  },
+  {
+    "id": "tymm105",
+    "course": "İngilizce",
+    "answer": "HEALTHY",
+    "clue": "İngilizce bir kelime.",
+    "explanation": "İngilizcede sağlıklı demektir."
+  },
+  {
+    "id": "tymm106",
+    "course": "İngilizce",
+    "answer": "INVENTION",
+    "clue": "İngilizce bir kelime.",
+    "explanation": "İngilizcede buluş veya icat demektir."
+  },
+  {
+    "id": "tymm107",
+    "course": "İngilizce",
+    "answer": "ACHIEVEMENT",
+    "clue": "İngilizce bir kelime.",
+    "explanation": "İngilizcede çabayla elde edilen başarı demektir."
+  },
+  {
+    "id": "tymm108",
+    "course": "İngilizce",
+    "answer": "SUSTAINABILITY",
+    "clue": "İngilizce bir kelime.",
+    "explanation": "İngilizcede sürdürülebilirlik demektir."
+  },
+  {
+    "id": "tymm109",
+    "course": "İngilizce",
+    "answer": "CITIZENSHIP",
+    "clue": "İngilizce bir kelime.",
+    "explanation": "İngilizcede vatandaşlık demektir."
+  },
+  {
+    "id": "tymm110",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "APFEL",
+    "clue": "Almanca bir kelime.",
+    "explanation": "Almancada elma demektir. Artikeli der’dir."
+  },
+  {
+    "id": "tymm111",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "KATZE",
+    "clue": "Almanca bir kelime.",
+    "explanation": "Almancada kedi demektir. Artikeli die’dir."
+  },
+  {
+    "id": "tymm112",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "SONNE",
+    "clue": "Almanca bir kelime.",
+    "explanation": "Almancada güneş demektir. Artikeli die’dir."
+  },
+  {
+    "id": "tymm113",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "GEBURTSTAG",
+    "clue": "Almanca bir kelime.",
+    "explanation": "Almancada doğum günü demektir. Artikeli der’dir."
+  },
+  {
+    "id": "tymm114",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "BAHNHOF",
+    "clue": "Almanca bir kelime.",
+    "explanation": "Almancada tren istasyonu demektir. Artikeli der’dir."
+  },
+  {
+    "id": "tymm115",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "UMWELT",
+    "clue": "Almanca bir kelime.",
+    "explanation": "Almancada çevre demektir. Artikeli die’dir."
+  },
+  {
+    "id": "tymm116",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "GESUNDHEIT",
+    "clue": "Almanca bir kelime.",
+    "explanation": "Almancada sağlık demektir. Artikeli die’dir."
+  },
+  {
+    "id": "tymm117",
+    "course": "Almanca (ikinci yabancı dil)",
+    "answer": "VERANTWORTUNG",
+    "clue": "Almanca bir kelime.",
+    "explanation": "Almancada sorumluluk demektir. Artikeli die’dir."
+  },
+  {
+    "id": "tymm118",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "SEKSEK",
+    "clue": "Bir spor terimi.",
+    "explanation": "Yere çizilen bölmeler üzerinde sıçrayarak oynanan geleneksel çocuk oyunudur."
+  },
+  {
+    "id": "tymm119",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "MENDİL KAPMACA",
+    "clue": "Bir spor terimi.",
+    "explanation": "İki takımın, ortadaki mendili alıp rakibe yakalanmadan kendi alanına dönmeye çalıştığı geleneksel oyundur."
+  },
+  {
+    "id": "tymm120",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "SIÇRAMA",
+    "clue": "Bir spor terimi.",
+    "explanation": "Ayaklarla yerden destek alarak vücudu kısa süre havaya kaldırma hareketidir."
+  },
+  {
+    "id": "tymm121",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "YAKALAMA",
+    "clue": "Bir spor terimi.",
+    "explanation": "Gelen bir nesneyi el, eldiven veya başka bir araçla kontrol altına alma hareketidir."
+  },
+  {
+    "id": "tymm122",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "ATLETİZM",
+    "clue": "Bir spor terimi.",
+    "explanation": "Koşu, atlama ve atma gibi yarışmalardan oluşan spor dalları bütünüdür."
+  },
+  {
+    "id": "tymm123",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "AEROBİK DAYANIKLILIK",
+    "clue": "Bir spor terimi.",
+    "explanation": "Uzun süreli fiziksel etkinliği, ağırlıklı olarak oksijen kullanılan enerji üretimiyle sürdürebilme yeteneğidir."
+  },
+  {
+    "id": "tymm124",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "SAVUNMA",
+    "clue": "Bir spor terimi.",
+    "explanation": "Rakibin sayı yapmasını ya da ilerlemesini engellemeye yönelik takım veya oyuncu davranışlarıdır."
+  },
+  {
+    "id": "tymm125",
+    "course": "Beden Eğitimi ve Spor",
+    "answer": "MANŞET",
+    "clue": "Bir spor terimi.",
+    "explanation": "Voleybolda topu iki kolun ön kısmıyla karşılayıp yönlendirme tekniğidir."
+  },
+  {
+    "id": "tymm126",
+    "course": "Müzik",
+    "answer": "ÇALGI",
+    "clue": "Bir müzik terimi.",
+    "explanation": "Müzik yapmak amacıyla ses üretmek için kullanılan araçtır."
+  },
+  {
+    "id": "tymm127",
+    "course": "Müzik",
+    "answer": "SES YÜKSEKLİĞİ",
+    "clue": "Bir müzik terimi.",
+    "explanation": "Bir sesin ince ya da kalın duyulmasını belirleyen özelliktir. Titreşim frekansıyla ilişkilidir."
+  },
+  {
+    "id": "tymm128",
+    "course": "Müzik",
+    "answer": "VURUŞ",
+    "clue": "Bir müzik terimi.",
+    "explanation": "Müzikte düzenli olarak duyulan veya sayılan temel zaman birimidir."
+  },
+  {
+    "id": "tymm129",
+    "course": "Müzik",
+    "answer": "MARŞ",
+    "clue": "Bir müzik terimi.",
+    "explanation": "Düzenli ve belirgin vuruşlarla yürüyüşe veya törenlere eşlik edebilen müzik türüdür."
+  },
+  {
+    "id": "tymm130",
+    "course": "Müzik",
+    "answer": "TÜRKÜ",
+    "clue": "Bir müzik terimi.",
+    "explanation": "Halk müziği geleneğinde çoğu zaman sözlü olarak söylenen ezgili eserdir."
+  },
+  {
+    "id": "tymm131",
+    "course": "Müzik",
+    "answer": "MAKAM",
+    "clue": "Bir müzik terimi.",
+    "explanation": "Türk müziğinde perdelerin ve bu perdeler üzerinde izlenen ezgisel yolun oluşturduğu düzendir."
+  },
+  {
+    "id": "tymm132",
+    "course": "Müzik",
+    "answer": "USUL",
+    "clue": "Bir müzik terimi.",
+    "explanation": "Türk müziğinde vuruşların belirli süre ve vurgu örüntülerine göre düzenlenmesidir."
+  },
+  {
+    "id": "tymm133",
+    "course": "Müzik",
+    "answer": "ARMONİ",
+    "clue": "Bir müzik terimi.",
+    "explanation": "Birlikte duyulan seslerin ve akorların birbirleriyle ilişkisini düzenleyen müzik alanıdır."
+  },
+  {
+    "id": "tymm134",
+    "course": "Görsel Sanatlar",
+    "answer": "NOKTA",
+    "clue": "Bir görsel sanatlar terimi.",
+    "explanation": "Görsel anlatımda yer ve dikkat odağı oluşturabilen temel bir ögedir."
+  },
+  {
+    "id": "tymm135",
+    "course": "Görsel Sanatlar",
+    "answer": "BİÇİM",
+    "clue": "Bir görsel sanatlar terimi.",
+    "explanation": "Bir nesnenin veya görsel ögenin dış görünüşünü belirleyen şekildir."
+  },
+  {
+    "id": "tymm136",
+    "course": "Görsel Sanatlar",
+    "answer": "RENK ÇEMBERİ",
+    "clue": "Bir görsel sanatlar terimi.",
+    "explanation": "Renkleri birbirleriyle ilişkilerini gösterecek biçimde dairesel olarak düzenleyen şemadır."
+  },
+  {
+    "id": "tymm137",
+    "course": "Görsel Sanatlar",
+    "answer": "BASKI RESİM",
+    "clue": "Bir görsel sanatlar terimi.",
+    "explanation": "Hazırlanan bir yüzeydeki görüntüyü kâğıt veya başka bir malzemeye aktararak elde edilen resimdir."
+  },
+  {
+    "id": "tymm138",
+    "course": "Görsel Sanatlar",
+    "answer": "HEYKEL",
+    "clue": "Bir görsel sanatlar terimi.",
+    "explanation": "Taş, kil, metal veya başka malzemelerle yapılan üç boyutlu sanat eseridir."
+  },
+  {
+    "id": "tymm139",
+    "course": "Görsel Sanatlar",
+    "answer": "FRESK",
+    "clue": "Bir görsel sanatlar terimi.",
+    "explanation": "Yaş sıva üzerine boyayla yapılan duvar resmi tekniğidir."
+  },
+  {
+    "id": "tymm140",
+    "course": "Görsel Sanatlar",
+    "answer": "IŞIK GÖLGE",
+    "clue": "Bir görsel sanatlar terimi.",
+    "explanation": "Bir yüzeyde aydınlık ve karanlık bölgeleri kullanarak hacim, yön ve derinlik oluşturma yöntemidir."
+  },
+  {
+    "id": "tymm141",
+    "course": "Görsel Sanatlar",
+    "answer": "SOYUT SANAT",
+    "clue": "Bir görsel sanatlar terimi.",
+    "explanation": "Görünen dünyayı birebir aktarmak yerine renk, çizgi ve biçim ilişkilerine odaklanan sanat yaklaşımıdır."
+  },
+  {
+    "id": "tymm142",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "KİŞİSEL TEMİZLİK",
+    "clue": "Bir sağlık veya trafik kavramı.",
+    "explanation": "El yıkama ve diş fırçalama gibi sağlığı korumaya yardımcı günlük temizlik alışkanlıklarıdır."
+  },
+  {
+    "id": "tymm143",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "SU TÜKETİMİ",
+    "clue": "Bir sağlık veya trafik kavramı.",
+    "explanation": "Vücudun sıvı ihtiyacının karşılanması için gün içinde su içilmesidir."
+  },
+  {
+    "id": "tymm144",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "FİZİKSEL SAĞLIK",
+    "clue": "Bir sağlık veya trafik kavramı.",
+    "explanation": "Vücudun günlük işlevlerini yerine getirebilmesi ve bedensel iyilik durumudur."
+  },
+  {
+    "id": "tymm145",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "STRES",
+    "clue": "Bir sağlık veya trafik kavramı.",
+    "explanation": "Zorlayıcı ya da önemli olarak algılanan durumlara verilen bedensel ve duygusal tepkidir."
+  },
+  {
+    "id": "tymm146",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "ERİŞİLEBİLİRLİK",
+    "clue": "Bir sağlık veya trafik kavramı.",
+    "explanation": "Çevrenin, ulaşımın, bilginin ve hizmetlerin farklı ihtiyaçları olan kişilerce kullanılabilir biçimde düzenlenmesidir."
+  },
+  {
+    "id": "tymm147",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "GÖRÜŞ MESAFESİ",
+    "clue": "Bir sağlık veya trafik kavramı.",
+    "explanation": "Bir sürücünün yolun ilerisini ve yoldaki nesneleri görebildiği uzaklıktır."
+  },
+  {
+    "id": "tymm148",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "RUHSAL SAĞLIK",
+    "clue": "Bir sağlık veya trafik kavramı.",
+    "explanation": "Duygusal ve zihinsel iyilik hâlini, günlük yaşamın güçlükleriyle başa çıkabilmeyi ve ilişkiler kurabilmeyi kapsar."
+  },
+  {
+    "id": "tymm149",
+    "course": "Sağlık Bilgisi ve Trafik Kültürü",
+    "answer": "TOPLU TAŞIMA",
+    "clue": "Bir sağlık veya trafik kavramı.",
+    "explanation": "Otobüs, metro ve tren gibi araçlarla çok sayıda yolcunun ortak ulaşım hizmetinden yararlanmasıdır."
+  },
+  {
+    "id": "tymm150",
+    "course": "Bilişim (seçmeli)",
+    "answer": "KLAVYE",
+    "clue": "Bir bilişim terimi.",
+    "explanation": "Harfleri, sayıları ve komutları bilgisayara girmek için kullanılan tuşlu donanımdır."
+  },
+  {
+    "id": "tymm151",
+    "course": "Bilişim (seçmeli)",
+    "answer": "FARE",
+    "clue": "Bir bilişim terimi.",
+    "explanation": "Ekrandaki işaretçiyi hareket ettirmeye ve seçim yapmaya yarayan giriş aygıtıdır."
+  },
+  {
+    "id": "tymm152",
+    "course": "Bilişim (seçmeli)",
+    "answer": "DÖNGÜ",
+    "clue": "Bir bilişim terimi.",
+    "explanation": "Bir dizi komutun belirli sayıda veya bir koşul sağlandığı sürece tekrarlanmasını sağlayan programlama yapısıdır."
+  },
+  {
+    "id": "tymm153",
+    "course": "Bilişim (seçmeli)",
+    "answer": "DEĞİŞKEN",
+    "clue": "Bir bilişim terimi.",
+    "explanation": "Programda bir değeri saklamak ve gerektiğinde değiştirmek için kullanılan adlandırılmış alandır."
+  },
+  {
+    "id": "tymm154",
+    "course": "Bilişim (seçmeli)",
+    "answer": "KOŞUL",
+    "clue": "Bir bilişim terimi.",
+    "explanation": "Bir işlemin yapılıp yapılmayacağını belirleyen doğru ya da yanlış sonuçlu ifadedir."
+  },
+  {
+    "id": "tymm155",
+    "course": "Bilişim (seçmeli)",
+    "answer": "AKIŞ ŞEMASI",
+    "clue": "Bir bilişim terimi.",
+    "explanation": "Bir sürecin ya da algoritmanın adımlarını ve karar noktalarını sembollerle gösteren şemadır."
+  },
+  {
+    "id": "tymm156",
+    "course": "Bilişim (seçmeli)",
+    "answer": "AĞ",
+    "clue": "Bir bilişim terimi.",
+    "explanation": "Veri ve kaynak paylaşımı için birbirine bağlanmış bilgisayar ve diğer cihazlardan oluşan yapıdır."
+  },
+  {
+    "id": "tymm157",
+    "course": "Bilişim (seçmeli)",
+    "answer": "ŞİFRELEME",
+    "clue": "Bir bilişim terimi.",
+    "explanation": "Bilgiyi yalnızca uygun anahtara sahip olanların okuyabileceği bir biçime dönüştürme işlemidir."
+  },
+  {
+    "id": "tymm158",
+    "course": "Hayat Bilgisi",
+    "answer": "OKUL",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Öğrencilerin bir arada öğrenip etkinliklere katıldığı eğitim yeridir."
+  },
+  {
+    "id": "tymm159",
+    "course": "Hayat Bilgisi",
+    "answer": "SINIF KURALI",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Sınıfta güvenli, düzenli ve saygılı bir öğrenme ortamı kurmak için benimsenen davranış kuralıdır."
+  },
+  {
+    "id": "tymm160",
+    "course": "Hayat Bilgisi",
+    "answer": "GÖREV PAYLAŞIMI",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Bir işi yapan kişilerin yapılacak işleri aralarında bölüşmesidir."
+  },
+  {
+    "id": "tymm161",
+    "course": "Hayat Bilgisi",
+    "answer": "KİŞİSEL ALAN",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Bir kişinin bedenini ve kendine ait alanı koruyabilmesini sağlayan sınırdır. Bu sınıra saygı göstermek önemlidir."
+  },
+  {
+    "id": "tymm162",
+    "course": "Hayat Bilgisi",
+    "answer": "EV ADRESİ",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Bir evin nerede olduğunu bildiren mahalle, sokak ve kapı numarası gibi bilgilerin bütünüdür."
+  },
+  {
+    "id": "tymm163",
+    "course": "Hayat Bilgisi",
+    "answer": "BAYRAM",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Bir topluluğun sevinç, dayanışma veya anma duygusuyla kutladığı özel gündür."
+  },
+  {
+    "id": "tymm164",
+    "course": "Hayat Bilgisi",
+    "answer": "TASARRUF",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Su, enerji veya para gibi kaynakları gereksiz yere tüketmeden kullanmaktır."
+  },
+  {
+    "id": "tymm165",
+    "course": "Hayat Bilgisi",
+    "answer": "GERİ DÖNÜŞÜM",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Atıkların işlenerek tekrar kullanılabilecek ham maddeye veya ürüne dönüştürülmesidir."
+  },
+  {
+    "id": "tymm166",
+    "course": "Hayat Bilgisi",
+    "answer": "ACİL DURUM",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Güvenliği veya sağlığı tehdit eden ve hızlı hareket etmeyi gerektiren durumdur."
+  },
+  {
+    "id": "tymm167",
+    "course": "Hayat Bilgisi",
+    "answer": "YEREL YÖNETİM",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Bir yerleşim yerindeki ortak ihtiyaçlar için hizmet veren yönetimdir. Belediye buna bir örnektir."
+  },
+  {
+    "id": "tymm168",
+    "course": "Hayat Bilgisi",
+    "answer": "SAĞLIKLI BESLENME",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Vücudun gereksinim duyduğu besinleri çeşitli ve dengeli biçimde tüketme alışkanlığıdır."
+  },
+  {
+    "id": "tymm169",
+    "course": "Hayat Bilgisi",
+    "answer": "DOĞAL ÇEVRE",
+    "clue": "Hayat Bilgisi dersinden bir kavram.",
+    "explanation": "Canlıların yaşadığı ve toprak, hava, su gibi doğal ögelerin bulunduğu ortamdır."
+  },
+  {
+    "id": "tymm170",
+    "course": "Türkçe",
+    "answer": "HARF",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Yazıda bir sesi göstermek için kullanılan işarettir."
+  },
+  {
+    "id": "tymm171",
+    "course": "Türkçe",
+    "answer": "HECE",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Bir solukta söylenebilen ses birimidir. Türkçede her hecede bir ünlü bulunur."
+  },
+  {
+    "id": "tymm172",
+    "course": "Türkçe",
+    "answer": "SÖZCÜK",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Tek başına bir anlam taşıyan ya da cümlede görev üstlenen dil birimidir."
+  },
+  {
+    "id": "tymm173",
+    "course": "Türkçe",
+    "answer": "CÜMLE",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Bir duyguyu, düşünceyi veya durumu anlatan yargı birimidir."
+  },
+  {
+    "id": "tymm174",
+    "course": "Türkçe",
+    "answer": "NOKTALAMA",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Yazının okunmasını ve anlamının doğru anlaşılmasını sağlayan işaretlerin kullanımına verilen addır."
+  },
+  {
+    "id": "tymm175",
+    "course": "Türkçe",
+    "answer": "EŞ ANLAM",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "İki sözcüğün aynı veya çok yakın anlama gelmesidir. Örneğin okul ile mektep."
+  },
+  {
+    "id": "tymm176",
+    "course": "Türkçe",
+    "answer": "ZIT ANLAM",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Sözcüklerin birbirine karşıt anlamlar taşımasıdır. Örneğin sıcak ile soğuk."
+  },
+  {
+    "id": "tymm177",
+    "course": "Türkçe",
+    "answer": "ANA DÜŞÜNCE",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Bir metnin okuyucuya vermek istediği temel düşüncedir."
+  },
+  {
+    "id": "tymm178",
+    "course": "Türkçe",
+    "answer": "ÇIKARIM",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Metinde doğrudan söylenmeyen bir sonuca, verilen ipuçlarından hareketle ulaşmaktır."
+  },
+  {
+    "id": "tymm179",
+    "course": "Türkçe",
+    "answer": "KÖK",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Bir sözcüğün daha küçük anlamlı bir parçaya ayrılamayan ve sözcükle anlam ilişkisi taşıyan bölümüdür."
+  },
+  {
+    "id": "tymm180",
+    "course": "Türkçe",
+    "answer": "YAPIM EKİ",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Bir köke veya gövdeye eklenerek yeni bir sözcük oluşturan ektir. Örneğin gözlükteki lük."
+  },
+  {
+    "id": "tymm181",
+    "course": "Türkçe",
+    "answer": "FİİLİMSİ",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Fiilden türeyip cümlede isim, sıfat ya da zarf görevi üstlenen sözcüktür."
+  },
+  {
+    "id": "tymm182",
+    "course": "Türkçe",
+    "answer": "ANLATIM BOZUKLUĞU",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Sözcük seçimi veya dil bilgisi nedeniyle bir cümlenin anlamını açık ve doğru iletememesi durumudur."
+  },
+  {
+    "id": "tymm183",
+    "course": "Türkçe",
+    "answer": "NESNEL ANLATIM",
+    "clue": "Türkçe dersinden bir kavram.",
+    "explanation": "Kişisel beğeniden bağımsız olarak, doğruluğu denetlenebilen bilgilere dayanan anlatımdır."
+  },
+  {
+    "id": "tymm184",
+    "course": "Fen Bilimleri",
+    "answer": "DUYU ORGANI",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Çevredeki uyarıları algılamamızı sağlayan organdır. Göz, kulak, burun, dil ve deri buna örnektir."
+  },
+  {
+    "id": "tymm185",
+    "course": "Fen Bilimleri",
+    "answer": "MIKNATIS",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Demir gibi bazı maddeleri çekebilen ve iki kutbu bulunan cisimdir."
+  },
+  {
+    "id": "tymm186",
+    "course": "Fen Bilimleri",
+    "answer": "SAYDAM MADDE",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Işığı geçirerek arkasındaki cisimlerin belirgin biçimde görülmesini sağlayan maddedir. Temiz pencere camı buna örnektir."
+  },
+  {
+    "id": "tymm187",
+    "course": "Fen Bilimleri",
+    "answer": "SES KAYNAĞI",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Titreşerek ses oluşturan varlıktır. Çalan bir zil veya bir müzik aletinin teli buna örnektir."
+  },
+  {
+    "id": "tymm188",
+    "course": "Fen Bilimleri",
+    "answer": "BUHARLAŞMA",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Sıvının yüzeyindeki taneciklerin gaz hâline geçmesidir. Bu olay kaynama sıcaklığının altında da gerçekleşebilir."
+  },
+  {
+    "id": "tymm189",
+    "course": "Fen Bilimleri",
+    "answer": "YOĞUŞMA",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Gaz hâlindeki maddenin ısı vererek sıvıya dönüşmesidir. Soğuk bir bardağın dışında su damlaları oluşması buna örnektir."
+  },
+  {
+    "id": "tymm190",
+    "course": "Fen Bilimleri",
+    "answer": "BESİN ZİNCİRİ",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Canlıların birbirini besin olarak kullanmasına bağlı olarak madde ve enerjinin aktarılma sırasıdır."
+  },
+  {
+    "id": "tymm191",
+    "course": "Fen Bilimleri",
+    "answer": "DÜNYANIN DÖNÜŞÜ",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Dünya’nın kendi ekseni çevresindeki hareketidir. Gece ve gündüzün oluşmasına yol açar."
+  },
+  {
+    "id": "tymm192",
+    "course": "Fen Bilimleri",
+    "answer": "GÜNEŞ TUTULMASI",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Ay’ın Dünya ile Güneş arasına girip Güneş’in görünümünü Dünya’nın bazı bölgelerinden kısmen veya tamamen örtmesidir."
+  },
+  {
+    "id": "tymm193",
+    "course": "Fen Bilimleri",
+    "answer": "PİL",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Kimyasal enerjiyi elektrik enerjisine dönüştürebilen devre elemanıdır."
+  },
+  {
+    "id": "tymm194",
+    "course": "Fen Bilimleri",
+    "answer": "AMPUL",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Elektrik enerjisini ışığa dönüştüren devre elemanıdır."
+  },
+  {
+    "id": "tymm195",
+    "course": "Fen Bilimleri",
+    "answer": "SİGORTA",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Akım güvenli sınırı aştığında devreyi keserek elektrik tesisatını koruyan aygıttır."
+  },
+  {
+    "id": "tymm196",
+    "course": "Fen Bilimleri",
+    "answer": "MEVSİM",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Dünya’nın eksen eğikliği ve Güneş çevresindeki dolanımı nedeniyle yıl içinde yaşanan dönemlerden biridir."
+  },
+  {
+    "id": "tymm197",
+    "course": "Fen Bilimleri",
+    "answer": "BASİT MAKİNE",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Kuvvetin büyüklüğünü veya yönünü değiştirerek iş yapmayı kolaylaştıran düzenektir. Kaldıraç bir örnektir."
+  },
+  {
+    "id": "tymm198",
+    "course": "Fen Bilimleri",
+    "answer": "KALDIRAÇ",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Bir destek noktası çevresinde dönebilen ve kuvvetin etkisini değiştiren basit makinedir."
+  },
+  {
+    "id": "tymm199",
+    "course": "Fen Bilimleri",
+    "answer": "MUTASYON",
+    "clue": "Fen Bilimleri dersinden bir kavram.",
+    "explanation": "Kalıtsal maddenin dizisinde veya yapısında oluşan kalıcı değişikliktir. Kalıtsal aktarım, değişikliğin oluştuğu hücreye bağlıdır."
+  },
+  {
+    "id": "tymm200",
+    "course": "Sosyal Bilgiler",
+    "answer": "KROKİ",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "Bir yerin konumunu ve belirgin ögelerini ayrıntılı ölçek kullanmadan gösteren kuş bakışı çizimdir."
+  },
+  {
+    "id": "tymm201",
+    "course": "Sosyal Bilgiler",
+    "answer": "YÖN",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "Bir yerin başka bir yere göre hangi tarafta kaldığını belirtir. Kuzey, güney, doğu ve batı ana yönlerdir."
+  },
+  {
+    "id": "tymm202",
+    "course": "Sosyal Bilgiler",
+    "answer": "KÜLTÜREL MİRAS",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "Geçmiş kuşaklardan günümüze ulaşan ve korunup gelecek kuşaklara aktarılması değerli olan eser, bilgi veya gelenektir."
+  },
+  {
+    "id": "tymm203",
+    "course": "Sosyal Bilgiler",
+    "answer": "ORTAK MİRAS",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "İnsanlığın tümü için değer taşıyan ve korunması ortak sorumluluk olan doğal veya kültürel varlıktır."
+  },
+  {
+    "id": "tymm204",
+    "course": "Sosyal Bilgiler",
+    "answer": "MESLEK",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "Bir kişinin bilgi ve becerilerini kullanarak yürüttüğü ve çoğu zaman gelir elde ettiği iş alanıdır."
+  },
+  {
+    "id": "tymm205",
+    "course": "Sosyal Bilgiler",
+    "answer": "ÜRETİM",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "İnsanların ihtiyaçlarını karşılamak için mal veya hizmet meydana getirmesidir."
+  },
+  {
+    "id": "tymm206",
+    "course": "Sosyal Bilgiler",
+    "answer": "TÜKETİM",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "İhtiyaçları karşılamak amacıyla mal ve hizmetlerin kullanılmasıdır."
+  },
+  {
+    "id": "tymm207",
+    "course": "Sosyal Bilgiler",
+    "answer": "BÜTÇE",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "Belirli bir dönem için gelirlerin ve harcamaların planlanmasıdır."
+  },
+  {
+    "id": "tymm208",
+    "course": "Sosyal Bilgiler",
+    "answer": "SİVİL TOPLUM",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "Kişilerin ortak amaçlar için gönüllü olarak örgütlendiği toplumsal alandır."
+  },
+  {
+    "id": "tymm209",
+    "course": "Sosyal Bilgiler",
+    "answer": "TOPLUMSAL ROL",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "Bir kişiden bulunduğu grup veya konuma göre beklenen davranışların bütünüdür."
+  },
+  {
+    "id": "tymm210",
+    "course": "Sosyal Bilgiler",
+    "answer": "DİJİTAL VATANDAŞLIK",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "Dijital ortamlarda hak ve sorumluluklarını bilerek güvenli, saygılı ve bilinçli davranmaktır."
+  },
+  {
+    "id": "tymm211",
+    "course": "Sosyal Bilgiler",
+    "answer": "KAMU HİZMETİ",
+    "clue": "Sosyal Bilgiler dersinden bir kavram.",
+    "explanation": "Toplumun ortak ihtiyaçlarını karşılamak için yürütülen eğitim, ulaşım veya temizlik gibi hizmettir."
+  },
+  {
+    "id": "tymm212",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "MİLLİ MÜCADELE",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "İşgal ve bağımsızlık tehdidine karşı Anadolu’da örgütlenen ve Kurtuluş Savaşı’nı da kapsayan bağımsızlık hareketidir."
+  },
+  {
+    "id": "tymm213",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "KUVA-YI MİLLİYE",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "İşgallere karşı yerel olarak kurulan gönüllü direniş birliklerine verilen addır."
+  },
+  {
+    "id": "tymm214",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "AMASYA GENELGESİ",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "Millî Mücadele’nin gerekçesini ve yöntemini açıklayan, milletin bağımsızlığını yine milletin kararıyla kazanacağını vurgulayan 1919 tarihli belgedir."
+  },
+  {
+    "id": "tymm215",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "ERZURUM KONGRESİ",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "1919’da toplanan ve millî sınırlar içinde vatanın bir bütün olduğunu vurgulayan kongredir."
+  },
+  {
+    "id": "tymm216",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "SİVAS KONGRESİ",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "1919’da toplanan ve millî direniş cemiyetlerini Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti çatısı altında birleştiren kongredir."
+  },
+  {
+    "id": "tymm217",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "MİSAK-I MİLLİ",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "Son Osmanlı Mebusan Meclisinin 1920’de kabul ettiği, bağımsızlık ve vatanın sınırlarıyla ilgili kararlar bütünüdür."
+  },
+  {
+    "id": "tymm218",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "LOZAN ANTLAŞMASI",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "1923’te imzalanan ve Türkiye’nin bağımsızlığını uluslararası alanda tanıyan barış antlaşmasıdır."
+  },
+  {
+    "id": "tymm219",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "MİLLİ EGEMENLİK",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "Devleti yönetme yetkisinin millete ait olması ilkesidir."
+  },
+  {
+    "id": "tymm220",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "CUMHURİYETÇİLİK",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "Millî egemenliğe ve halkın seçtiği temsilciler aracılığıyla yönetime katılmasına dayanan Atatürk ilkesidir."
+  },
+  {
+    "id": "tymm221",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "LAİKLİK",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "Devlet düzeninin ve hukuk kurallarının dinî kurallardan bağımsız kurulmasını ve inanç özgürlüğünün korunmasını gözeten ilkedir."
+  },
+  {
+    "id": "tymm222",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "İNKILAPÇILIK",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "Çağın ihtiyaçlarına göre yenilikler yapmayı ve yapılan yenilikleri sürdürmeyi esas alan Atatürk ilkesidir."
+  },
+  {
+    "id": "tymm223",
+    "course": "T.C. İnkılap Tarihi ve Atatürkçülük",
+    "answer": "HARF İNKILABI",
+    "clue": "İnkılap tarihiyle ilgili bir kavram.",
+    "explanation": "1928’de yeni Türk harflerinin kabul edilmesi ve yaygınlaştırılması sürecidir."
+  },
+  {
+    "id": "tymm224",
+    "course": "Felsefe",
+    "answer": "FELSEFİ SORU",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "Bilgi, varlık veya değer gibi konulardaki kabulleri sorgulayan ve gerekçeli düşünmeyi gerektiren sorudur."
+  },
+  {
+    "id": "tymm225",
+    "course": "Felsefe",
+    "answer": "ARGÜMAN",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "Bir görüşü desteklemek için öne sürülen öncüller ile bunlardan çıkarılan sonuçtan oluşan akıl yürütmedir."
+  },
+  {
+    "id": "tymm226",
+    "course": "Felsefe",
+    "answer": "TÜMDENGELİM",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "Öncüller doğru kabul edildiğinde sonucun zorunlu olarak çıktığı akıl yürütme biçimidir."
+  },
+  {
+    "id": "tymm227",
+    "course": "Felsefe",
+    "answer": "TÜMEVARIM",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "Tek tek gözlem veya örneklerden hareketle daha genel bir sonuca ulaşma biçimidir."
+  },
+  {
+    "id": "tymm228",
+    "course": "Felsefe",
+    "answer": "TUTARLILIK",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "Bir düşünce veya görüş içindeki ifadelerin birbirleriyle çelişmemesidir."
+  },
+  {
+    "id": "tymm229",
+    "course": "Felsefe",
+    "answer": "SAFSATA",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "İkna edici görünebilse de akıl yürütmede hata içeren çıkarımdır."
+  },
+  {
+    "id": "tymm230",
+    "course": "Felsefe",
+    "answer": "EPİSTEMOLOJİ",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "Bilginin kaynağını, sınırlarını ve hangi koşullarda gerekçelendirildiğini inceleyen felsefe alanıdır."
+  },
+  {
+    "id": "tymm231",
+    "course": "Felsefe",
+    "answer": "ONTOLOJİ",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "Varlığın ne olduğunu ve nelerin var sayılabileceğini sorgulayan felsefe alanıdır."
+  },
+  {
+    "id": "tymm232",
+    "course": "Felsefe",
+    "answer": "ETİK",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "İnsan davranışlarını iyi, kötü, doğru ve yanlış gibi kavramlar üzerinden inceleyen felsefe alanıdır."
+  },
+  {
+    "id": "tymm233",
+    "course": "Felsefe",
+    "answer": "ESTETİK",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "Güzellik, sanat ve sanat eserlerinin nasıl değerlendirildiğini sorgulayan felsefe alanıdır."
+  },
+  {
+    "id": "tymm234",
+    "course": "Felsefe",
+    "answer": "RASYONALİZM",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "Bilginin elde edilmesinde akla ve akıl yürütmeye temel rol veren felsefi yaklaşımdır."
+  },
+  {
+    "id": "tymm235",
+    "course": "Felsefe",
+    "answer": "EMPİRİZM",
+    "clue": "Felsefe dersinden bir kavram.",
+    "explanation": "Bilginin kaynağında duyusal deneyim ve gözleme öncelik veren felsefi yaklaşımdır."
+  },
+  {
+    "id": "tymm236",
+    "course": "Teknoloji ve Tasarım",
+    "answer": "TASARIM",
+    "clue": "Teknoloji ve Tasarım dersinden bir kavram.",
+    "explanation": "Bir ihtiyaca veya probleme çözüm üretmek için bir ürünün, sistemin ya da hizmetin düşünülüp planlanmasıdır."
+  },
+  {
+    "id": "tymm237",
+    "course": "Teknoloji ve Tasarım",
+    "answer": "PROTOTİP",
+    "clue": "Teknoloji ve Tasarım dersinden bir kavram.",
+    "explanation": "Bir tasarımın çalışmasını veya görünümünü denemek için hazırlanan ilk örnektir."
+  },
+  {
+    "id": "tymm238",
+    "course": "Teknoloji ve Tasarım",
+    "answer": "MAKET",
+    "clue": "Teknoloji ve Tasarım dersinden bir kavram.",
+    "explanation": "Bir nesnenin ya da yapının görünüşünü veya yerleşimini göstermek için yapılan modeldir."
+  },
+  {
+    "id": "tymm239",
+    "course": "Teknoloji ve Tasarım",
+    "answer": "ERGONOMİ",
+    "clue": "Teknoloji ve Tasarım dersinden bir kavram.",
+    "explanation": "Ürünlerin ve çalışma ortamlarının insanın özelliklerine ve ihtiyaçlarına uygun biçimde tasarlanması alanıdır."
+  },
+  {
+    "id": "tymm240",
+    "course": "Teknoloji ve Tasarım",
+    "answer": "İNOVASYON",
+    "clue": "Teknoloji ve Tasarım dersinden bir kavram.",
+    "explanation": "Yeni veya önemli ölçüde geliştirilmiş bir ürünün, yöntemin ya da hizmetin kullanıma geçirilmesidir."
+  },
+  {
+    "id": "tymm241",
+    "course": "Teknoloji ve Tasarım",
+    "answer": "GÖRSEL TASLAK",
+    "clue": "Teknoloji ve Tasarım dersinden bir kavram.",
+    "explanation": "Bir fikrin veya ürünün ana hatlarını hızlıca göstermek için hazırlanan ön çizimdir."
+  },
+  {
+    "id": "tymm242",
+    "course": "Teknoloji ve Tasarım",
+    "answer": "TASARIM DÖNGÜSÜ",
+    "clue": "Teknoloji ve Tasarım dersinden bir kavram.",
+    "explanation": "Sorunu belirleme, fikir üretme, örnek geliştirme, deneme ve iyileştirme adımlarından oluşan süreçtir."
+  },
+  {
+    "id": "tymm243",
+    "course": "Teknoloji ve Tasarım",
+    "answer": "KULLANICI İHTİYACI",
+    "clue": "Teknoloji ve Tasarım dersinden bir kavram.",
+    "explanation": "Bir ürünü veya hizmeti kullanacak kişinin çözülmesini beklediği sorun veya gereksinimdir."
+  },
+  {
+    "id": "tymm244",
+    "course": "Trafik Güvenliği",
+    "answer": "YAYA KALDIRIMI",
+    "clue": "Trafik Güvenliği dersinden bir kavram.",
+    "explanation": "Yayaların araç yolundan ayrı ve güvenli biçimde yürüyebilmesi için ayrılan bölümdür."
+  },
+  {
+    "id": "tymm245",
+    "course": "Trafik Güvenliği",
+    "answer": "TRAFİK IŞIĞI",
+    "clue": "Trafik Güvenliği dersinden bir kavram.",
+    "explanation": "Yaya ve araçların geçişini farklı renklerde ışıklı işaretlerle düzenleyen sistemdir."
+  },
+  {
+    "id": "tymm246",
+    "course": "Trafik Güvenliği",
+    "answer": "OKUL GEÇİDİ",
+    "clue": "Trafik Güvenliği dersinden bir kavram.",
+    "explanation": "Öğrencilerin okul çevresinde yolu geçmesi için işaretlenen geçiş alanıdır."
+  },
+  {
+    "id": "tymm247",
+    "course": "Trafik Güvenliği",
+    "answer": "EMNİYET MESAFESİ",
+    "clue": "Trafik Güvenliği dersinden bir kavram.",
+    "explanation": "Öndeki araç aniden yavaşlarsa güvenli biçimde durabilmek için bırakılan aralıktır."
+  },
+  {
+    "id": "tymm248",
+    "course": "Trafik Güvenliği",
+    "answer": "ARAÇ YOLU",
+    "clue": "Trafik Güvenliği dersinden bir kavram.",
+    "explanation": "Yolun araçların hareket etmesi için ayrılan kısmıdır."
+  },
+  {
+    "id": "tymm249",
+    "course": "Trafik Güvenliği",
+    "answer": "YOLCU",
+    "clue": "Trafik Güvenliği dersinden bir kavram.",
+    "explanation": "Bir ulaşım aracını kullanmadan o araçla seyahat eden kişidir."
+  },
+  {
+    "id": "tymm250",
+    "course": "Trafik Güvenliği",
+    "answer": "BİSİKLET YOLU",
+    "clue": "Trafik Güvenliği dersinden bir kavram.",
+    "explanation": "Bisikletli ulaşım için ayrılmış veya işaretlenmiş yol bölümüdür."
+  },
+  {
+    "id": "tymm251",
+    "course": "Trafik Güvenliği",
+    "answer": "DUR İŞARETİ",
+    "clue": "Trafik Güvenliği dersinden bir kavram.",
+    "explanation": "Sürücüye geçişe devam etmeden önce durması gerektiğini bildiren trafik işaretidir."
+  },
+  {
+    "id": "tymm252",
+    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "answer": "İNSAN HAKLARI",
+    "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
+    "explanation": "Her insanın insan olduğu için sahip olduğu temel hak ve özgürlüklerdir."
+  },
+  {
+    "id": "tymm253",
+    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "answer": "EŞİTLİK",
+    "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
+    "explanation": "İnsanların hak ve onur bakımından eşit olması ve benzer durumlarda ayrımcılık yapılmadan muamele görmesidir."
+  },
+  {
+    "id": "tymm254",
+    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "answer": "ÇOCUK HAKLARI",
+    "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
+    "explanation": "Çocukların gelişimini ve güvenliğini koruyan eğitim, oyun ve katılım gibi temel haklardır."
+  },
+  {
+    "id": "tymm255",
+    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "answer": "KATILIM",
+    "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
+    "explanation": "Kişilerin kendilerini etkileyen konularda görüş bildirmesi veya karar alma süreçlerinde rol almasıdır."
+  },
+  {
+    "id": "tymm256",
+    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "answer": "SEÇİM",
+    "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
+    "explanation": "Bir göreve gelecek kişiyi ya da bir konuda uygulanacak seçeneği oyla belirleme sürecidir."
+  },
+  {
+    "id": "tymm257",
+    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "answer": "UZLAŞMA",
+    "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
+    "explanation": "Farklı görüşleri olan kişilerin konuşarak ortak bir çözümde anlaşmasıdır."
+  },
+  {
+    "id": "tymm258",
+    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "answer": "AYRIMCILIK",
+    "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
+    "explanation": "Kişilere, kimlikleri veya özellikleri nedeniyle haklı bir neden olmadan farklı ve olumsuz davranılmasıdır."
+  },
+  {
+    "id": "tymm259",
+    "course": "İnsan Hakları, Yurttaşlık ve Demokrasi",
+    "answer": "ÇOĞULCULUK",
+    "clue": "Yurttaşlık ve demokrasiyle ilgili bir kavram.",
+    "explanation": "Farklı görüş ve yaşam biçimlerinin bir toplumda birlikte var olabilmesini önemseyen anlayıştır."
+  },
+  {
+    "id": "tymm260",
+    "course": "Kur’an-ı Kerim",
+    "answer": "AYET",
+    "clue": "Kur’an-ı Kerim dersinden bir kavram.",
+    "explanation": "Kur’an surelerini oluşturan bölümlerden her biridir."
+  },
+  {
+    "id": "tymm261",
+    "course": "Kur’an-ı Kerim",
+    "answer": "SURE",
+    "clue": "Kur’an-ı Kerim dersinden bir kavram.",
+    "explanation": "Kur’an’ın ayetlerden oluşan bölümlerinden biridir. Kur’an’da 114 sure bulunur."
+  },
+  {
+    "id": "tymm262",
+    "course": "Kur’an-ı Kerim",
+    "answer": "CÜZ",
+    "clue": "Kur’an-ı Kerim dersinden bir kavram.",
+    "explanation": "Kur’an’ın okumayı kolaylaştırmak amacıyla ayrılan otuz bölümünden biridir."
+  },
+  {
+    "id": "tymm263",
+    "course": "Kur’an-ı Kerim",
+    "answer": "TECVİT",
+    "clue": "Kur’an-ı Kerim dersinden bir kavram.",
+    "explanation": "Kur’an harflerinin doğru seslendirilmesi ve okuyuş kurallarının uygulanmasıyla ilgili alandır."
+  },
+  {
+    "id": "tymm264",
+    "course": "Kur’an-ı Kerim",
+    "answer": "MAHREÇ",
+    "clue": "Kur’an-ı Kerim dersinden bir kavram.",
+    "explanation": "Bir harfin seslendirilirken ağız, boğaz veya başka bir ses bölgesinde çıktığı yerdir."
+  },
+  {
+    "id": "tymm265",
+    "course": "Kur’an-ı Kerim",
+    "answer": "MED",
+    "clue": "Kur’an-ı Kerim dersinden bir kavram.",
+    "explanation": "Kur’an okuyuşunda belirli bir sesin kuralına göre uzatılmasıdır."
+  },
+  {
+    "id": "tymm266",
+    "course": "Kur’an-ı Kerim",
+    "answer": "VAKIF",
+    "clue": "Kur’an-ı Kerim dersinden bir kavram.",
+    "explanation": "Kur’an okurken uygun bir yerde durmaya verilen addır."
+  },
+  {
+    "id": "tymm267",
+    "course": "Kur’an-ı Kerim",
+    "answer": "MEAL",
+    "clue": "Kur’an-ı Kerim dersinden bir kavram.",
+    "explanation": "Kur’an ayetlerinin anlamını başka bir dilde, o dilin anlatım olanaklarıyla aktaran metindir."
+  },
+  {
+    "id": "tymm268",
+    "course": "Peygamberimizin Hayatı",
+    "answer": "SİYER",
+    "clue": "Peygamberimizin Hayatı dersinden bir kavram.",
+    "explanation": "Hz. Muhammed’in yaşamını, kişiliğini ve dönemindeki olayları ele alan alandır."
+  },
+  {
+    "id": "tymm269",
+    "course": "Peygamberimizin Hayatı",
+    "answer": "HİCRET",
+    "clue": "Peygamberimizin Hayatı dersinden bir kavram.",
+    "explanation": "Hz. Muhammed ve Müslümanların Mekke’den Medine’ye göçüne verilen addır."
+  },
+  {
+    "id": "tymm270",
+    "course": "Peygamberimizin Hayatı",
+    "answer": "MUHACİR",
+    "clue": "Peygamberimizin Hayatı dersinden bir kavram.",
+    "explanation": "İslam tarihindeki bu bağlamda, Mekke’den Medine’ye göç eden Müslümanlara verilen addır."
+  },
+  {
+    "id": "tymm271",
+    "course": "Peygamberimizin Hayatı",
+    "answer": "ENSAR",
+    "clue": "Peygamberimizin Hayatı dersinden bir kavram.",
+    "explanation": "Medine’de, Mekke’den göç eden Müslümanlara yardım eden Müslümanlara verilen addır."
+  },
+  {
+    "id": "tymm272",
+    "course": "Peygamberimizin Hayatı",
+    "answer": "MEDİNE SÖZLEŞMESİ",
+    "clue": "Peygamberimizin Hayatı dersinden bir kavram.",
+    "explanation": "Medine’de farklı toplulukların birlikte yaşamasına ilişkin hak ve yükümlülükleri düzenleyen tarihî belgedir."
+  },
+  {
+    "id": "tymm273",
+    "course": "Peygamberimizin Hayatı",
+    "answer": "HUDEYBİYE ANTLAŞMASI",
+    "clue": "Peygamberimizin Hayatı dersinden bir kavram.",
+    "explanation": "628’de Hz. Muhammed’in önderliğindeki Müslümanlarla Mekkeliler arasında yapılan antlaşmadır."
+  },
+  {
+    "id": "tymm274",
+    "course": "Peygamberimizin Hayatı",
+    "answer": "VEDA HUTBESİ",
+    "clue": "Peygamberimizin Hayatı dersinden bir kavram.",
+    "explanation": "Hz. Muhammed’in son haccı sırasında insanlara hitaben yaptığı konuşmalara verilen addır."
+  },
+  {
+    "id": "tymm275",
+    "course": "Peygamberimizin Hayatı",
+    "answer": "MEKKE",
+    "clue": "Peygamberimizin Hayatı dersinden bir kavram.",
+    "explanation": "Kâbe’nin bulunduğu ve Hz. Muhammed’in doğduğu şehirdir."
+  },
+  {
+    "id": "tymm276",
+    "course": "Temel Dinî Bilgiler",
+    "answer": "ABDEST",
+    "clue": "Temel Dinî Bilgiler dersinden bir kavram.",
+    "explanation": "Namaz gibi bazı ibadetlerden önce belirli organları usulüne göre yıkama ve mesh etme yoluyla yapılan hazırlıktır."
+  },
+  {
+    "id": "tymm277",
+    "course": "Temel Dinî Bilgiler",
+    "answer": "TEYEMMÜM",
+    "clue": "Temel Dinî Bilgiler dersinden bir kavram.",
+    "explanation": "Su bulunmadığında veya kullanılamadığında, temiz toprak ya da toprak cinsinden bir maddeyle yapılan ibadet hazırlığıdır."
+  },
+  {
+    "id": "tymm278",
+    "course": "Temel Dinî Bilgiler",
+    "answer": "KIBLE",
+    "clue": "Temel Dinî Bilgiler dersinden bir kavram.",
+    "explanation": "Müslümanların namaz kılarken yöneldikleri, Kâbe’nin bulunduğu yöndür."
+  },
+  {
+    "id": "tymm279",
+    "course": "Temel Dinî Bilgiler",
+    "answer": "EZAN",
+    "clue": "Temel Dinî Bilgiler dersinden bir kavram.",
+    "explanation": "Namaz vaktinin girdiğini bildiren çağrıdır."
+  },
+  {
+    "id": "tymm280",
+    "course": "Temel Dinî Bilgiler",
+    "answer": "ORUÇ",
+    "clue": "Temel Dinî Bilgiler dersinden bir kavram.",
+    "explanation": "İslam’da tan yerinin ağarmasından güneş batana kadar ibadet niyetiyle yemeden ve içmeden uzak durmaktır."
+  },
+  {
+    "id": "tymm281",
+    "course": "Temel Dinî Bilgiler",
+    "answer": "NİYET",
+    "clue": "Temel Dinî Bilgiler dersinden bir kavram.",
+    "explanation": "Bir davranışı veya ibadeti yapmaya gönülden karar vermektir."
+  },
+  {
+    "id": "tymm282",
+    "course": "Temel Dinî Bilgiler",
+    "answer": "HAC",
+    "clue": "Temel Dinî Bilgiler dersinden bir kavram.",
+    "explanation": "Dinî şartları sağlayan Müslümanların belirli zamanda Kâbe’yi ve ilgili yerleri ziyaret ederek yerine getirdikleri ibadettir."
+  },
+  {
+    "id": "tymm283",
+    "course": "Temel Dinî Bilgiler",
+    "answer": "AHİRET",
+    "clue": "Temel Dinî Bilgiler dersinden bir kavram.",
+    "explanation": "İslam inancında dünya yaşamından sonraki hayatı ifade eder."
   }
 ];
