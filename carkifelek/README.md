@@ -26,3 +26,5 @@ Bu klasörde `node tests/game.test.cjs` çalıştırılır. Denetimler 386 sorun
 Tanım yerine yalnızca “Bir müzik terimi”, “Bir matematik kavramı”, “Bir ilimiz” gibi genel ifadeler gösterilir. Alt konu bilgisi gösterilmez. Daha önce kaydedilen oyundaki hazır sorular da açılışta güncel kategori ipuçlarına geçirilir.
 
 Çark durduğunda 30 saniye içinde bir harf seçilir. SESLİ ve JOKER dilimleri ücretsiz sesli harf hakkı verir. Normal puan dilimlerinde kapalı sessiz harf varken sesli harf 100 puandır. Oyunu sıfırlama düğmesi takım puanlarını ve tur geçmişini temizler.
+
+Cevap açıldıktan sonra tahtanın altında kısa bir bilgi notu görünür. Özel sorulara isteğe bağlı açıklama eklenebilir.

@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict');const vm=require('node:vm');const fs=require('node:fs');const C=require('../app.js');const ctx={window:{}};vm.runInNewContext(fs.readFileSync('questions.js','utf8'),ctx);const qs=ctx.window.QUESTION_BANK;
 assert.equal(qs.length,386);assert.equal(new Set(qs.map(q=>q.course)).size,17);assert.equal(new Set(qs.map(q=>q.id)).size,386);assert.equal(new Set(qs.map(q=>q.course+'|'+q.answer)).size,386);
-for(const q of qs){assert(q.clue.length>10);assert(C.clean(q.answer,q.course).length>0);assert(q.answer.split(' ').every(w=>w.length<=20));assert(/^[A-ZÇĞİÖŞÜÄ -]+$/.test(q.answer),q.answer);}
+for(const q of qs){assert(q.clue.length>10);assert(q.explanation.trim().length>=20 && q.explanation.length<=320,q.id);assert(C.clean(q.answer,q.course).length>0);assert(q.answer.split(' ').every(w=>w.length<=20));assert(/^[A-ZÇĞİÖŞÜÄ -]+$/.test(q.answer),q.answer);}
 const initial=()=>({q:{answer:'KİTAP',course:'Türk Dili ve Edebiyatı'},teams:[{name:'A',score:1000,round:0},{name:'B',score:700,round:0}],turn:0,value:200,selected:[],solved:false,spinning:false});
 let s=initial();let r=C.award(s,'K');assert.equal(r.p,200);assert.equal(s.teams[0].score,1200);assert.equal(s.turn,0);assert.equal(s.value,null);assert.equal(C.award(s,'K'),null);
 s.value=300;r=C.award(s,'Z');assert.equal(r.hit,false);assert.equal(s.turn,1);assert.equal(s.teams[1].score,700);

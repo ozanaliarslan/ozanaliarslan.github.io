@@ -74,3 +74,17 @@
 }
 .wheel-tools .text-button { padding-inline: 6px; }
 #wheelSoundBtn[aria-pressed="false"] { color: #66716e; }
+
+.answer-note {
+ width: min(100%, 760px);
+ margin: 3px 0 9px;
+ padding: 10px 14px;
+ border: 1px solid #d8e4da;
+ border-left: 3px solid #548873;
+ border-radius: 8px;
+ background: #eef5ec;
+ color: var(--ink);
+}
+.answer-note[hidden] { display: none; }
+.answer-note h2 { margin: 0 0 4px; font-size: 12px; }
+.answer-note p { margin: 0; font-size: clamp(14px, 1.3vw, 18px); line-height: 1.4; overflow-wrap: anywhere; }
